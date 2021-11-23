@@ -1,7 +1,9 @@
-{% for i in deals %}
-	<p>{{ i }}</p>
-	<p>{{ i.author }}</p>
-	<p>{{ i.current_price }}</p>
-	<p>{{ i.pub_date }}</p>
-	<p>{{ i.description }}</p>
-{% endfor %}
+{% extends '_base.html' %}
+{% block title %} Deals list {% endblock %}
+{% block content %}
+
+	{% for deal in deals %}
+		{% include "deals/deal_card.html" %}
+	{% endfor %}
+
+{% endblock %}
