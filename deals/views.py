@@ -18,7 +18,8 @@ class DealDetailView(DetailView):
     context_object_name = 'deal'
 
     def get_context_data(self, **kwargs):
+        from django.core.paginator import Paginator
         context = super().get_context_data(**kwargs)
-        context['comments'] = Comment.objects.filter(deal=self.object.id).order_by('-created_at')
+        comments = Comment.objects.filter(deal=self.object.id).order_by('-created_at')[:10]
+        context['comments'] = comments
         return context
-

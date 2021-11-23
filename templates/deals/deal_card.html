@@ -6,8 +6,14 @@
 			</div>
 			<div class="col-sm-10">
 				<div class="card-body">
-					<h5 class="card-title">	<a href="{% url 'deals:detail' deal.pk %}"> {{ deal.name }} | ${{ deal.current_price }} <s>${{ deal.historical_price }}</s></h5></a>
-					<p class="card-text">{{ deal.description }}</p>
+					<h5 class="card-title">
+						<a href="{% url 'deals:detail' deal.pk %}">
+							{{ deal.name }} | ${{ deal.current_price }}
+							{% if deal.historical_price %}| <s> {{ deal.historical_price }}</s> |
+								{{ deal.price_percentage | floatformat:2 }}%  {% endif %}
+						</a>
+					</h5>
+					<p class="card-text">{{ deal.description | truncatewords:20  }}</p>
 					<p>{{ deal.pub_date }} | Comments: {{ deal.comment_set.count }} | Author: {{ deal.author }}</p>
 				</div>
 			</div>
