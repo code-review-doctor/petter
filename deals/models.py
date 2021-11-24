@@ -1,14 +1,10 @@
 import uuid as uuid
 
 from django.conf import settings
-from django.core.exceptions import ValidationError
 from django.db import models
-from django.utils.translation import gettext_lazy as _
+from django.urls import reverse
 
 from users.models import CustomUser
-
-
-
 
 
 class Deal(models.Model):
@@ -29,6 +25,9 @@ class Deal(models.Model):
 
     def price_percentage(self):
         return self.current_price / self.historical_price * 100 if self.historical_price > 0 else 0
+
+    def get_absolute_url(self):
+        return reverse("deals:detail", args=[str(self.id)])
 
     def __str__(self):
         return self.name
