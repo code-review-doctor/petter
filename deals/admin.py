@@ -25,5 +25,9 @@ class DealAdmin(admin.ModelAdmin):
     form = DealAdminForm
 
 
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['author', 'comment', 'created_at']
+
+
 admin.site.register(Deal, DealAdmin)
-admin.site.register(Comment)
+admin.site.register(Comment, CommentAdmin)
