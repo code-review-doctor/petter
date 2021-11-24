@@ -12,10 +12,8 @@
 					<div class="row product-gallery mx-1">
 						<div class="col-12 mb-0">
 							<figure class="view overlay rounded z-depth-1 main-img">
-								<a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
-								   data-size="400x400">
-									<img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
-									     class="img-fluid z-depth-1">
+								<a href="{{ deal.product_img }}" data-size="400x400">
+									<img src="{{ deal.product_img }}" class="img-fluid z-depth-1">
 								</a>
 							</figure>
 						</div>
@@ -45,7 +43,7 @@
 						</tr>
 						<tr>
 							<th class="pl-0 w-25" scope="row"><strong>Valid</strong></th>
-{#							Add custom filter and return 0 when expired#}
+							{#							Add custom filter and return 0 when expired#}
 							<td>{{ deal.valid_till | timeuntil }}</td>
 						</tr>
 						</tbody>

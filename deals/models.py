@@ -11,6 +11,7 @@ class Deal(models.Model):
     name = models.CharField(max_length=140)
     description = models.CharField(max_length=5000)
     link = models.URLField()
+    product_img = models.URLField()
     uuid = models.UUIDField(
         unique=True,
         default=uuid.uuid4,
@@ -19,7 +20,7 @@ class Deal(models.Model):
     historical_price = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=True, default=0)
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    valid_till = models.DateTimeField(null=True, blank=False)
+    valid_till = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

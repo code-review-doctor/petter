@@ -3,7 +3,6 @@ from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group
 
-
 from users.forms import CustomUserChangeForm
 from users.forms import CustomUserCreationForm
 
@@ -15,8 +14,6 @@ class CustomUserAdmin(admin.ModelAdmin):
     form = CustomUserChangeForm
     model = CustomUser
     list_display = ['username', 'age', 'is_active', ]
-
-
 
 
 admin.site.register(CustomUser, CustomUserAdmin)

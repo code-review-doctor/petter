@@ -1,8 +1,8 @@
 <div class="container">
 	<div class="card mb-2">
 		<div class="row no-gutters">
-			<div class="col-sm-2">
-				<img class="card-img" src="https://www.tutlane.com/images/defaultimg.png" alt="Suresh Dasari Card">
+			<div class="col-sm-2 p-2">
+				<img class="card-img" src="{{ deal.product_img}}">
 			</div>
 			<div class="col-sm-10">
 				<div class="card-body">
@@ -14,7 +14,7 @@
 						</a>
 					</h5>
 					<p class="card-text">{{ deal.description | truncatewords:20  }}</p>
-					<p>{{ deal.pub_date }} | Comments: {{ deal.comment_set.count }} | Author: {{ deal.author }}</p>
+					<p><small>{{ deal.created_at }} | Comments: {{ deal.comment_set.count }} | Author: {{ deal.author }}</small></p>
 				</div>
 			</div>
 		</div>
