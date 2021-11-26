@@ -25,7 +25,7 @@ class Deal(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def price_percentage(self):
-        return self.current_price / self.historical_price * 100 if self.historical_price > 0 else 0
+        return (1 - self.current_price / self.historical_price) * 100 if self.historical_price > 0 else 0
 
     def get_absolute_url(self):
         return reverse("deals:detail", args=[str(self.id)])
