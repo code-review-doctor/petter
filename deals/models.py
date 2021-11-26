@@ -24,8 +24,16 @@ class Deal(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    # voting
+    vote_up = models.IntegerField(default=0)
+    vote_down = models.IntegerField(default=0)
+    voter = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='voter', default=None, blank=True)
+
     def price_percentage(self):
-        return self.current_price / self.historical_price * 100 if self.historical_price > 0 else 0
+        return (1 - self.current_price / self.historical_price) * 100 if self.historical_price > 0 else 0
+
+    def get_voting_count(self):
+        return self.vote_up - self.vote_down
 
     def get_absolute_url(self):
         return reverse("deals:detail", args=[str(self.id)])
@@ -43,3 +51,10 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.author.first_name if self.author.first_name else self.author.username
+
+
+class Vote(models.Model):
+    deal = models.ForeignKey(Deal, related_name='deal_id', on_delete=models.CASCADE, default=None, blank=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='user_id', on_delete=models.CASCADE, default=None,
+                             blank=True)
+    vote = models.BooleanField(default=True)
