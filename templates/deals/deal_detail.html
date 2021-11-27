@@ -33,6 +33,30 @@
 						</strong>
 					</span>
 				</p>
+				<p>
+
+
+					<span id="container-vote-up">
+					<span id="deal_id" data-value="{{ deal.id }}"></span>
+
+					<a class="vote-action" href="#" value="vote_up">
+
+						<button type="button" class="btn btn-outline-success">
+								<i class="bi bi-file-plus" fill="currentColor" width="20" height="20"></i>
+                            </button>
+
+					</a>
+					</span>
+					<span id="voting-counter p-2">{{ deal.get_voting_count }}</span>
+					<span id="container-vote-down">
+						<a class="vote-action" href="#" value="vote_down">
+							<button type="button" class="btn btn-outline-danger">
+								<i class="bi bi-file-minus" fill="currentColor"></i>
+                            </button>
+						</a>
+					</span>
+				</p>
+
 				<p class="pt-1">{{ deal.description }}</p>
 				<div class="table-responsive">
 					<table class="table table-sm table-borderless mb-0">
@@ -59,4 +83,40 @@
 	<!--Section: Block Content-->
 
 	{% include 'deals/comments.html' %}
+	<script>
+        {# TODO: Delete this dummy permission #}
+        $(document).ready(function () {
+            $('.vote-action').click(function (e) {
+                e.preventDefault();
+                let deal_id = document.getElementById('deal_id').getAttribute('data-value');
+                let button = $(this).attr("value");
+                {% if not have_voted %}
+                    $.ajax({
+                        type: 'POST',
+                        url: '{% url "deals:vote" %}',
+                        data: {
+                            deal_id: deal_id,
+                            csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+                            action: 'votes',
+                            button: button,
+                        },
+                        success: function (json) {
+                            if (json.length < 1 || json == undefined) {
+                            }
+
+                            document.getElementById("voting-counter").innerHTML = json['total']
+
+                            console.log(json)
+
+                        },
+                        error: function (xhr, errmsg, err) {
+                        }
+                    });
+                {% endif %}
+
+
+            });
+        });
+
+	</script>
 {% endblock %}
