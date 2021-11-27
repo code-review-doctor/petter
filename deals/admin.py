@@ -4,6 +4,7 @@ from django.contrib import admin
 
 from deals.models import Comment
 from deals.models import Deal
+from deals.models import Vote
 
 
 class DealAdminForm(forms.ModelForm):
@@ -29,5 +30,10 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = ['author', 'comment', 'created_at']
 
 
+class VoteAdmin(admin.ModelAdmin):
+    list_display = ['user', 'vote_value', 'deal_id', 'created_at', 'id']
+
+
 admin.site.register(Deal, DealAdmin)
 admin.site.register(Comment, CommentAdmin)
+admin.site.register(Vote, VoteAdmin)
