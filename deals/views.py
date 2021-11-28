@@ -43,8 +43,19 @@ class DealListView(ListView):
     model = Deal
     template_name = 'deals/deal_list.html'
     context_object_name = 'deals'
-    paginate_by = 5
+    paginate_by = 2
     ordering = ['-created_at']
+
+    def get_context_data(self, **kwargs):
+        context = super(DealListView, self).get_context_data(**kwargs)
+
+        if self.request.GET.get('last_days') and self.request.GET.get('min_votes'):
+            self.template_name = 'deals/hot_deal_list.html'
+            context['deals'] = Deal.deal_mgr.get_hot_deal(
+                int(self.request.GET.get('last_days')),
+                int(self.request.GET.get('min_votes')),
+            )
+        return context
 
 
 class DealCreateView(CreateView):
@@ -74,28 +85,26 @@ class NewDealDetailView(DetailView):
     model = Deal
     context_object_name = 'deal'
 
-    def can_vote(self):
-        ...
-
     def get_context_data(self, **kwargs):
         context = super(NewDealDetailView, self).get_context_data(**kwargs)
-        context.update({
-            'form': CommentForm()
-        })
+        context['form'] = CommentForm()
+
         comments = Comment.objects.filter(deal_id=self.object.id).order_by('-created_at')[:10]
+        context['comments'] = comments
+
         votes = Vote.objects.filter(deal_id=self.object.id)
+        context['votes'] = votes
+
         have_voted = votes.filter(user_id=self.request.user.id).exists()
         if have_voted:
             have_voted = votes.get(user_id=self.request.user.id)
         context['have_voted'] = have_voted
-        context['comments'] = comments
-        context['votes'] = votes
+
         return context
 
     def post(self, *args, **kwargs):
         self.object = self.get_object(self.get_queryset())
         form = CommentForm(self.request.POST)
-        print(form)
         if form.is_valid():
             form.instance.author = self.request.user
             form.instance.deal = self.object
