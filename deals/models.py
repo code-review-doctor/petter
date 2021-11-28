@@ -1,14 +1,33 @@
+import datetime
 import uuid as uuid
 
 from django.conf import settings
 from django.db import models
+from django.db.models import F
 from django.db.models import Q
 from django.urls import reverse
 
 from users.models import CustomUser
 
 
+class Dealmanager(models.Manager):
+    def get_hot_deal(self, days, hot_result):
+        if days == 0 or days == None:
+            date_filter = None
+        else:
+            date_filter = datetime.date.today() - datetime.timedelta(days)
+
+        voting = F('vote_up') - F('vote_down')
+        hot_deals = Deal.objects.annotate(rate=voting).filter(
+            rate__gte=hot_result,
+            created_at__gte=datetime.date.today() - datetime.timedelta(days),
+        )
+        return hot_deals
+
+
 class Deal(models.Model):
+    objects = models.Manager()
+    deal_mgr = Dealmanager()
     name = models.CharField(max_length=140)
     description = models.CharField(max_length=5000)
     link = models.URLField()
@@ -25,6 +44,8 @@ class Deal(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     promo_code = models.CharField(max_length=200, blank=True)
+
+    active = models.BooleanField(default=True, blank=False, null=False)
 
     vote_up = models.IntegerField(default=0)
     vote_down = models.IntegerField(default=0)
@@ -83,10 +104,10 @@ class Vote(models.Model):
         vote_deal = Deal.objects.get(id=self.deal.id)
         if self.vote_value == 1:
             vote_deal.vote_up += 1
-            vote_deal.save()
+            vote_deal.save(update_fields=['vote_up'])
         if self.vote_value == -1:
             vote_deal.vote_down += 1
-            vote_deal.save()
+            vote_deal.save(update_fields=['vote_down'])
         super(Vote, self).save(*args, **kwargs)
 
     def delete(self, *args, **kwargs):
