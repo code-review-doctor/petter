@@ -24,6 +24,10 @@ class DealAdminForm(forms.ModelForm):
 
 class DealAdmin(admin.ModelAdmin):
     form = DealAdminForm
+    list_display = ('name', 'created_at', 'vote_up', 'vote_down', "overall_rating",)
+
+    def overall_rating(self, obj):
+        return obj.vote_up - obj.vote_down
 
 
 class CommentAdmin(admin.ModelAdmin):
@@ -32,6 +36,17 @@ class CommentAdmin(admin.ModelAdmin):
 
 class VoteAdmin(admin.ModelAdmin):
     list_display = ['user', 'vote_value', 'deal_id', 'created_at', 'id']
+
+    def delete_queryset(self, request, queryset):
+        for vote in queryset:
+            vote_deal = Deal.objects.get(id=vote.deal_id)
+            if vote.vote_value == 1:
+                vote_deal.vote_up -= 1
+                vote_deal.save(update_fields=['vote_up'])
+            if vote.vote_value == -1:
+                vote_deal.vote_down -= 1
+                vote_deal.save(update_fields=['vote_down'])
+        super().delete_queryset(request, queryset)
 
 
 admin.site.register(Deal, DealAdmin)
