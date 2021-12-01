@@ -1,4 +1,3 @@
-import datetime
 import uuid as uuid
 
 from django.conf import settings
@@ -11,16 +10,10 @@ from users.models import CustomUser
 
 
 class Dealmanager(models.Manager):
-    def get_hot_deal(self, days, hot_result):
-        if days == 0 or days == None:
-            date_filter = None
-        else:
-            date_filter = datetime.date.today() - datetime.timedelta(days)
-
+    def get_hot_deal(self, hot_result):
         voting = F('vote_up') - F('vote_down')
         hot_deals = Deal.objects.annotate(rate=voting).filter(
             rate__gte=hot_result,
-            created_at__gte=datetime.date.today() - datetime.timedelta(days),
         )
         return hot_deals
 
