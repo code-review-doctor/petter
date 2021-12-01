@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
     'deals.apps.DealsConfig',
-    'bootstrap4',
-
+    'bootstrap4',  # TODO: Override forms with raw BS and delete this lib
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'

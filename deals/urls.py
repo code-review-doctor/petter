@@ -4,10 +4,12 @@ from deals import views
 from deals.views import DealCreateView
 from deals.views import DealDeleteView
 from deals.views import DealListView
+from deals.views import HotDealListView
 from deals.views import NewDealDetailView
 
 urlpatterns = [
     path('', DealListView.as_view(), name='list'),
+    path('deal/hot/', HotDealListView.as_view(), name='hot_list'),
     path('deal/<int:pk>/', NewDealDetailView.as_view(), name='detail'),
     path('deal/delete/<int:pk>/', DealDeleteView.as_view(), name='delete'),
     path('deal/new/', DealCreateView.as_view(), name='new'),

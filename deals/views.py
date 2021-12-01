@@ -39,23 +39,24 @@ def vote_view(request):
                              "vote": success_vote})
 
 
-class DealListView(ListView):
+class DealList(ListView):
     model = Deal
     template_name = 'deals/deal_list.html'
     context_object_name = 'deals'
-    paginate_by = 2
-    ordering = ['-created_at']
+    ordering = ['-created_at', '-vote_up', '-vote_down']
 
+
+class HotDealListView(DealList):
     def get_context_data(self, **kwargs):
-        context = super(DealListView, self).get_context_data(**kwargs)
-
-        if self.request.GET.get('last_days') and self.request.GET.get('min_votes'):
-            self.template_name = 'deals/hot_deal_list.html'
-            context['deals'] = Deal.deal_mgr.get_hot_deal(
-                int(self.request.GET.get('last_days')),
-                int(self.request.GET.get('min_votes')),
-            )
+        context = super(HotDealListView, self).get_context_data(**kwargs)
+        context['deals'] = Deal.deal_mgr.get_hot_deal(
+            200,
+        )
         return context
+
+
+class DealListView(DealList):
+    ...
 
 
 class DealCreateView(CreateView):
