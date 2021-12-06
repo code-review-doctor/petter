@@ -44,10 +44,10 @@ jobs:
         with:
           fetch-depth: 0
           clean: false
-      - name: SonarCloud Scan
+      - name: Test
         run: |
-          ls -all
-
+        ls -all
+      - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
