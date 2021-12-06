@@ -2,7 +2,7 @@ name: Django CI
 
 on:
   push:
-    branches: ['*']
+    branches: [ '*' ]
   pull_request:
     branches: [ master ]
 
@@ -28,23 +28,15 @@ jobs:
       - uses: ricardochaves/python-lint@v1.4.0
         with:
           python-root-list: ""
-          use-pylint: false
-          use-pycodestyle: false
           use-flake8: true
-          use-black: false
-          use-mypy: false
-          use-isort: false
-          extra-pylint-options: ""
-          extra-pycodestyle-options: ""
-          extra-flake8-options: "--output-file=flake8.txt"
-          extra-black-options: ""
-          extra-mypy-options: ""
-          extra-isort-options: ""
+          extra-flake8-options: "--output-file=flake8.txt --exit-zero --tee"
+
 
 
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0
+          clean: false
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
