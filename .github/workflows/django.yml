@@ -36,7 +36,7 @@ jobs:
           use-isort: false
           extra-pylint-options: ""
           extra-pycodestyle-options: ""
-          extra-flake8-options: ""
+          extra-flake8-options: "--output-file=flake8.txt"
           extra-black-options: ""
           extra-mypy-options: ""
           extra-isort-options: ""
