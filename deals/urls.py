@@ -6,12 +6,14 @@ from deals.views import DealDeleteView
 from deals.views import DealListView
 from deals.views import HotDealListView
 from deals.views import NewDealDetailView
+from deals.views import UserDealListView
 
 urlpatterns = [
     path('', DealListView.as_view(), name='list'),
-    path('deal/hot/', HotDealListView.as_view(), name='hot_list'),
-    path('deal/<int:pk>/', NewDealDetailView.as_view(), name='detail'),
-    path('deal/delete/<int:pk>/', DealDeleteView.as_view(), name='delete'),
-    path('deal/new/', DealCreateView.as_view(), name='new'),
-    path('deal/vote/', views.vote_view, name='vote')
+    path('deals/hot/', HotDealListView.as_view(), name='hot_list'),
+    path('deals/user/<int:pk>/', UserDealListView.as_view(), name='user_deals'),
+    path('deals/<int:pk>/', NewDealDetailView.as_view(), name='detail'),
+    path('deals/delete/<int:pk>/', DealDeleteView.as_view(), name='delete'),
+    path('deals/new/', DealCreateView.as_view(), name='new'),
+    path('deals/vote/', views.vote_view, name='vote')
 ]
