@@ -24,6 +24,12 @@ jobs:
         run: |
           pipenv install
           pipenv run python manage.py test
+
+      - name: Run Flake8
+        run: |
+          pip freeze
+          pipemv graph
+          pipenv install flake8
           pipenv flake8 --output-file=flake8.txt
 
       - uses: actions/checkout@v2
