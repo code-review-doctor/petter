@@ -44,9 +44,6 @@ jobs:
         with:
           fetch-depth: 0
           clean: false
-      - name: Test
-        run: |
-        ls -all
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
