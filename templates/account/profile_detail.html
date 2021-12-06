@@ -1,0 +1,33 @@
+{% extends '_base.html' %}
+{% block title %} My profile {% endblock title %}
+{% block content %}
+
+
+
+	<div class="card bg-light">
+		<div class="media">
+			<img src="{{ profile.avatar }}" class="align-self-start align mr-3" alt="..." style="max-height: 200px">
+			<div class="media-body">
+				<h1 class="mt-0 text-center">{{ profile.username }}</h1>
+
+				<dl class="row">
+					<dt class="col-sm-2">Name</dt>
+					<dd class="col-sm-10">{{ profile.first_name }}</dd>
+
+					<dt class="col-sm-2">Surname</dt>
+					<dd class="col-sm-10"> {{ profile.last_name }} </dd>
+
+					<dt class="col-sm-2">Published</dt>
+					<dd class="col-sm-10"> {{ deals.count }} </dd>
+
+					<dt class="col-sm-2">Comments:</dt>
+					<dd class="col-sm-10"> {{ comments.count }} </dd>
+
+				</dl>
+			</div>
+		</div>
+
+
+	</div>
+
+{% endblock content %}

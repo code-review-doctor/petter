@@ -2,6 +2,7 @@
 import datetime
 
 from django import forms
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
@@ -59,7 +60,7 @@ class DealListView(DealList):
     ...
 
 
-class DealCreateView(CreateView):
+class DealCreateView(LoginRequiredMixin, CreateView):
     model = Deal
     template_name = 'deals/deal_create.html'
     fields = ['name', 'description', 'link', 'product_img',
@@ -121,3 +122,11 @@ class DealDeleteView(DeleteView):
     model = Deal
     success_url = reverse_lazy("deals:list")
     template_name_suffix = "_delete"
+
+
+class UserDealListView(LoginRequiredMixin, DealList):
+
+    def get_queryset(self):
+        pk = self.kwargs.get('pk')
+        self.queryset = self.model.objects.filter(author_id=pk)
+        return super(UserDealListView, self).get_queryset()
