@@ -23,9 +23,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       - name: SonarCloud Cleanup
         run: |
-          sudo git reset --hard HEAD
           sudo rm -rf "/home/runner/work/petter/petter/.scannerwork"
-
+          sudo git reset --hard HEAD
       - uses: actions/checkout@v2
       - name: Set up Python 3.10
         uses: actions/setup-python@v1
