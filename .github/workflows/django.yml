@@ -28,7 +28,7 @@ jobs:
       - name: Run Flake8
         run: |
           pip freeze
-          pipemv graph
+          pipenv graph
           pipenv install flake8
           pipenv flake8 --output-file=flake8.txt
 
