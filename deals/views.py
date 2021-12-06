@@ -7,6 +7,7 @@ from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
 from django.urls import reverse_lazy
+from django.views.decorators.http import require_http_methods
 from django.views.generic import CreateView
 from django.views.generic import DeleteView
 from django.views.generic import DetailView
@@ -17,6 +18,7 @@ from deals.models import Deal
 from deals.models import Vote
 
 
+@require_http_methods(["POST"])
 def vote_view(request):
     if request.POST.get('action') == 'votes':
 
