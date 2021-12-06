@@ -11,6 +11,7 @@ uuid = "*"
 django-bootstrap4 = "*"
 django-allauth = "*"
 flake8 = "~=4.0.1"
+pre-commit = "~=2.16.0"
 
 [dev-packages]
 faker = "*"
