@@ -3,9 +3,9 @@
 		{% csrf_token %}
 
 		<div class="d-flex flex-row add-comment-section mt-4 mb-4">
-			<img class="img-fluid img-responsive rounded-circle mr-2"
-			     src="https://i.imgur.com/qdiP4DB.jpg"
-			     width="38">
+			<a href="{% url 'accounts:profile' user.pk %}">
+				<img class="img-fluid img-responsive rounded-circle mr-3" src="{{ user.avatar }}" width="38 px">
+			</a>
 
 			{{ form.comment }}
 
