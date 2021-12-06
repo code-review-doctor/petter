@@ -1,0 +1,67 @@
+{% extends "_base.html" %}
+
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+	<div class="card bg-light">
+		<article class="card-body mx-auto" style="max-width: 400px;">
+			<h4 class="card-title mt-3 text-center">Create Account</h4>
+			<p class="text-center">Get started with your free account</p>
+			<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+				{% csrf_token %}
+				<small>{{ form.username.errors }}</small>
+				<div class="form-group input-group">
+
+					<div class="input-group-prepend">
+						<span class="input-group-text"> <i class="bi bi-person"></i> </span>
+
+					</div>
+
+					<input name="{{ form.username.html_name }}" class="form-control"
+					       placeholder="{{ form.username.label }}" type="text">
+
+				</div>
+
+				<small>{{ form.email.errors }}</small>
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text"> <i class="bi bi-envelope"></i> </span>
+					</div>
+					<small>{{ form.email.errors }}</small>
+					<input name="{{ form.email.html_name }}" class="form-control"
+					       placeholder="{{ form.email.label }}" type="text">
+				</div>
+
+				<small>{{ form.password1.errors }}</small>
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text"> <i class="bi bi-lock"></i> </span>
+					</div>
+					<small>{{ form.password1.errors }}</small>
+					<input name="{{ form.password1.html_name }}" class="form-control" placeholder="Create password"
+					       type="password">
+				</div>
+
+				<small>{{ form.password2.errors }}</small>
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text"> <i class="bi bi-lock"></i> </span>
+					</div>
+					<small>{{ form.password2.errors }}</small>
+					<input name="{{ form.password2.html_name }}" class="form-control" placeholder="Repeat password"
+					       type="password">
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-block"> Create Account</button>
+				</div>
+				<p class="text-center">Have an account? <a href="{% url 'account_login' %}">Log In</a></p>
+			</form>
+		</article>
+	</div>
+
+{% endblock %}
+
+
+

@@ -1,0 +1,48 @@
+{% extends "_base.html" %}
+{% block title %}Log in{% endblock %}
+{% block content %}
+	<div class="card bg-light">
+		<article class="card-body mx-auto" style="max-width: 400px;">
+			<h4 class="card-title mt-3 text-center">Login</h4>
+			<p class="text-center">Login or register from here to access.</p>
+			<form class="login" method="POST" action="{% url 'account_login' %}">
+				{% csrf_token %}
+				<small>{{ form.login.errors }}</small>
+				<div class="form-group input-group">
+
+					<div class="input-group-prepend">
+						<span class="input-group-text"> <i class="bi bi-person"></i> </span>
+					</div>
+
+					<input name="{{ form.login.html_name }}" class="form-control"
+					       placeholder="{{ form.login.label }}" type="text">
+
+				</div>
+
+				<small>{{ form.password1.errors }}</small>
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text"> <i class="bi bi-lock"></i> </span>
+					</div>
+					<small>{{ form.password.errors }}</small>
+					<input name="{{ form.password.html_name }}" class="form-control"
+					       placeholder="{{ form.password.label }}" type="password">
+				</div>
+
+
+				<div class="form-group">
+
+					<button type="submit" class="btn btn-primary btn-block"> Login</button>
+				</div>
+				<div class="input-group-prepend">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1"
+					       name="{{ form.remember.html_name }}">
+					<label for="{{ form.remember.id_for_label }}">Remember me</label>
+				</div>
+				<p class="text-center">Don't have an account? <a href="{{ signup_url }}">Register!</a></p>
+				<p class="text-center">Forgot password?<a href="{% url 'account_reset_password' %}"> Remind password</a>
+				</p>
+			</form>
+		</article>
+	</div>
+{% endblock content %}
