@@ -25,6 +25,8 @@ jobs:
           pipenv install
           pipenv run python manage.py test
       - uses: actions/checkout@v1
+        with:
+          clean: false
       - uses: ricardochaves/python-lint@v1.4.0
         with:
           python-root-list: ""
@@ -34,7 +36,7 @@ jobs:
           use-black: false
           use-mypy: false
           use-isort: false
-          extra-flake8-options: "--exit-zero"
+#          extra-flake8-options: "--exit-zero"
 
 
 
@@ -43,6 +45,9 @@ jobs:
           fetch-depth: 0
           clean: false
       - name: SonarCloud Scan
+        run: |
+          ls -all
+
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
