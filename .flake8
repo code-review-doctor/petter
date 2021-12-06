@@ -10,3 +10,5 @@ exclude =
     *migrations*
 max-line-length = 120
 max-complexity = 15
+output-file = flake8.txt
+tee = True
