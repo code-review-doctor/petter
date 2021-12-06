@@ -12,12 +12,34 @@
 			</li>
 		</ul>
 
-
 	</div>
+
 	<ul class="form-inline navbar-nav mr-auto">
-		<li class="nav-item">
-			<a class="nav-link" href="{% url 'deals:new' %}">New Deal</a>
+		<li class="nav-item mr-2">
+			<a class="btn btn-warning" href="{% url 'deals:new' %}">New Deal</a>
 		</li>
+		{% if user.is_authenticated %}
+			<div class="circle dropleft">
+				<span class="initials" role="button" data-toggle="dropdown" aria-haspopup="true"
+				      aria-expanded="false">{{ user.get_initials }}</span>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="{% url 'accounts:profile' %}">{{ user.username }}</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="{% url 'deals:user_deals' user.pk %}">Published</a>
+					<a class="dropdown-item" href="#">Saved</a>
+					<a class="dropdown-item" href="#">Alerts</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="{% url 'account_logout' %}">Log Out</a>
+				</div>
+			</div>
+
+
+		{% else %}
+			<li class="nav-item mr-2">
+				<a class="btn btn-secondary " href="{% url 'account_login' %}">Login / Register</a>
+
+			</li>
+		{% endif %}
 
 	</ul>
 
