@@ -10,6 +10,7 @@ faker = "*"
 uuid = "*"
 django-bootstrap4 = "*"
 django-allauth = "*"
+flake8 = "~=4.0.1"
 
 [dev-packages]
 faker = "*"
