@@ -24,7 +24,8 @@ jobs:
       - name: SonarCloud Cleanup
         run: |
           sudo git reset --hard HEAD
-          
+          sudo rm -rf "/home/runner/work/petter/petter/.scannerwork"
+
       - uses: actions/checkout@v2
       - name: Set up Python 3.10
         uses: actions/setup-python@v1
