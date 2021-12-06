@@ -4,7 +4,8 @@
 
 		<div class="d-flex flex-row add-comment-section mt-4 mb-4">
 			<a href="{% url 'accounts:profile' user.pk %}">
-				<img class="img-fluid img-responsive rounded-circle mr-3" src="{{ user.avatar }}" width="38 px">
+				<img class="img-fluid img-responsive rounded-circle mr-3" src="{{ user.avatar }}" width="38 px"
+				     alt="{{ user.username }} avatar">
 			</a>
 
 			{{ form.comment }}

@@ -12,7 +12,7 @@
 						<div class="col-12 mb-0">
 							<figure class="view overlay rounded z-depth-1 main-img">
 								<a href="{{ deal.product_img }}" data-size="400x400">
-									<img src="{{ deal.product_img }}" class="img-fluid z-depth-1">
+									<img src="{{ deal.product_img }}" class="img-fluid z-depth-1" alt="Product photo">
 								</a>
 							</figure>
 						</div>
@@ -40,7 +40,7 @@
 
 						<a class="vote-action btn btn-outline-success {% if have_voted %}disabled {% endif %}" href="#"
 						   role="button" value="vote_up" id="vote_up">
-							<i class="bi bi-file-plus" fill="currentColor" width="20" height="20"></i>
+							<i class="bi bi-file-plus" fill="currentColor" width="20" height="20" aria-hidden=true></i>
 						</a>
 
 					</span>
@@ -50,7 +50,7 @@
 					<span id="container-vote-down">
 						<a class="vote-action btn btn-outline-danger {% if have_voted %}disabled {% endif %}" href="#"
 						   role="button" value="vote_down" id="vote_down">
-							<i class="bi bi-file-minus" fill="currentColor" width="20" height="20"></i>
+							<i class="bi bi-file-minus" fill="currentColor" width="20" height="20" aria-hidden=true></i>
 						</a>
 					</span>
 					</span>
@@ -58,7 +58,7 @@
 
 				<p class="pt-1">{{ deal.description }}</p>
 				<div class="table-responsive">
-					<table class="table table-sm table-borderless mb-0">
+					<table class="table table-sm table-borderless mb-0" aria-describedby="deal details">
 						<tbody>
 						<tr>
 							<th class="pl-0 w-25" scope="row"><strong>Delivery cost</strong></th>
