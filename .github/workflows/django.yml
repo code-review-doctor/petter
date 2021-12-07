@@ -93,7 +93,7 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: Reports
-          path: github/workspace/
+          path: /github/workspace/
 
       - name: SonarCloud Scan && Upload
         uses: SonarSource/sonarcloud-github-action@master
