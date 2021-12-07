@@ -45,11 +45,13 @@ jobs:
 
       - name: Django run migration
         run: |
+          pipenv shell
           python -m django --version
           python manage.py migrate
 
       - name: Flake8
         run: |
+          pipenv shell
           python -m flake8
 
 
