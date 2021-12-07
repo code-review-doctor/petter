@@ -3,7 +3,9 @@ import datetime
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.utils import timezone
+
 from deals.models import Deal
+from deals.models import Vote
 
 User = get_user_model()
 
@@ -39,3 +41,71 @@ class TestDealSModel(TestCase):
 
     def test_computing_price_percentage(self):
         self.assertEqual(self.deal1.price_percentage(), 80.0)
+
+    def test_computing_vote_count(self):
+        self.assertEqual(self.deal1.get_voting_count(), 100)
+
+    def test_user_cant_vote(self):
+        self.assertFalse(self.deal1.can_vote(user_id=self.custom_user.id), False)
+
+    def test_user_can_vote(self):
+        Vote.objects.create(
+            deal=self.deal1,
+            user=self.custom_user,
+            vote_value=Vote.VoteChoice.PLUS,
+        )
+        self.assertTrue(self.deal1.can_vote(user_id=self.custom_user.id), True)
+
+    def test_vote_plus_increase_deal_vote_counter(self):
+        deal = Deal.objects.get(name='Deal 1')
+        deal.vote_up = 400
+        deal.save(update_fields=['vote_up'])
+
+        Vote.objects.create(
+            deal=deal,
+            user=self.custom_user,
+            vote_value=Vote.VoteChoice.PLUS,
+        )
+        deal.refresh_from_db()
+        self.assertEqual(deal.vote_up, 401)
+
+    def test_vote_minus_decrease_deal_vote_counter(self):
+        deal = Deal.objects.get(name='Deal 1')
+        deal.vote_down = 100
+        deal.save(update_fields=['vote_down'])
+
+        Vote.objects.create(
+            deal=deal,
+            user=self.custom_user,
+            vote_value=Vote.VoteChoice.MINUS,
+        )
+        deal.refresh_from_db()
+        self.assertEqual(deal.vote_down, 101)
+
+    def test_deleting_vote_decrease_deal_vote_counter(self):
+        deal = Deal.objects.get(name='Deal 1')
+        deal.vote_down = 10
+        deal.save(update_fields=['vote_down'])
+
+        vote = Vote.objects.create(
+            deal=deal,
+            user=self.custom_user,
+            vote_value=Vote.VoteChoice.MINUS,
+        )
+        deal.refresh_from_db()
+        self.assertEqual(deal.vote_down, 11)
+        vote.delete()
+        deal.refresh_from_db()
+        self.assertEqual(deal.vote_down, 10)
+
+    def test_deal_vote_down_counter_cant_be_lower_than_zero(self):
+        deal = Deal.objects.get(name='Deal 1')
+        deal.vote_down = -50
+        deal.save()
+        self.assertEqual(deal.vote_down, 0)
+
+    def test_deal_vote_up_counter_cant_be_lower_than_zero(self):
+        deal = Deal.objects.get(name='Deal 1')
+        deal.vote_up = -10
+        deal.save()
+        self.assertEqual(deal.vote_up, 0)
