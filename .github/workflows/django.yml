@@ -90,6 +90,8 @@ jobs:
           pipenv run coverage erase
           pipenv run coverage run --source='.' manage.py test
           pipenv run coverage xml --fail-under=40 output=/github/workspace/coverage.xml
+          cd /github/workspace/
+          ls --all
 
 
 
@@ -119,7 +121,8 @@ jobs:
             -Dsonar.projectName=petter
             -Dsonar.sourceEncoding=UTF-8
             -Dsonar.language=py
-            -Dsonar.python.coverage.reportPaths=/home/runner/work/reports/*coverage*.xml
+#            -Dsonar.python.coverage.reportPaths=/home/runner/work/reports/*coverage*.xml
+            -Dsonar.python.coverage.reportPaths=/github/workspace/coverage.xml
             -Dsonar.python.flake8.reportPaths=/github/workspace/flake8.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
