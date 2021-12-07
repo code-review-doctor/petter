@@ -104,10 +104,13 @@ jobs:
             -Dsonar.organization=sergiuszkotecki
             -Dsonar.projectKey=SergiuszKotecki_petter
             -Dsonar.python.coverage.reportPaths=coverage.xml
-            -Dsonar.sources=lib/
-            -Dsonar.test.exclusions=tests/**
-            -Dsonar.tests=tests/
-            -Dsonar.verbose=true
+            -Dsonar.sources=.
+            -Dsonar.test.exclusions=manage.py
+            -Dsonar.projectName=petter
+            -Dsonar.sourceEncoding=UTF-8
+            -Dsonar.language=py
+            -Dsonar.python.coverage.reportPaths=/home/runner/work/reports/*coverage*.xml
+            -Dsonar.python.flake8.reportPaths=/github/workspace/flake8.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
