@@ -76,14 +76,14 @@ jobs:
 
       - name: Django test
         run: |
-          sudo pipenv run python manage.py test
+          pipenv run python manage.py test
 
       - name: Download clean repo for SonarQube analysis
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           clean: false
-      - name: SonarCloud Scan
+      - name: SonarCloud Scan && Upload
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
