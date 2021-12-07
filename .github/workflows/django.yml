@@ -89,13 +89,10 @@ jobs:
         run: |
           pipenv run coverage erase
           pipenv run coverage run --source='.' manage.py test
-          pipenv run coverage xml --fail-under=40 --skip-empty -o /github/workspace/coverage.xml
+          pipenv run coverage xml --fail-under=40 --skip-empty -o coverage.xml
+          sudo mv coverage.xml /github/workspace/coverage.xml
           cd /github/workspace/
           ls --all
-
-
-
-
 
       - name: publish artifact
         uses: actions/upload-artifact@v2
