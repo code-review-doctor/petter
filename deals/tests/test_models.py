@@ -11,6 +11,8 @@ User = get_user_model()
 
 
 class TestDealSModel(TestCase):
+    DEAL_1 = 'Deal 1'
+
     def setUp(self) -> None:
         self.current_day = timezone.now()
         self.custom_user = User.objects.create(
@@ -20,7 +22,7 @@ class TestDealSModel(TestCase):
             email='test@test.test',
         )
         self.deal1 = Deal.objects.create(
-            name='Deal 1',
+            name=self.DEAL_1,
             description='Description',
             link='http://localhost:8000/link/',
             product_img='http://localhost:8000/link/',
@@ -57,7 +59,7 @@ class TestDealSModel(TestCase):
         self.assertTrue(self.deal1.can_vote(user_id=self.custom_user.id), True)
 
     def test_vote_plus_increase_deal_vote_counter(self):
-        deal = Deal.objects.get(name='Deal 1')
+        deal = Deal.objects.get(name=self.DEAL_1)
         deal.vote_up = 400
         deal.save(update_fields=['vote_up'])
 
@@ -70,7 +72,7 @@ class TestDealSModel(TestCase):
         self.assertEqual(deal.vote_up, 401)
 
     def test_vote_minus_decrease_deal_vote_counter(self):
-        deal = Deal.objects.get(name='Deal 1')
+        deal = Deal.objects.get(name=self.DEAL_1)
         deal.vote_down = 100
         deal.save(update_fields=['vote_down'])
 
@@ -83,7 +85,7 @@ class TestDealSModel(TestCase):
         self.assertEqual(deal.vote_down, 101)
 
     def test_deleting_vote_decrease_deal_vote_counter(self):
-        deal = Deal.objects.get(name='Deal 1')
+        deal = Deal.objects.get(name=self.DEAL_1)
         deal.vote_down = 10
         deal.save(update_fields=['vote_down'])
 
@@ -99,13 +101,13 @@ class TestDealSModel(TestCase):
         self.assertEqual(deal.vote_down, 10)
 
     def test_deal_vote_down_counter_cant_be_lower_than_zero(self):
-        deal = Deal.objects.get(name='Deal 1')
+        deal = Deal.objects.get(name=self.DEAL_1)
         deal.vote_down = -50
         deal.save()
         self.assertEqual(deal.vote_down, 0)
 
     def test_deal_vote_up_counter_cant_be_lower_than_zero(self):
-        deal = Deal.objects.get(name='Deal 1')
+        deal = Deal.objects.get(name=self.DEAL_1)
         deal.vote_up = -10
         deal.save()
         self.assertEqual(deal.vote_up, 0)
