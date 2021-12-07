@@ -10,5 +10,5 @@ exclude =
     *migrations*
 max-line-length = 120
 max-complexity = 15
-output-file = /github/workspace/flake8.txt
+output-file = /github/workspace/reports/flake8.txt
 tee = True
