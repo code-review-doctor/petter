@@ -87,8 +87,8 @@ jobs:
 
       - name: Copy reports
         run: |
-        sudo mv /home/runner/work/reports/flake8.txt /github/workspace/flake8.txt
-        sudo mv /home/runner/work/reports/coverage.xml /github/workspace/coverage.xml
+          sudo mv /home/runner/work/reports/flake8.txt /github/workspace/flake8.txt
+          sudo mv /home/runner/work/reports/coverage.xml /github/workspace/coverage.xml
 
       - name: Download clean repo for SonarQube analysis
         uses: actions/checkout@v2
