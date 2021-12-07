@@ -41,7 +41,6 @@ jobs:
           pipenv --version
           pipenv --where
           pipenv --venv
-          python -m django --version
 
       - name: Django run migration
         run: |
