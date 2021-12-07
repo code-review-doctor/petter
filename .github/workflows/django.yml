@@ -84,19 +84,16 @@ jobs:
           path: /home/runner/work/reports/
           name: Reports
 
-
-      - name: Copy reports
-        run: |
-          sudo mv /home/runner/work/reports/coverage.xml /github/workspace/coverage.xml
-          sudo mv /home/runner/work/reports/flake8.txt /github/workspace/flake8.txt
-
-
-
       - name: Download clean repo for SonarQube analysis
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           clean: false
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: Reports
+          path: github/workspace/
 
       - name: SonarCloud Scan && Upload
         uses: SonarSource/sonarcloud-github-action@master
@@ -104,9 +101,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-      - name: Django test
+      - name: Copy reports
         run: |
-          pipenv run python manage.py test
+          sudo mv /github/workspace/coverage.xml /home/runner/work/reports/coverage.xml
+          sudo mv /github/workspace/flake8.txt /home/runner/work/reports/flake8.txt
 
 
 #      - name: Run tests
