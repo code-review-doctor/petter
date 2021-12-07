@@ -79,7 +79,7 @@ jobs:
             -Dsonar.projectName=petter
             -Dsonar.sourceEncoding=UTF-8
             -Dsonar.language=py
-            -Dsonar.python.coverage.reportPaths=/home/runner/work/reports/*coverage*.xml
+            -Dsonar.python.coverage.reportPaths=/home/runner/work/reports/coverage.xml
             -Dsonar.python.flake8.reportPaths=/github/workspace/flake8.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

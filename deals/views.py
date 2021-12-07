@@ -7,6 +7,7 @@ from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
 from django.urls import reverse_lazy
+from django.utils import timezone
 from django.views.decorators.http import require_http_methods
 from django.views.generic import CreateView
 from django.views.generic import DeleteView
@@ -72,7 +73,7 @@ class DealCreateView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
-        today = datetime.date.today()
+        today = timezone.now()
         form.instance.valid_till = today + datetime.timedelta(8)
         return super().form_valid(form)
 
