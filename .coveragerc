@@ -18,4 +18,4 @@ skip_covered = False
 directory = coverage/html/
 
 [xml]
-output = /github/workspace/reports/coverage.xml
+output =/home/runner/work/petter/petter/reports/coverage.xml
