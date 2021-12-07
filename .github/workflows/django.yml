@@ -75,13 +75,13 @@ jobs:
           pipenv run python -m flake8 --tee --output-file=/home/runner/work/reports/flake8.txt
 
       - name: Check file existence
-        id: check_files
+        id: check_files1
         uses: andstor/file-existence-action@v1
         with:
           files: "/home/runner/work/reports/flake8.txt"
 
       - name: File exists
-        if: steps.check_files.outputs.files_exists == 'true'
+        if: steps.check_files1.outputs.files_exists == 'true'
         # Only runs if all of the files exists
         run: echo All files exists!
 
@@ -90,13 +90,13 @@ jobs:
           pipenv run python manage.py test
 
       - name: Check file existence
-        id: check_files
+        id: check_files2
         uses: andstor/file-existence-action@v1
         with:
           files: "/home/runner/work/reports/coverage.xml"
 
       - name: File exists
-        if: steps.check_files.outputs.files_exists == 'true'
+        if: steps.check_files2.outputs.files_exists == 'true'
         # Only runs if all of the files exists
         run: echo All files exists!
 
@@ -112,13 +112,13 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Check file existence
-        id: check_files
+        id: check_files3
         uses: andstor/file-existence-action@v1
         with:
           files: "/home/runner/work/reports/flake8.txt"
 
       - name: File exists
-        if: steps.check_files.outputs.files_exists == 'true'
+        if: steps.check_files3.outputs.files_exists == 'true'
         # Only runs if all of the files exists
         run: echo All files exists!
 
@@ -127,13 +127,13 @@ jobs:
           pipenv run python manage.py test
 
       - name: Check file existence
-        id: check_files
+        id: check_files4
         uses: andstor/file-existence-action@v1
         with:
           files: "/home/runner/work/reports/coverage.xml"
 
       - name: File exists
-        if: steps.check_files.outputs.files_exists == 'true'
+        if: steps.check_files4.outputs.files_exists == 'true'
         # Only runs if all of the files exists
         run: echo All files exists!
 
