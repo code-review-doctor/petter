@@ -2,7 +2,7 @@ name: Django CI
 
 on:
   push:
-    branches: ['*']
+    branches: [ '*' ]
   pull_request:
     branches: [ master ]
 
@@ -36,7 +36,7 @@ jobs:
           use-black: false
           use-mypy: false
           use-isort: false
-#          extra-flake8-options: "--exit-zero"
+          extra-flake8-options: "--tee --output-file=/github/workspace/flake8.txt"
 
 
 
