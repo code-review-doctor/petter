@@ -80,6 +80,11 @@ jobs:
         with:
           files: "/home/runner/work/reports/flake8.txt"
 
+      - name: File exists
+        if: steps.check_files.outputs.files_exists == 'true'
+        # Only runs if all of the files exists
+        run: echo All files exists!
+
       - name: Django test
         run: |
           pipenv run python manage.py test
@@ -89,6 +94,11 @@ jobs:
         uses: andstor/file-existence-action@v1
         with:
           files: "/home/runner/work/reports/coverage.xml"
+
+      - name: File exists
+        if: steps.check_files.outputs.files_exists == 'true'
+        # Only runs if all of the files exists
+        run: echo All files exists!
 
       - name: Download clean repo for SonarQube analysis
         uses: actions/checkout@v2
@@ -107,6 +117,11 @@ jobs:
         with:
           files: "/home/runner/work/reports/flake8.txt"
 
+      - name: File exists
+        if: steps.check_files.outputs.files_exists == 'true'
+        # Only runs if all of the files exists
+        run: echo All files exists!
+
       - name: Django test
         run: |
           pipenv run python manage.py test
@@ -116,6 +131,11 @@ jobs:
         uses: andstor/file-existence-action@v1
         with:
           files: "/home/runner/work/reports/coverage.xml"
+
+      - name: File exists
+        if: steps.check_files.outputs.files_exists == 'true'
+        # Only runs if all of the files exists
+        run: echo All files exists!
 
 
 #      - name: Run tests
