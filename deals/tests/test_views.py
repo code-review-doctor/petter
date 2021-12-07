@@ -38,7 +38,7 @@ class DealTestCase(TestCase):
             vote_down=100,
         )
 
-    def test_user_own_deal(self):
+    def test_user_created_deal(self):
         user = User.objects.get(username='test')
         deal = Deal.objects.get(name='Deal 1')
         self.assertEqual(deal.author.id, user.id)
