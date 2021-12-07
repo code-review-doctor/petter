@@ -85,6 +85,16 @@ jobs:
         run: |
           pipenv run python manage.py test
 
+      - name: Django coverage
+        run: |
+          pipenv run coverage erase
+          pipenv run coverage run --source='.' manage.py test
+          pipenv run coverage xml --fail-under=40 output=/github/workspace/coverage.xml
+
+
+
+
+
       - name: publish artifact
         uses: actions/upload-artifact@v2
         with:
