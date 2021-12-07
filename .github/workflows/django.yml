@@ -90,6 +90,7 @@ jobs:
           sudo mv /home/runner/work/reports/flake8.txt /github/workspace/flake8.txt
           sudo mv /home/runner/work/reports/coverage.xml /github/workspace/coverage.xml
 
+
       - name: Download clean repo for SonarQube analysis
         uses: actions/checkout@v2
         with:
