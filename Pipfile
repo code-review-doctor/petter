@@ -12,6 +12,8 @@ django-bootstrap4 = "*"
 django-allauth = "*"
 flake8 = "~=4.0.1"
 pre-commit = "~=2.16.0"
+coverage = "~=6.2"
+django-coverage-plugin = "~=2.0.2"
 
 [dev-packages]
 faker = "*"

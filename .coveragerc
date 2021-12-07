@@ -1,0 +1,21 @@
+[run]
+branch = True
+source = .
+omit =
+    */node_modules/*
+    *migrations*
+    *__init__*
+    manage.py
+
+# plugins = django_coverage_plugin
+
+[report]
+fail_under = 80
+show_missing = True
+skip_covered = False
+
+[html]
+directory = coverage/html/
+
+[xml]
+output = coverage/xml/coverage.xml

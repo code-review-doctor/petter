@@ -118,3 +118,4 @@ cython_debug/
 factories/
 .flake8.txt
 *flake8.txt
+.idea/sonarlint
