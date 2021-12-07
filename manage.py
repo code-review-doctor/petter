@@ -37,7 +37,8 @@ def main():
         covered = coverage.report()
         coverage.xml_report()
         coverage.erase()
-        if covered < 80:
+        # First Quality gate
+        if covered < 40:
             sys.exit(1)
 
 
