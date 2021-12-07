@@ -49,7 +49,46 @@ jobs:
 
       - name: Flake8
         run: |
-          pipenv run python -m flake8
+          pipenv run python -m flake8 --tee --output-file=/github/workspace/flake8.txt
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.10'
+
+      - name: Install pipenv
+        run: |
+          python -m pip install pipenv==2021.11.23
+
+      - name: Pipenv install dependencies
+        run: |
+          pipenv install
+
+      - name: Flake8
+        run: |
+          pipenv run python -m flake8 --tee --output-file=/github/workspace/flake8.txt
+
+      - name: Django test
+        run: |
+          pipenv run python manage.py test
+
+      - name: Download clean repo for SonarQube analysis
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          clean: false
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
 
 
 #      - name: Run tests
