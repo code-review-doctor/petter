@@ -28,12 +28,6 @@ jobs:
       - name: Install pipenv
         uses: dschep/install-pipenv-action@v1
 
-      - name: Check pipenv environment
-        run: |
-          pipenv --version
-          pipenv --where
-          pipenv --venv
-
       - name: Pipenv install dependencies
         run: |
           pipenv install
@@ -41,6 +35,14 @@ jobs:
       - name: Pipenv check dependencies
         run: |
           pipenv graph
+
+      - name: Check pipenv environment
+        run: |
+          pipenv --version
+          pipenv --where
+          pipenv --venv
+
+
 
 #      - name: Run tests
 #        run: |
