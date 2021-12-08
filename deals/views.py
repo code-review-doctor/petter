@@ -4,6 +4,7 @@ import datetime
 from django import forms
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
+from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
 from django.urls import reverse_lazy
@@ -41,6 +42,8 @@ def vote_view(request):
         deal_o = Deal.objects.get(id=deal_id)
         return JsonResponse({'total': deal_o.get_voting_count(),
                              "vote": success_vote})
+    else:
+        return HttpResponse(status=422)
 
 
 class DealList(ListView):
