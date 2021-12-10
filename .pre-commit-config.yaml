@@ -11,3 +11,9 @@ repos:
     hooks:
       - id: bandit
         args: ['-iii', '-ll']
+#  - repo: https://github.com/gitguardian/ggshield
+#    rev: v1.10.7
+#    hooks:
+#      - id: ggshield
+#        language_version: python3
+#        stages: [ commit ]
