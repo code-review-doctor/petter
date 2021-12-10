@@ -15,6 +15,7 @@ from django.views.generic import DeleteView
 from django.views.generic import DetailView
 from django.views.generic import ListView
 
+from deals.filters import DealFilter
 from deals.models import Comment
 from deals.models import Deal
 from deals.models import Vote
@@ -51,6 +52,15 @@ class DealList(ListView):
     template_name = 'deals/deal_list.html'
     context_object_name = 'deals'
     ordering = ['-created_at', '-vote_up', '-vote_down']
+    search_message = ''
+
+    def get_context_data(self, **kwargs):
+        context = super(DealList, self).get_context_data(**kwargs)
+        query = self.request.GET.get('q')
+        if query:
+            context['filter'] = DealFilter(self.request.GET, queryset=self.get_queryset())
+
+        return context
 
 
 class HotDealListView(DealList):

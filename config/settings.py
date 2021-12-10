@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'deals.apps.DealsConfig',
     # 'accounts.apps.AccountsConfig',
     # third party
+    'django_filters',
     'bootstrap4',  # TODO: Override forms with raw BS and delete this lib
     'allauth',
     'allauth.account',

@@ -15,5 +15,5 @@ urlpatterns = [
     path('deals/<int:pk>/', NewDealDetailView.as_view(), name='detail'),
     path('deals/delete/<int:pk>/', DealDeleteView.as_view(), name='delete'),
     path('deals/new/', DealCreateView.as_view(), name='new'),
-    path('deals/vote/', views.vote_view, name='vote')
+    path('deals/vote/', views.vote_view, name='vote'),
 ]

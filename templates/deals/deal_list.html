@@ -4,12 +4,21 @@
 	<div class="container mt-5">
 		<div class="row">
 			<div class="col-sm-10">
-				{% for deal in deals %}
-					{% include "deals/deal_card.html" %}
-				{% endfor %}
+				{% if filter.qs %}
+					{% for deal in filter.qs %}
+						{% include "deals/deal_card.html" %}
+					{% endfor %}
+				{% else %}
+					{% for deal in deals %}
+						{% include "deals/deal_card.html" %}
+					{% empty %}
+						Sorry currently we don't have any deals...
+					{% endfor %}
+				{% endif %}
 
 
-			{% include "_pagination.html" %}
+
+				{% include "_pagination.html" %}
 			</div>
 
 			<div class="col-sm-2">
