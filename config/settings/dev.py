@@ -1,6 +1,6 @@
 import dj_database_url
 
-from .base import *  # noqa: F403
+from config.settings.base import *  # noqa: F403
 
 DATABASES = {
     'default': dj_database_url.config(default=env('DATABASE_URL_LOCAL'))  # noqa: F405
