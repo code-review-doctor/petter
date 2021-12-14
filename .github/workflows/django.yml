@@ -59,6 +59,7 @@ jobs:
 
       - name: Django test
         run: |
+          set DJANGO_ENV=dev
           pipenv run python manage.py test
 
       - name: Download clean repo for SonarQube analysis
