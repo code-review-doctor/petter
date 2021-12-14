@@ -16,6 +16,9 @@ coverage = "~=6.2"
 django-coverage-plugin = "~=2.0.2"
 django-filter = "*"
 whitenoise = "*"
+psycopg2-binary = "==2.8.5"
+dj-database-url = "*"
+psycopg2 = "*"
 
 [dev-packages]
 faker = "*"
