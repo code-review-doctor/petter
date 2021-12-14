@@ -1,4 +1,4 @@
-from unittest import TestCase
+from django.test import TestCase
 
 from django.urls import resolve
 from django.urls import reverse

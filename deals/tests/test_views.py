@@ -17,6 +17,7 @@ class DealViewTestCase(TestCase):
     DEAL_VOTE = 'deals/vote/'
 
     def setUp(self):
+        print('ssss')
         today = timezone.now()
         self.factory = RequestFactory()
         self.custom_user = User.objects.create_user(
@@ -46,6 +47,17 @@ class DealViewTestCase(TestCase):
             vote_up=200,
             vote_down=100,
         )
+        print(self.deal_1.id)
+
+    def test_deal_detail_can_add_comment_view(self):
+        login = self.client.login(username='test', password='password')
+        self.assertTrue(login)
+        response_post = self.client.post(reverse(self.DEAL_DETAIL, args=[self.deal_1.id]), {
+            'comment': 'test comment'
+        })
+        self.assertEqual(response_post.status_code, 302)
+        response_get = self.client.get(reverse(self.DEAL_DETAIL, args=[self.deal_1.id]))
+        self.assertContains(response_get, 'test comment')
 
     def test_deal_list(self):
         response = self.client.get(reverse("deals:list"))
@@ -78,18 +90,9 @@ class DealViewTestCase(TestCase):
         self.assertEqual(Deal.objects.last().name, 'Deal 2')
 
     def test_deal_detail_view(self):
-        response = self.client.get(reverse(self.DEAL_DETAIL, args=['1']))
+        response = self.client.get(reverse(self.DEAL_DETAIL, args=[self.deal_1.id]))
+        print(response)
         self.assertEqual(response.status_code, 200)
-
-    def test_deal_detail_can_add_comment_view(self):
-        login = self.client.login(username='test', password='password')
-        self.assertTrue(login)
-        response_post = self.client.post(reverse(self.DEAL_DETAIL, args=['1']), {
-            'comment': 'test comment'
-        })
-        self.assertEqual(response_post.status_code, 302)
-        response_get = self.client.get(reverse(self.DEAL_DETAIL, args=['1']))
-        self.assertContains(response_get, 'test comment')
 
     def test_guest_cant_vote_on_deal(self):
         response_post = self.client.post(self.DEAL_VOTE, {
@@ -103,7 +106,7 @@ class DealViewTestCase(TestCase):
         deal_vote_up_old = self.deal_1.vote_up
         request = self.factory.post(self.DEAL_VOTE, {
             'action': 'votes',
-            'deal_id': '1',
+            'deal_id': self.deal_1.id,
             'button': 'vote_up',
         })
         request.user = self.custom_user
@@ -116,7 +119,7 @@ class DealViewTestCase(TestCase):
         deal_vote_up_old = self.deal_1.vote_up
         request = self.factory.post(self.DEAL_VOTE, {
             'action': 'votes',
-            'deal_id': '1',
+            'deal_id': self.deal_1.id,
             'button': 'vote_up',
         })
         request.user = self.custom_user
@@ -127,7 +130,7 @@ class DealViewTestCase(TestCase):
 
     def test_user_can_delete_deal(self):
         self.client.login(username='test', password='password')
-        response = self.client.post(reverse('deals:delete', kwargs={'pk': 1}))
+        response = self.client.post(reverse('deals:delete', kwargs={'pk': self.deal_1.id}))
         self.assertEqual(response.status_code, 302)
-        null_response = self.client.get(reverse(self.DEAL_DETAIL, args=['1']))
+        null_response = self.client.get(reverse(self.DEAL_DETAIL, args=[self.deal_1.id]))
         self.assertEqual(null_response.status_code, 404)
