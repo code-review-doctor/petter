@@ -6,7 +6,12 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.dev')
+    if os.environ.get("DJANGO_ENV") == 'prod':
+        os.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings.prod'
+    elif os.environ.get("DJANGO_ENV") == 'dev':
+        os.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings.dev'
+    elif os.environ.get("DJANGO_ENV") == 'test':
+        os.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings.test'
 
     try:
         command = sys.argv[1]

@@ -64,7 +64,9 @@ jobs:
           extra-flake8-options: "--tee --output-file=/github/workspace/flake8.txt"
 
       - name: Run Django migrations
-        run: pipenv run python manage.py migrate
+        run: |
+          set DJANGO_ENV=test
+          pipenv run python manage.py migrate
       - name: Django test
         run: |
           set DJANGO_ENV=test
