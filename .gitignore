@@ -120,3 +120,4 @@ factories/
 *flake8.txt
 .idea/sonarlint
 .idea/sonarlint-state.xml
+staticfiles/
