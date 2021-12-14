@@ -15,9 +15,11 @@ pre-commit = "~=2.16.0"
 coverage = "~=6.2"
 django-coverage-plugin = "~=2.0.2"
 django-filter = "*"
+whitenoise = "*"
 
 [dev-packages]
 faker = "*"
+psutil = "*"
 
 [requires]
 python_version = "3.10"
