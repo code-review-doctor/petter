@@ -11,5 +11,5 @@ DATABASES = {
     }
 }
 SECRET_KEY = 'test12312312asd'   # noqa: F405
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
