@@ -73,6 +73,12 @@ jobs:
           use-isort: false
           extra-flake8-options: "--tee --output-file=/github/workspace/flake8.txt"
 
+      - name: Run Django collectstatic
+        run: |
+          pipenv run python manage.py collectstatic
+        env:
+          DJANGO_ENV: test
+
       - name: Run Django migrations
         run: |
           pipenv run python manage.py migrate --settings=config.settings.test

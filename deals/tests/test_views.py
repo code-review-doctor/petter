@@ -17,7 +17,6 @@ class DealViewTestCase(TestCase):
     DEAL_VOTE = 'deals/vote/'
 
     def setUp(self):
-        print('ssss')
         today = timezone.now()
         self.factory = RequestFactory()
         self.custom_user = User.objects.create_user(
@@ -47,7 +46,6 @@ class DealViewTestCase(TestCase):
             vote_up=200,
             vote_down=100,
         )
-        print(self.deal_1.id)
 
     def test_deal_detail_can_add_comment_view(self):
         login = self.client.login(username='test', password='password')
@@ -91,7 +89,6 @@ class DealViewTestCase(TestCase):
 
     def test_deal_detail_view(self):
         response = self.client.get(reverse(self.DEAL_DETAIL, args=[self.deal_1.id]))
-        print(response)
         self.assertEqual(response.status_code, 200)
 
     def test_guest_cant_vote_on_deal(self):
