@@ -12,7 +12,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.10.0]
+        python-version: [3.10.0, 3.10.1]
     services:
       postgres:
         image: postgres:latest
@@ -77,12 +77,12 @@ jobs:
         run: |
           pipenv run python manage.py migrate --settings=config.settings.test
         env:
-          DJANGO_ENV: "test"
+          DJANGO_ENV: test
       - name: Django test
         run: |
           pipenv run python manage.py test --settings=config.settings.test
         env:
-          DJANGO_ENV: "test"
+          DJANGO_ENV: test
 
       - name: Download clean repo for SonarQube analysis
         uses: actions/checkout@v2
