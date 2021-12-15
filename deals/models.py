@@ -5,6 +5,7 @@ from django.db import models
 from django.db.models import F
 from django.db.models import Q
 from django.urls import reverse
+from djmoney.models.fields import MoneyField
 
 from users.models import CustomUser
 
@@ -29,9 +30,10 @@ class Deal(models.Model):
         unique=True,
         default=uuid.uuid4,
         editable=False)
-    current_price = models.DecimalField(max_digits=6, decimal_places=2)
-    historical_price = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=True, default=0)
-    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2)
+    current_price = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN')
+    historical_price = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN',
+                                  null=False, blank=True, default=0)
+    delivery_cost = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN')
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     valid_till = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)

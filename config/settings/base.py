@@ -30,7 +30,11 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     # 'allauth.socialaccount',
+    'djmoney',
 ]
+
+CURRENCIES = ('USD', 'EUR', 'PLN')
+CURRENCY_CHOICES = [('USD', 'USD $'), ('EUR', 'EUR €'), ('PLN', 'zł')]
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = 'deals:list'
