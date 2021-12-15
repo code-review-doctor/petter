@@ -66,11 +66,11 @@ jobs:
       - name: Run Django migrations
         run: |
           set DJANGO_ENV=test
-          pipenv run python manage.py migrate --settings=config.settings.dev
+          pipenv run python manage.py migrate --settings=config.settings.test
       - name: Django test
         run: |
           set DJANGO_ENV=test
-          pipenv run python manage.py test --settings=config.settings.dev
+          pipenv run python manage.py test --settings=config.settings.test
 
       - name: Download clean repo for SonarQube analysis
         uses: actions/checkout@v2
