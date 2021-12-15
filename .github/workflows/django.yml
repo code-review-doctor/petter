@@ -39,7 +39,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: /opt/hostedtoolcache/Python/3.10.0/x64/
-          key: python-${{ hashFiles('Pipfile.lock')
+          key: python-${{ hashFiles('Pipfile.lock')}}
 
       - name: Install pipenv
         uses: dschep/install-pipenv-action@v1
