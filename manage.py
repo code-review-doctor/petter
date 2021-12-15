@@ -25,7 +25,7 @@ def main():
 
     if running_test:
         from coverage import Coverage
-        coverage = Coverage()
+        coverage = Coverage(branch=True)
         coverage.erase()
         coverage.start()
 

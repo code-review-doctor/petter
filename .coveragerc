@@ -6,6 +6,10 @@ omit =
     *migrations*
     *__init__*
     manage.py
+    config/wsgi.py
+    config/asgi.py
+    *config/settings*
+    *apps.py*
 
 # plugins = django_coverage_plugin
 
