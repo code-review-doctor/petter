@@ -8,8 +8,8 @@
 				<div class="card-body">
 					<h5 class="card-title">
 						<a href="{% url 'deals:detail' deal.pk %}">
-							{{ deal.name }} | ${{ deal.current_price }}
-							{% if deal.historical_price %}| <s> {{ deal.historical_price }}</s> |
+							{{ deal.name }} | {{ deal.current_price_format }}
+							{% if deal.historical_price %}| <s> {{ deal.historical_price_format }}</s> |
 								{{ deal.price_percentage | floatformat:2 }}%  {% endif %}
 						</a>
 						<p><span class="badge badge-info">{{ deal.get_voting_count }}</span></p>

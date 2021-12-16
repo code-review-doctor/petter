@@ -45,8 +45,25 @@ class Deal(models.Model):
     vote_up = models.IntegerField(default=0)
     vote_down = models.IntegerField(default=0)
 
+    @property
+    def current_price_format(self):
+        if self.current_price.currency.code == 'PLN':
+            money_format = f'{self.current_price.amount} {self.current_price.currency}'
+        else:
+            money_format = f'{self.current_price.currency}{self.current_price.amount}'
+        return money_format
+
+    @property
+    def historical_price_format(self):
+        if self.historical_price.currency.code == 'PLN':
+            money_format = f'{self.historical_price.amount} {self.historical_price.currency}'
+        else:
+            money_format = f'{self.historical_price.currency}{self.historical_price.amount}'
+        return money_format
+
     def price_percentage(self):
-        return (1 - self.current_price / self.historical_price) * 100 if self.historical_price > 0 else 0
+        return (1 - self.current_price.amount / self.historical_price.amount)\
+               * 100 if self.historical_price.amount > 0 else 0
 
     def get_absolute_url(self):
         return reverse("deals:detail", args=[str(self.id)])
