@@ -56,7 +56,6 @@
 					</span>
 				</p>
 
-				<p class="pt-1">{{ deal.description }}</p>
 				<div class="table-responsive">
 					<table class="table table-sm table-borderless mb-0" aria-describedby="deal details">
 						<tbody>
@@ -75,9 +74,12 @@
 				<hr>
 
 				<a type="button" class="btn btn-primary btn-md mr-1 mb-2" href="{{ deal.link }}">Buy now</a>
-			</div>
-		</div>
 
+
+			</div>
+
+		</div>
+		<p class="pt-1">{{ deal.description.html|safe  }}</p>
 	</section>
 
 	{% include 'deals/comments.html' %}

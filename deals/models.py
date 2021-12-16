@@ -5,6 +5,7 @@ from django.db import models
 from django.db.models import F
 from django.db.models import Q
 from django.urls import reverse
+from django_quill.fields import QuillField
 from djmoney.models.fields import MoneyField
 
 from users.models import CustomUser
@@ -23,7 +24,7 @@ class Deal(models.Model):
     objects = models.Manager()
     deal_mgr = Dealmanager()
     name = models.CharField(max_length=140)
-    description = models.CharField(max_length=5000)
+    description = QuillField(max_length=5000)
     link = models.URLField()
     product_img = models.URLField()
     uuid = models.UUIDField(

@@ -22,6 +22,7 @@ psycopg2 = "*"
 django-environ = "~=0.8.1"
 django-admin-honeypot = "~=1.1.0"
 django-money = "~=2.1"
+django-quill-editor = "~=0.1.29"
 
 [dev-packages]
 faker = "*"

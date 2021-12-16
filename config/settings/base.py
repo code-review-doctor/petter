@@ -31,7 +31,29 @@ INSTALLED_APPS = [
     'allauth.account',
     # 'allauth.socialaccount',
     'djmoney',
+    'django_quill',
 ]
+
+QUILL_CONFIGS = {
+    'default': {
+        'theme': 'snow',
+        'placeholder': 'Wspaniały opis okazji...',
+        'modules': {
+            'syntax': True,
+            'toolbar': [
+                [
+                    {'align': []},
+                    'bold', 'italic', 'underline', 'strike', 'blockquote',
+                    {'color': []},
+                ],
+                [{'list': 'ordered'}, {'list': 'bullet'}],
+                [{'list': ['ordered', 'bullet', ]}],
+                ['link'],
+                ['clean'],
+            ]
+        }
+    }
+}
 
 CURRENCIES = ('USD', 'EUR', 'PLN')
 CURRENCY_CHOICES = [('USD', 'USD $'), ('EUR', 'EUR €'), ('PLN', 'zł')]
