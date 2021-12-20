@@ -15,5 +15,4 @@ class CustomUserChangeForm(UserChangeForm):
         fields = (
             'first_name', 'last_name',
             'username', 'email', 'age',
-            'avatar', 'is_staff', 'is_active', 'password'
-        )
+            'avatar', 'is_staff', 'is_active',)

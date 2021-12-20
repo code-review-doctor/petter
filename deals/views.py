@@ -24,20 +24,19 @@ from deals.models import Vote
 @require_http_methods(["POST"])
 def vote_view(request):
     if request.POST.get('action') == 'votes':
-
         deal_id = int(request.POST.get('deal_id'))
-        user_vote = Vote.objects.filter(Q(user_id=request.user.id) & Q(deal_id=deal_id))
+        user_vote = Vote.objects.filter(Q(user_id=request.user.uuid) & Q(deal_id=deal_id))
         button = request.POST.get('button')
         success_vote = None
 
         if not user_vote and button == 'vote_up':
             Vote.objects.create(deal_id=deal_id,
-                                user_id=request.user.id,
+                                user_id=request.user.uuid,
                                 vote_value=Vote.VoteChoice.PLUS)
             success_vote = button
         if not user_vote and button == 'vote_down':
             Vote.objects.create(deal_id=deal_id,
-                                user_id=request.user.id,
+                                user_id=request.user.uuid,
                                 vote_value=Vote.VoteChoice.MINUS)
             success_vote = button
         deal_o = Deal.objects.get(id=deal_id)
@@ -113,10 +112,11 @@ class NewDealDetailView(DetailView):
         votes = Vote.objects.filter(deal_id=self.object.id)
         context['votes'] = votes
 
-        have_voted = votes.filter(user_id=self.request.user.id).exists()
-        if have_voted:
-            have_voted = votes.get(user_id=self.request.user.id)
-        context['have_voted'] = have_voted
+        if not self.request.user.is_anonymous:
+            have_voted = votes.filter(user_id=self.request.user.uuid).exists()
+            if have_voted:
+                have_voted = votes.get(user_id=self.request.user.uuid)
+            context['have_voted'] = have_voted
 
         return context
 
@@ -143,6 +143,6 @@ class DealDeleteView(DeleteView):
 class UserDealListView(LoginRequiredMixin, DealList):
 
     def get_queryset(self):
-        pk = self.kwargs.get('pk')
-        self.queryset = self.model.objects.filter(author_id=pk)
+        username = self.kwargs.get('username')
+        self.queryset = self.model.objects.filter(author__username=username)
         return super(UserDealListView, self).get_queryset()

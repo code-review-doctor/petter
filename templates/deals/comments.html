@@ -12,7 +12,7 @@
 				<div class="card p-3 mt-2">
 					<div class="d-flex justify-content-between align-items-center">
 						<div class="user d-flex flex-row align-items-center">
-							<a href="{% url 'accounts:profile' comment.author.pk %}">
+							<a href="{% url 'accounts:profile' comment.author.username %}">
 								{% if comment.author.avatar %}
 									<img src="{{ comment.author.avatar.url }}"
 									     class="user-img rounded-circle z-depth-2 circle-avatar mr-2" alt="User avatar"
@@ -28,7 +28,7 @@
 							</a>
 							<span>
 								<small class="font-weight-bold text-primary">
-									<a href="{% url 'accounts:profile' comment.author.pk %}"> {{ comment.author }}</a>
+									<a href="{% url 'accounts:profile' comment.author.username %}"> {{ comment.author }}</a>
 								</small>
 
 								<small>{{ comment.created_at | timesince }} ago</small>

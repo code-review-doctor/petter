@@ -11,7 +11,7 @@ from deals.views import UserDealListView
 urlpatterns = [
     path('', DealListView.as_view(), name='list'),
     path('deals/hot/', HotDealListView.as_view(), name='hot_list'),
-    path('deals/user/<int:pk>/', UserDealListView.as_view(), name='user_deals'),
+    path('deals/user/<str:username>/', UserDealListView.as_view(), name='user_deals'),
     path('deals/<int:pk>/', NewDealDetailView.as_view(), name='detail'),
     path('deals/delete/<int:pk>/', DealDeleteView.as_view(), name='delete'),
     path('deals/new/', DealCreateView.as_view(), name='new'),

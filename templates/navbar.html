@@ -27,7 +27,7 @@
 					{% if user.avatar %}
 						<span role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-						<img class="rounded-circle z-depth-2 circle-avatar" alt="{{ user.username }} avatar"
+						<img class="rounded-circle circle-avatar" alt="{{ user.username }} avatar"
 						     src="{{ user.avatar.url }}" data-holder-rendered="true">
 						</span>
 					{% else %}
@@ -37,9 +37,10 @@
 						</span>
 					{% endif %}
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="{% url 'accounts:profile' %}">{{ user.username }}</a>
+						<a class="dropdown-item"
+						   href="{% url 'accounts:profile' user.username %}">{{ user.username }}</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="{% url 'deals:user_deals' user.pk %}">Published</a>
+						<a class="dropdown-item" href="{% url 'deals:user_deals' user.username %}">Published</a>
 						<a class="dropdown-item" href="#">Saved</a>
 						<a class="dropdown-item" href="#">Alerts</a>
 						<div class="dropdown-divider"></div>

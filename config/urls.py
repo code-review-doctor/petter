@@ -23,8 +23,8 @@ urlpatterns = [
     path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
     path('magic_place/', admin.site.urls),
     path('__debug__/', include('debug_toolbar.urls')),
-    path('accounts/', include(('accounts.urls', 'accounts'), namespace='accounts')),
-    path('accounts/', include('allauth.urls')),
+    path('profile/', include(('accounts.urls', 'accounts'), namespace='accounts')),
+    path('profile/', include('allauth.urls')),
     path('', include(('deals.urls', 'deals'), namespace='deals')),
 ]
 if settings.DEBUG:
