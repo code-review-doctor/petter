@@ -16,7 +16,6 @@
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
 				<i class="bi bi-search" aria-hidden="true"></i>
 			</button>
-
 		</form>
 
 		<ul class="form-inline my-2 my-lg-0 navbar-nav">
@@ -25,8 +24,18 @@
 			</li>
 			{% if user.is_authenticated %}
 				<div class="circle dropleft">
-					<span class="initials" role="button" data-toggle="dropdown" aria-haspopup="true"
-					      aria-expanded="false">{{ user.get_initials }}</span>
+					{% if user.avatar %}
+						<span role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+						<img class="rounded-circle z-depth-2 circle-avatar" alt="{{ user.username }} avatar"
+						     src="{{ user.avatar.url }}" data-holder-rendered="true">
+						</span>
+					{% else %}
+
+						<span class="initials" role="button" data-toggle="dropdown" aria-haspopup="true"
+						      aria-expanded="false">{{ user.get_initials }}</span>
+						</span>
+					{% endif %}
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						<a class="dropdown-item" href="{% url 'accounts:profile' %}">{{ user.username }}</a>
 						<div class="dropdown-divider"></div>
@@ -42,7 +51,6 @@
 			{% else %}
 				<li class="nav-item mr-2">
 					<a class="btn btn-secondary " href="{% url 'account_login' %}">Login / Register</a>
-
 				</li>
 			{% endif %}
 

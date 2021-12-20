@@ -11,7 +11,7 @@ from djmoney.models.fields import MoneyField
 from users.models import CustomUser
 
 
-class Dealmanager(models.Manager):
+class DealManager(models.Manager):
     def get_hot_deal(self, hot_result):
         voting = F('vote_up') - F('vote_down')
         hot_deals = Deal.objects.annotate(rate=voting).filter(
@@ -22,11 +22,11 @@ class Dealmanager(models.Manager):
 
 class Deal(models.Model):
     objects = models.Manager()
-    deal_mgr = Dealmanager()
+    deal_mgr = DealManager()
     name = models.CharField(max_length=140)
     description = QuillField(max_length=5000)
     link = models.URLField()
-    product_img = models.URLField()
+    product_img = models.ImageField(upload_to='deals_photo')
     uuid = models.UUIDField(
         unique=True,
         default=uuid.uuid4,
@@ -63,7 +63,7 @@ class Deal(models.Model):
         return money_format
 
     def price_percentage(self):
-        return (1 - self.current_price.amount / self.historical_price.amount)\
+        return (1 - self.current_price.amount / self.historical_price.amount) \
                * 100 if self.historical_price.amount > 0 else 0
 
     def get_absolute_url(self):

@@ -4,7 +4,7 @@ from django.db import models
 
 class CustomUser(AbstractUser):
     age = models.PositiveIntegerField(null=True, blank=True)
-    avatar = models.URLField()
+    avatar = models.ImageField(upload_to='avatars', blank=True, null=True)
 
     def get_initials(self):
         if self.first_name and self.last_name:

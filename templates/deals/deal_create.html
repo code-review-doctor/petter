@@ -1,6 +1,4 @@
-
 {% extends "_base.html" %}
-{% debug %}
 
 {% block title %} Dodaj nową okazję {% endblock %}
 {% block content %}
@@ -8,7 +6,7 @@
 	<div class="card bg-light">
 		<article class="card-body mx-auto" style="max-width: 800px;">
 			<h4 class="card-title mt-3 text-center">Dodaj nową okazję</h4>
-			<form class="create_deal" method="POST">
+			<form class="create_deal" method="POST" enctype="multipart/form-data">
 				{% csrf_token %}
 				{{ form.errors }}
 				<!-- 2 column grid layout with text inputs for the first and last names -->
@@ -20,49 +18,50 @@
 							<label class="form-label" for="form3Example1">Tytuł</label>
 						</div>
 					</div>
+				</div>
+				<div class="row mb-4">
 					<div class="col">
 						<div class="form-outline">
-							<input type="text" id="form3Example2" class="form-control"/>
-							<label class="form-label" for="form3Example2">Last name</label>
+							{{ form.product_img }}
 						</div>
 					</div>
 				</div>
 
-				<div class="form-outline mb-4" style="background-color: white">
-					{{ form.description }}
+				<div class="row mb-4">
+					<div class="col">
+						<div class="form-outline mb-4" style="background-color: white">
+							{{ form.description }}
+						</div>
+					</div>
 				</div>
 
-				<!-- Email input -->
 				<div class="form-outline mb-4">
-					<input type="text" id="form3Example1" name="{{ form.link.html_name }}" class="form-control" {{ form.link.required }}/>
+					<input type="text" id="form3Example1" name="{{ form.link.html_name }}"
+					       class="form-control" {% if form.link.required %} required {% endif %}/>
 					<label class="form-label" for="form3Example1">Link</label>
+					<div class="invalid-feedback">
+						Please provide a valid link.
+					</div>
 				</div>
 
 				<div class="row mb-4">
 					<div class="col">
 						<div class="form-outline">
-							<input type="text" id="form3Example1" name="{{ form.current_price.html_name }}"
-							       class="form-control"/>
-							<label class="form-label" for="form3Example1">Aktualna cena</label>
+							{{ form.current_price }}
+							<label class="form-label" for="form3Example1">Cena promocyjna</label>
 						</div>
 					</div>
 					<div class="col">
 						<div class="form-outline">
-							<input type="text" id="form3Example1" name="{{ form.historical_price.html_name }}"
-							       class="form-control"/>
-							<label class="form-label" for="form3Example1">Poprzednia cena</label>
+							{{ form.historical_price }}
 						</div>
+						<label class="form-label" for="form3Example1">Cena regularna</label>
 					</div>
 				</div>
 				<div class="form-outline mb-4">
-					<input type="text" id="form3Example1" name="{{ form.delivery_cost.html_name }}" class="form-control"/>
-					<label class="form-label" for="form3Example1">Link</label>
-					<p>zzz {{ form.delivery_cost.items }} yyy</p>
-					{% for i in form.delivery_cost.items %}
-					<p>.. {{ i }} ..</p>
-					{% endfor %}
+					{{ form.delivery_cost }}
+					<label class="form-label" for="form3Example1">Koszt dostawy</label>
 				</div>
-				<!-- Submit button -->
 				<button type="submit" class="btn btn-success btn-block mb-4">Dodaj</button>
 
 			</form>
