@@ -10,7 +10,7 @@ from deals.models import Vote
 User = get_user_model()
 
 
-class TestDealSModel(TestCase):
+class TestDealsModel(TestCase):
     DEAL_1 = 'Deal 1'
 
     def setUp(self) -> None:
@@ -23,8 +23,8 @@ class TestDealSModel(TestCase):
         )
         self.deal1 = Deal.objects.create(
             name=self.DEAL_1,
-            description='Description',
-            link='http://localhost:8000/link/',
+            description='{"delta":"{\\"ops\\":[{\\"insert\\":\\"this is a test!\\"},'
+                        '{\\"insert\\":\\"\\\\n\\"}]}","html":"<p>this is a test!</p>"}',
             product_img='http://localhost:8000/link/',
 
             current_price=20.00,
@@ -48,7 +48,7 @@ class TestDealSModel(TestCase):
         self.assertEqual(self.deal1.get_voting_count(), 100)
 
     def test_user_cant_vote(self):
-        self.assertFalse(self.deal1.can_vote(user_id=self.custom_user.id), False)
+        self.assertFalse(self.deal1.can_vote(user_id=self.custom_user.uuid), False)
 
     def test_user_can_vote(self):
         Vote.objects.create(
@@ -56,7 +56,7 @@ class TestDealSModel(TestCase):
             user=self.custom_user,
             vote_value=Vote.VoteChoice.PLUS,
         )
-        self.assertTrue(self.deal1.can_vote(user_id=self.custom_user.id), True)
+        self.assertTrue(self.deal1.can_vote(user_id=self.custom_user.uuid), True)
 
     def test_vote_plus_increase_deal_vote_counter(self):
         deal = Deal.objects.get(name=self.DEAL_1)

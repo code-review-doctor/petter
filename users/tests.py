@@ -20,7 +20,6 @@ class TestsUser(TestCase):
         )
 
     def test_create_user(self):
-        self.assertEqual(self.user.pk, self.user.id)
         self.assertEqual(self.user.username, 'tester')
         self.assertEqual(self.user.first_name, 'test')
         self.assertEqual(self.user.last_name, 'testowy')

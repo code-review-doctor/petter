@@ -29,7 +29,8 @@ class DealViewTestCase(TestCase):
 
         self.deal_1 = Deal.objects.create(
             name='Deal 1',
-            description='Description',
+            description='{"delta":"{\\"ops\\":[{\\"insert\\":\\"this is a test!\\"},'
+                        '{\\"insert\\":\\"\\\\n\\"}]}","html":"<p>this is a test!</p>"}',
             link='http://localhost:8000/link/',
             product_img='http://localhost:8000/link/avatar',
 
@@ -76,7 +77,8 @@ class DealViewTestCase(TestCase):
         self.assertTrue(login)
         response = self.client.post(reverse('deals:new'), {
             'name': 'Deal 2',
-            'description': 'Description',
+            'description': '{"delta":"{\\"ops\\":[{\\"insert\\":\\"this is a test!\\"},'
+                           '{\\"insert\\":\\"\\\\n\\"}]}","html":"<p>this is a test!</p>"}',
             'link': 'http://localhost:8000/link/',
             'product_img': 'http://localhost:8000/link/avatar',
 
