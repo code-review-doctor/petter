@@ -121,3 +121,4 @@ factories/
 .idea/sonarlint
 .idea/sonarlint-state.xml
 staticfiles/
+media/
