@@ -62,6 +62,7 @@ CURRENCY_CHOICES = [('USD', 'USD $'), ('EUR', 'EUR €'), ('PLN', 'zł')]
 SITE_ID = 1
 LOGIN_REDIRECT_URL = 'deals:list'
 AUTH_USER_MODEL = 'users.CustomUser'
+LOGIN_URL = '/profile/login/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
