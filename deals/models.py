@@ -23,7 +23,7 @@ class DealManager(models.Manager):
 class Deal(models.Model):
     objects = models.Manager()
     deal_mgr = DealManager()
-    name = models.CharField(max_length=140)
+    name = models.CharField(max_length=140, db_index=True)
     description = QuillField(max_length=5000)
     link = models.URLField()
     product_img = models.ImageField(upload_to='deals_photo')
@@ -35,7 +35,7 @@ class Deal(models.Model):
     historical_price = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN',
                                   null=False, blank=True, default=0)
     delivery_cost = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN')
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, db_index=True)
     valid_till = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -92,8 +92,8 @@ class Deal(models.Model):
 
 
 class Comment(models.Model):
-    author: CustomUser = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    deal = models.ForeignKey(Deal, on_delete=models.CASCADE)
+    author: CustomUser = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, db_index=True)
+    deal = models.ForeignKey(Deal, on_delete=models.CASCADE, db_index=True)
     comment = models.CharField(max_length=500)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -109,8 +109,8 @@ class Vote(models.Model):
         NEUTRAL = 0
 
     created_at = models.DateTimeField(auto_now_add=True)
-    deal = models.ForeignKey(Deal, on_delete=models.CASCADE)
-    user: CustomUser = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    deal = models.ForeignKey(Deal, on_delete=models.CASCADE, db_index=True)
+    user: CustomUser = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, db_index=True)
     vote_value: VoteChoice = models.IntegerField(choices=VoteChoice.choices)
 
     def save(self, *args, **kwargs):

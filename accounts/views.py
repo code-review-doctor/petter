@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import DetailView
 
 from deals.models import Comment
@@ -6,7 +7,7 @@ from deals.models import Deal
 from users.admin import CustomUser
 
 
-class UserProfileView(DetailView):
+class UserProfileView(LoginRequiredMixin, DetailView):
     model: CustomUser = get_user_model()
     template_name = 'account/profile_detail.html'
     context_object_name = 'profile'
