@@ -5,10 +5,25 @@ from django.db import models
 from django.db.models import F
 from django.db.models import Q
 from django.urls import reverse
+from django.utils.text import slugify
 from django_quill.fields import QuillField
 from djmoney.models.fields import MoneyField
 
 from users.models import CustomUser
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=150)
+    description = models.TextField(max_length=5000)
+    slug = models.SlugField(unique=True, max_length=50, allow_unicode=True, blank=True)
+
+    def __str__(self):
+        return str(self.name)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super(Category, self).save(*args, **kwargs)
 
 
 class DealManager(models.Manager):
@@ -23,6 +38,7 @@ class DealManager(models.Manager):
 class Deal(models.Model):
     objects = models.Manager()
     deal_mgr = DealManager()
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)
     name = models.CharField(max_length=140, db_index=True)
     description = QuillField(max_length=5000)
     link = models.URLField()

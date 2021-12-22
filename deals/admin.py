@@ -2,6 +2,7 @@
 from django import forms
 from django.contrib import admin
 
+from deals.models import Category
 from deals.models import Comment
 from deals.models import Deal
 from deals.models import Vote
@@ -52,3 +53,4 @@ class VoteAdmin(admin.ModelAdmin):
 admin.site.register(Deal, DealAdmin)
 admin.site.register(Comment, CommentAdmin)
 admin.site.register(Vote, VoteAdmin)
+admin.site.register(Category)
