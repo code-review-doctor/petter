@@ -1,0 +1,3446 @@
+[
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "3dfx",
+      "website": "https://pl.wikipedia.org//wiki/3dfx",
+      "slug": "3dfx",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "3dfx Interactive (nazwa 3dfx pochodzi od angielskiego three dimensional effects – efekty trójwymiarowe. Wymowa effects jest podobna do fx) – firma produkująca akceleratory graficzne i karty graficzne ze zintegrowaną akceleracją. Pod koniec roku 2000 doznała jednego z największych kryzysów w dziejach przemysłu komputerów osobistych. Ostatecznie została za 69 mln dolarów wykupiona przez firmę NVIDIA, która nie kontynuowała linii ani wsparcia produktów 3dfx. Siedzibą firmy było San Jose w"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "A4Tech",
+      "website": "https://pl.wikipedia.org//wiki/A4Tech",
+      "slug": "a4tech",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "A4Tech Corporation, Ltd – tajwańskie przedsiębiorstwo założone w 1987 roku."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "ABIT",
+      "website": "https://pl.wikipedia.org//wiki/ABIT",
+      "slug": "abit",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "ABIT – tajwańskie przedsiębiorstwo produkujące podzespoły komputerowe, aktywne od końca lat 80. do końca 2008. ABIT był najbardziej znany z produkcji płyt głównych, produkowanych dla entuzjastów przetaktowywania komponentów komputera. W roku 2005 firma napotkała trudności finansowe. Skutkiem tego było połączenie oddziału zajmującego się produkcją płyt głównych ze spółką Universal Scientific Industrial Co., Ltd. (USI)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Acer",
+      "website": "https://pl.wikipedia.org//wiki/Acer",
+      "slug": "acer",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "TWSE: 2353"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Adata",
+      "website": "https://pl.wikipedia.org//wiki/Adata",
+      "slug": "adata",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "ADATA Technology Co., Ltd. – międzynarodowa korporacja z siedzibą w Tajpej w Republice Chińskiej, zajmująca się produkcją nośników cyfrowego przechowywania danych oraz badaniami naukowymi w zakresie elektroniki cyfrowej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Advanced Gravis",
+      "website": "https://pl.wikipedia.org//wiki/Advanced_Gravis",
+      "slug": "advanced-gravis",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Advanced Gravis Computer Technology – producent akcesoriów komputerowych. Firma została założona w roku 1982 w Kolumbii Brytyjskiej (Kanada). Do jej najbardziej znanych produktów należą kontrolery do gier Gravis PC GamePad i Gravis Joystick oraz rodzina kart dźwiękowych Gravis Ultrasound – pierwszych kart z wbudowaną syntezą wavetable dla użytkowników domowych. W latach świetności firma zatrudniała 200 pracowników i była największym producentem dżojstików komputerowych. W roku 1997 fir"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Advanced Micro Devices",
+      "website": "https://pl.wikipedia.org//wiki/Advanced_Micro_Devices",
+      "slug": "advanced-micro-devices",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Advanced Micro Devices, Inc., AMD – amerykańskie przedsiębiorstwo produkujące elektronikę (głównie układy scalone) dla użytkowników domowych i firm. Do głównych produktów AMD należą mikroprocesory, chipsety do płyt głównych, systemy wbudowane oraz procesory graficzne dla serwerów, stacji roboczych i komputerów PC."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "American Power Conversion",
+      "website": "https://pl.wikipedia.org//wiki/American_Power_Conversion",
+      "slug": "american-power-conversion",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "American Power Conversion Corporation (APC) - przedsiębiorstwo z siedzibą w West Kingston, Rhode Island, jeden z czołowych producentów systemów UPS."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Apacer",
+      "website": "https://pl.wikipedia.org//wiki/Apacer",
+      "slug": "apacer",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Apacer Technology Inc. (chiń. 宇瞻科技股份有限公司) – tajwańskie przedsiębiorstwo elektroniczne, założone w kwietniu 1997 roku. Zajmuje się produkcją modułów pamięci komputerowej i urządzeń peryferyjnych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Apple (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Apple_(przedsi%C4%99biorstwo)",
+      "slug": "apple-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Apple Inc. (dawniej Apple Computer Inc.) – amerykańskie przedsiębiorstwo informatyczne z siedzibą w Cupertino w Kalifornii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "ASRock",
+      "website": "https://pl.wikipedia.org//wiki/ASRock",
+      "slug": "asrock",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "ASRock Inc. – przedsiębiorstwo utworzone w roku 2002 na Tajwanie, jako spółka zależna ASUS. Przedsiębiorstwo z siedzibą w Tajpej posiada oddziały w Europie, jak i w USA."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "ASUS",
+      "website": "https://pl.wikipedia.org//wiki/ASUS",
+      "slug": "asus",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "ASUS, oficjalnie ASUSTeK Computer Inc. – tajwańskie przedsiębiorstwo zajmujące się produkcją elektroniki, głównie: płyt głównych, kart graficznych, laptopów, smartfonów, tabletów, komputerów stacjonarnych oraz napędów optycznych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "ATI Technologies",
+      "website": "https://pl.wikipedia.org//wiki/ATI_Technologies",
+      "slug": "ati-technologies",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "ATI Technologies Inc. (gdzie ATI jest skrótem od Array Technologies Incorporated) – kanadyjski producent układów scalonych, znany głównie ze swoich kart graficznych. Notowany na giełdach w Toronto i NASDAQ."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "AVer Information",
+      "website": "https://pl.wikipedia.org//wiki/AVer_Information",
+      "slug": "aver-information",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "AVer Information Inc. (chiń. 圓展科技股份有限公司) – tajwańskie przedsiębiorstwo elektroniczne. Zostało założone w 2008 roku, a swoją siedzibę ma w Nowym Tajpej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Belinea",
+      "website": "https://pl.wikipedia.org//wiki/Belinea",
+      "slug": "belinea",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Belinea – niemiecka firma powstała w 1991, specjalizująca się w sprzedaży monitorów. Są to monitory wyprodukowane przez MAXDATA a następnie sprzedawane w Europie pod nazwą Belinea. MAXDATA pod nazwą Belinea produkuje również komputery.Firma 27 czerwca 2008 (tak jak jej \"spółka matka\" MAXDATA) złożyła wniosek do sądu o upadłość, co spowodowane jest rosnącą konkurencją oraz postępującymi spadkami cen sprzętu."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "BenQ",
+      "website": "https://pl.wikipedia.org//wiki/BenQ",
+      "slug": "benq",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "BenQ – przedsiębiorstwo powstałe na skutek przekształceń Continental Systems Inc., powstałego w 1984, w Acer Technologies."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Biostar",
+      "website": "https://pl.wikipedia.org//wiki/Biostar",
+      "slug": "biostar",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Biostar (pełna nazwa: Biostar Microtech International Corp) – producent sprzętu komputerowego z siedzibą na Tajwanie. Specjalizuje się w projektowaniu i produkowaniu podzespołów takich jak płyty główne, karty graficzne, a także komputerów typu barebone i komputerów przemysłowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "BOE Technology",
+      "website": "https://pl.wikipedia.org//wiki/BOE_Technology",
+      "slug": "boe-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "BOE Technology Group Co., Ltd. (chiń. 京东方科技集团股份有限公司) – chińskie przedsiębiorstwo elektroniczne, specjalizujące się w produkcji wyświetlaczy. Produkty firmy znajdują zastosowanie w telefonach komórkowych, tabletach, laptopach, monitorach i urządzeniach pokrewnych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Cal-Tex Semiconductor",
+      "website": "https://pl.wikipedia.org//wiki/Cal-Tex_Semiconductor",
+      "slug": "cal-tex-semiconductor",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Cal-Tex Semiconductor, Inc. – amerykański producent kalkulatorowych i zegarowych układów scalonych, powstały w 1971 roku. Siedzibą przedsiębiorstwa była Santa Clara w Kalifornii. W 1975 roku został przejęty przez przedsiębiorstwo Fairchild Semiconductor."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Chaintech",
+      "website": "https://pl.wikipedia.org//wiki/Chaintech",
+      "slug": "chaintech",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": " Chaintech Computer Co. Ltd. – tajwańska firma założona w listopadzie 1986 roku. Specjalizuje się w produkcji kart graficznych i płyt głównych, ale produkuje też karty dźwiękowe, modemy oraz moduły pamięci. W październiku 2005 roku  Chaintech  zmienił nazwę na  Walton Chaintech Corporation. Główna siedziba znajduje się w Tajpej. Firma ma także osiem oddziałów w: Hongkongu, Pekinie i Shenzhen (Chiny), Korei, Sydney (Australia), Kalifornii (USA), Paryżu (Francja) i Moskwie (Rosja)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Cirrus Logic",
+      "website": "https://pl.wikipedia.org//wiki/Cirrus_Logic",
+      "slug": "cirrus-logic",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Cirrus Logic Inc. – amerykańskie przedsiębiorstwo elektroniczne. Zostało założone w 1981 roku, a swoją siedzibę ma w Austin w stanie Teksas."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Convex Computer",
+      "website": "https://pl.wikipedia.org//wiki/Convex_Computer",
+      "slug": "convex-computer",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Convex Computer Corporation – amerykańskie przedsiębiorstwo komputerowe. Zajmowało się projektowaniem, produkowaniem, marketingiem i serwisowaniem komputerów dla naukowców i użytkowników technicznych. Produkty tej firmy zawierały jedno i wieloprocesorowe systemy wektorowe/skalarne oraz wieloprocesorowe skalowalne systemy przetwarzania równoległego, i powiązane oprogramowanie. Firma została ufundowana we wrześniu 1982 z siedzibą w Richardson, Teksas. Convex zostało kupione przez Hewlett"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Corsair Components",
+      "website": "https://pl.wikipedia.org//wiki/Corsair_Components",
+      "slug": "corsair-components",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Corsair Components, Inc. – amerykańskie przedsiębiorstwo komputerowe z siedzibą w Fremont, w stanie Kalifornia, w Stanach Zjednoczonych. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "D-Link",
+      "website": "https://pl.wikipedia.org//wiki/D-Link",
+      "slug": "d-link",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "D-Link Corporation – tajwański producent komputerowego sprzętu sieciowego: przewodowego Ethernet i bezprzewodowego Wi-Fi, przeznaczonego zarówno dla firm, jak i użytkowników domowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "D-Wave Systems",
+      "website": "https://pl.wikipedia.org//wiki/D-Wave_Systems",
+      "slug": "d-wave-systems",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "D-Wave Systems Inc. – kanadyjskie przedsiębiorstwo z siedzibą w Burnaby, w Kolumbii Brytyjskiej, zajmujące się obliczeniami kwantowymi. D-Wave jest pierwszym na świecie przedsiębiorstwem, które rozpoczęło sprzedaż komputerów wykorzystujących efekty kwantowe w swoich operacjach, oraz pierwszym które wdrożyło pionierską technologię tworzenia podglądów operacji za pomocą szybkich zrzutów obrazu stanu procesora (ang. snapshotting).Do pierwszych klientów D-Wave należą m.in. konsorcjum Lockh"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Daewoo",
+      "website": "https://pl.wikipedia.org//wiki/Daewoo",
+      "slug": "daewoo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Daewoo Group (hangul: 대우, hancha: 大宇, transkrypcja poprawiona: Daeu czyt. Deu) – były południowokoreański wielobranżowy koncern działający w wielu gałęziach przemysłu, m.in. w okrętownictwie, sprzęcie elektronicznym, nieruchomościach, budownictwie, sprzęcie budowlanym, a także w motoryzacji, założony w 1967 roku w Seulu."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Dell",
+      "website": "https://pl.wikipedia.org//wiki/Dell",
+      "slug": "dell",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Dell (właściwie Dell Computer Corporation) – amerykańska międzynarodowa korporacja z siedzibą w Round Rock w stanie Teksas, która opracowuje, sprzedaje, naprawia i obsługuje komputery oraz powiązane produkty i usługi. Nazwa pochodzi od nazwiska założyciela firmy Michaela Della i jest jedną z największych korporacji technologicznych na świecie, zatrudniającą ponad 103 300 osób w różnych krajach. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "DisplayLink",
+      "website": "https://pl.wikipedia.org//wiki/DisplayLink",
+      "slug": "displaylink",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "DisplayLink – firma informatyczna zajmującą się półprzewodnikami i oprogramowaniem komputerowym."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "EIZO",
+      "website": "https://pl.wikipedia.org//wiki/EIZO",
+      "slug": "eizo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "EIZO Corporation (jap. EIZO株式会社 EIZO Kabushiki-gaisha) – japońska korporacja założona w marcu 1968 roku, zajmująca się produkcją profesjonalnych monitorów komputerowych. Obecną nazwę przyjęła w roku 2013. Według danych z 31 marca 2018 roku zatrudnia 2325 osób."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Elitegroup Computer Systems",
+      "website": "https://pl.wikipedia.org//wiki/Elitegroup_Computer_Systems",
+      "slug": "elitegroup-computer-systems",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Elitegroup Computer Systems (ECS) – tajwańskie przedsiębiorstwo elektroniczne produkujące części komputerowe. Zostało założone w 1987 roku. Jest to jeden z największych producentów płyt głównych na świecie. Wiele produktów ECS używanych jest na zasadzie OEM przez firmy takie jak IBM czy Compaq."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Elpida Memory",
+      "website": "https://pl.wikipedia.org//wiki/Elpida_Memory",
+      "slug": "elpida-memory",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Elpida Memory, Inc. (jap. エルピーダメモリ株式会社 Erupīda Memori Kabushiki-gaisha) – dawne japońskie przedsiębiorstwo elektroniczne, zajmujące się produkcją układów pamięci DRAM. Powstało w 1999 r. jako wspólny projekt NEC oraz Hitachi."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "EVS Broadcast Equipment",
+      "website": "https://pl.wikipedia.org//wiki/EVS_Broadcast_Equipment",
+      "slug": "evs-broadcast-equipment",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "EVS Broadcast Equipment – przedsiębiorstwo tworzące systemy do produkcji cyfrowych sygnałów wizyjnych, które znajdują zastosowanie głównie podczas produkcji „na żywo” (live outside broadcast). Ich serwery stały się dominującym standardem dla nadawców na całym świecie.[potrzebny przypis] Produkcyjne serwery XT3  umożliwiają tworzenie, edycję, wymianę oraz emisję kontentu wizyjnego i dźwiękowego."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Foxconn",
+      "website": "https://pl.wikipedia.org//wiki/Foxconn",
+      "slug": "foxconn",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Foxconn Group – tajwański międzynarodowy producent podzespołów i komponentów elektronicznych, dostarczający je na zlecenie globalnych wielobranżowych koncernów produkujących m.in. smartfony, komputery, samochody czy konsole do gier. Marka handlowa firmy Hon Hai Precision Industry Co. Ltd.[3] działającej od 1947 roku z siedzibą w Tajpej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Fujitsu",
+      "website": "https://pl.wikipedia.org//wiki/Fujitsu",
+      "slug": "fujitsu",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Fujitsū (jap. 富士通株式会社 Fujitsū Kabushiki-gaisha) – japońskie przedsiębiorstwo z siedzibą w Tokio, specjalizujące się w usługach informatycznych oraz produkcji półprzewodników, komputerów (superkomputerów, komputerów osobistych, serwerów, telekomunikacji i usługach). Przedsiębiorstwo zatrudnia około 140 tysięcy pracowników w 100 państwach[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Fujitsu Siemens Computers",
+      "website": "https://pl.wikipedia.org//wiki/Fujitsu_Siemens_Computers",
+      "slug": "fujitsu-siemens-computers",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Fujitsu Siemens Computers (FSC) – była japońsko-niemiecka spółka joint venture z branży IT. W spółce 50% udziałów posiadał Fujitsu Limited z Japonii i pozostałe 50% Siemens AG z Niemiec."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "G.Skill",
+      "website": "https://pl.wikipedia.org//wiki/G.Skill",
+      "slug": "gskill",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "G.SKILL International Enterprise Co., Ltd. (chiń. 芝奇國際實業股份有限公司) – tajwańskie przedsiębiorstwo elektroniczne, produkujące m.in. moduły pamięci operacyjnej. Portfolio G.Skill obejmuje także urządzenia peryferyjne dla graczy oraz nośniki pamięci masowej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Gainward",
+      "website": "https://pl.wikipedia.org//wiki/Gainward",
+      "slug": "gainward",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Gainward – tajwański producent kart graficznych opartych na procesorach NVIDIA."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Genius",
+      "website": "https://pl.wikipedia.org//wiki/Genius",
+      "slug": "genius",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Genius – przedsiębiorstwo elektroniczne produkujące urządzenia peryferyjne do komputerów (myszki, klawiatury, tablety), założone w 1983 roku na Tajwanie. Genius zatrudnia około czterech tysięcy pracowników na całym świecie. Dochód ze sprzedaży wyniósł 353 miliony USD w roku 2005, 424 miliony w roku 2006."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Gigabyte Technology",
+      "website": "https://pl.wikipedia.org//wiki/Gigabyte_Technology",
+      "slug": "gigabyte-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Gigabyte Technology Co., Ltd. – tajwańskie przedsiębiorstwo zajmujące się produkcją sprzętu komputerowego."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Hitachi (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Hitachi_(przedsi%C4%99biorstwo)",
+      "slug": "hitachi-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Hitachi, Ltd. (jap. 株式会社日立製作所 Kabushiki-kaisha Hitachi Seisakusho) – koncern technologiczny z siedzibą w Tokio, oferujący produkty w większości krajów na świecie, w tym w Polsce. Grupę Hitachi w Europie stanowi 141 spółek zatrudniających ponad 11 tysięcy pracowników. Przedsiębiorstwo prowadzi aktywną działalność badawczo-rozwojową, w 2008 roku wydała ponad 4 mld USD na R&D prowadzony w kilku centrach w Azji, Europie oraz Ameryce Północnej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "HK MagicTech Electronic Group Limited",
+      "website": "https://pl.wikipedia.org//wiki/HK_MagicTech_Electronic_Group_Limited",
+      "slug": "hk-magictech-electronic-group-limited",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "HK MagicTech Electronic Co. LTD – chińskie przedsiębiorstwo założone w 2010 r. w Shenzhen. Jego głównym obszarem działalności jest produkcja elektroniki. Obecnie koncentruje się na takich wyrobach jak: laptopy, tablety, telefony komórkowe, nawigacje GPS, Mp5 itp. Swoje produkty sprzedaje wielu krajowym, jak i zagranicznym odbiorcom, którzy odsprzedają je pod marką własną, co jest typową praktyką, jeśli chodzi o współczesne markowe firmy. Przedsiębiorstwo prowadzi sprzedaż wyrobów własn"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "HTC",
+      "website": "https://pl.wikipedia.org//wiki/HTC",
+      "slug": "htc",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "HTC Corporation (dawniej High Tech Computer Corporation) – tajwańskie przedsiębiorstwo zajmujące się produkcją przenośnych urządzeń z systemem operacyjnym Windows Mobile, od 2008 roku z systemem Android, a od 2012 roku także Windows Phone 8. Jest jednym z największych producentów urządzeń palmtopów oraz smartfonów."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "IBM",
+      "website": "https://pl.wikipedia.org//wiki/IBM",
+      "slug": "ibm",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "International Business Machines Corporation – amerykańskie przedsiębiorstwo, będące jednym z najstarszych przedsiębiorstw informatycznych na świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Iiyama (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Iiyama_(przedsi%C4%99biorstwo)",
+      "slug": "iiyama-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Iiyama Corporation (jap. 株式会社 iiyama Kabushiki-gaisha iiyama) – japońskie przedsiębiorstwo elektroniczne produkujące monitory i odbiorniki telewizyjne."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Intel",
+      "website": "https://pl.wikipedia.org//wiki/Intel",
+      "slug": "intel",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Intel Corporation – największy na świecie producent układów scalonych oraz twórca mikroprocesorów z rodziny x86, które znajdują się w większości komputerów osobistych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Iomega",
+      "website": "https://pl.wikipedia.org//wiki/Iomega",
+      "slug": "iomega",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Iomega – firma produkująca nośniki danych, głównie dyski twarde, założona w 1980 roku  w Kalifornii gdzie ma siedzibę w San Diego. Marka należy do EMC Corporation."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Itronix",
+      "website": "https://pl.wikipedia.org//wiki/Itronix",
+      "slug": "itronix",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Itronix, właśc. General Dynamics Itronix – amerykański producent komputerowy bazujący w Spokane (Waszyngton)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "JMicron",
+      "website": "https://pl.wikipedia.org//wiki/JMicron",
+      "slug": "jmicron",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "JMicron Technology Corporation (chiń. 智微科技) – tajwańskie przedsiębiorstwo elektroniczne. Zostało założone w 2001 roku, a swoją siedzibę ma w Xinzhu."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Kensington Technology Group",
+      "website": "https://pl.wikipedia.org//wiki/Kensington_Technology_Group",
+      "slug": "kensington-technology-group",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Kensington Technology Group – producent antykradzieżowych zabezpieczeń do laptopów i sprzętu komputerowego, a także akcesoriów do notebooków. Firma Kensington została założona w 1981 roku z chwilą wynalezienia System Savera – urządzenia zapewniającego chłodzenie komputera za pomocą wentylatora jak również ochronę antyprzepięciową. Produkt ten stał się bestsellerem sprzedażowym w zakresie urządzeń peryferyjnych dla komputerów Apple II. Główna siedziba firmy mieści się w Redwood Shores w"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Kingston Technology",
+      "website": "https://pl.wikipedia.org//wiki/Kingston_Technology",
+      "slug": "kingston-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Kingston Technology Corporation – amerykańskie przedsiębiorstwo zajmujące się opracowywaniem, produkcją, sprzedażą i serwisem pamięci komputerowych. Siedziba przedsiębiorstwa znajduje się w Fountain Valley, w stanie Kalifornia. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Kioxia",
+      "website": "https://pl.wikipedia.org//wiki/Kioxia",
+      "slug": "kioxia",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Kioxia Corporation (jap. キオクシア株式会社 Kiokushia Kabushiki-gaisha) – japońskie przedsiębiorstwo elektroniczne, zajmujące się produkcją pamięci komputerowych. Jest spółką zależną będącą własnością holdingu Kioxia Holdings Corporation (jap. キオクシアホールディングス株式会社 Kiokushia Hōrudingusu Kabushiki-gaisha). Dawniej funkcjonowało pod nazwą Toshiba Memory Corporation (jap. 東芝メモリ株式会社 Tōshiba Memori Kabushiki-gaisha). Powstało w wyniku wydzielenia Toshiba Memory z Toshiba Corporation w kwietniu 2017 roku"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Kontron",
+      "website": "https://pl.wikipedia.org//wiki/Kontron",
+      "slug": "kontron",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Kontron AG – międzynarodowa firma projektująca i produkująca wbudowane komputery modułowe, płyty oraz systemy."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Kyocera",
+      "website": "https://pl.wikipedia.org//wiki/Kyocera",
+      "slug": "kyocera",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Kyocera Corporation (jap. 京セラ株式会社 Kyōsera Kabushiki-gaisha) – japońskie przedsiębiorstwo elektroniczne założone w 1959 roku przez Kazuo Inamoriego jako Kyoto Ceramics. Główna siedziba firmy mieści się w Kioto.Producent sprzętu komputerowego, fotograficznego, elektronicznego i drukarek. Produkty tej firmy są sprzedawane pod markami Kyocera, a także „TA Triumph-Adler” i „UTAX” w Europie i na Bliskim Wschodzie oraz „Copystar” w Stanach Zjednoczonych (sprzęt do druku i małej poligrafii), C"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Leadtek",
+      "website": "https://pl.wikipedia.org//wiki/Leadtek",
+      "slug": "leadtek",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Leadtek Research, Inc. - założona w 1986 roku tajwańska firma zajmująca się głównie projektowaniem, produkcją kart graficznych z procesorami graficznymi firmy nVidia i kart telewizyjnych do komputera, również na magistrali USB."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Lenovo",
+      "website": "https://pl.wikipedia.org//wiki/Lenovo",
+      "slug": "lenovo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Lenovo Group Limited (chiń. 联想集团有限公司; pinyin Liánxiǎng jítuán yǒuxiàn gōngsī) – chińskie przedsiębiorstwo informatyczne będące liderem w dziedzinie innowacyjnych technologii dla użytkowników indywidualnych i biznesowych oraz dla dużych przedsiębiorstw. Oferta korporacji obejmuje komputery osobiste, stacje robocze, serwery, pamięć masową, a także produkty mobilne, takie jak smartfony (w tym marki Motorola), tablety, aplikacje oraz rozwiązania z zakresu Smart Home."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Lexar",
+      "website": "https://pl.wikipedia.org//wiki/Lexar",
+      "slug": "lexar",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Lexar Media, Inc. – amerykańskie przedsiębiorstwo elektroniczne oraz marka kart pamięci, pamięci przenośnych, czytników i pokrewnych urządzeń. Przedsiębiorstwo powstało w 1996 roku. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "LG Group",
+      "website": "https://pl.wikipedia.org//wiki/LG_Group",
+      "slug": "lg-group",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "LG Group (kor: LG 법인) – południowokoreańskie przedsiębiorstwo działające w branży elektronicznej, chemicznej i dawniej  telekomunikacyjnej; jeden z największych koreańskich czeboli."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Lite-On",
+      "website": "https://pl.wikipedia.org//wiki/Lite-On",
+      "slug": "lite-on",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Lite-On (chiń. 光寶科技) – tajwańskie przedsiębiorstwo elektroniczne, zajmujące się produkcją urządzeń optoelektronicznych i zasilaczy. Jego portfolio obejmuje m.in. diody LED, zasilacze i fototranzystory. Jest także producentem nagrywarek DVD. Przedsiębiorstwo zostało założone w 1975 roku[3]. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Logitech",
+      "website": "https://pl.wikipedia.org//wiki/Logitech",
+      "slug": "logitech",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Logitech – firma produkująca sprzęt peryferyjny do komputerów – m.in. głośniki, klawiatury, myszy, kamery internetowe."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Longsys",
+      "website": "https://pl.wikipedia.org//wiki/Longsys",
+      "slug": "longsys",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Shenzhen Longsys Electronics Co., Ltd. (chiń. 深圳市江波龙电子股份有限公司) – chińskie przedsiębiorstwo działające na rynku pamięci masowych. Zajmuje się produkcją pamięci wbudowanych, dysków SSD, pamięci mobilnych i modułów pamięci. Zostało założone w 1999 roku, a swoją siedzibę ma w Shenzhen."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "M-Audio",
+      "website": "https://pl.wikipedia.org//wiki/M-Audio",
+      "slug": "m-audio",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "M-Audio – producent sprzętu muzycznego i komputerowego."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Manta (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Manta_(przedsi%C4%99biorstwo)",
+      "slug": "manta-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Manta S.A. – istniejące od 1998 roku polskie przedsiębiorstwo z siedzibą w Warszawie, zajmujące sprowadzaniem i dystrybucją sprzętu RTV, AGD oraz IT z Chin. Manta jako pierwsza firma ogłosiła plany sprowadzenia telewizorów 3D w Polsce. Firma ogłosiła także plany rebrandingu i przesunięcia produktów budżetowych do submarek."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "MediaTek",
+      "website": "https://pl.wikipedia.org//wiki/MediaTek",
+      "slug": "mediatek",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "MediaTek Inc. (chiń. 聯發科技股份有限公司) – tajwańskie przedsiębiorstwo z branży półprzewodnikowej. Zostało założone w 1997 roku, a swoją siedzibę ma w Xinzhu."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Micro-Star International",
+      "website": "https://pl.wikipedia.org//wiki/Micro-Star_International",
+      "slug": "micro-star-international",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Micro-Star International Co., Ltd (MSI) – tajwańskie przedsiębiorstwo informatyczne z siedzibą w Nowym Tajpej, Tajwan. Projektuje, rozwija i dostarcza sprzęt komputerowy, powiązane produkty i usługi, w tym laptopy, komputery stacjonarne, płyty główne, karty graficzne, komputery All-in-One, serwery, komputery przemysłowe, urządzenia peryferyjne do komputerów PC, samochodowe produkty rozrywkowo-informacyjne itp."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Microchip Technology",
+      "website": "https://pl.wikipedia.org//wiki/Microchip_Technology",
+      "slug": "microchip-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Microchip Technology Inc. – amerykańskie przedsiębiorstwo zajmujące się produkcją różnorodnych układów scalonych, od układów analogowych jak wzmacniacze operacyjne poprzez elementy optoelektroniczne, radiowe, pamięci EEPROM. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Micron Technology",
+      "website": "https://pl.wikipedia.org//wiki/Micron_Technology",
+      "slug": "micron-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Micron Technology – amerykańskie przedsiębiorstwo elektroniczne, założone w październiku 1978 roku[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Mikrotik",
+      "website": "https://pl.wikipedia.org//wiki/Mikrotik",
+      "slug": "mikrotik",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "SIA Mikrotīkls, znany jako MikroTik – łotewski producent sprzętu komputerowego do zastosowań sieciowych i bezprzewodowych. Sprzedaje oprogramowanie, urządzenia łączności radiowej w standardzie 802.11a/b/g/n/ac oraz routery."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Mostek (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Mostek_(przedsi%C4%99biorstwo)",
+      "slug": "mostek-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Mostek Corporation – amerykański producent układów scalonych, założony w 1969 r. przez byłych pracowników Texas Instruments."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Motorola",
+      "website": "https://pl.wikipedia.org//wiki/Motorola",
+      "slug": "motorola",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Motorola – amerykańskie przedsiębiorstwo telekomunikacyjne założone w 1928 roku, z siedzibą w Schaumburgu na przedmieściach Chicago (USA). Było spółką publiczną notowaną na giełdzie nowojorskiej (NYSE) (od 26 maja 1946) (symbol giełdowy: MOT), a w przeszłości także tokijskiej (od października 1988 do czerwca 2005) i Chicago Stock Exchange. 4 stycznia 2011 podzieliło się na dwa przedsiębiorstwa, Motorola Mobility i Motorola Solutions."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "NEC Corporation",
+      "website": "https://pl.wikipedia.org//wiki/NEC_Corporation",
+      "slug": "nec-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "NEC Corporation (jap. 日本電気株式会社 Nippon Denki Kabushiki Gaisha) (wcześniej Nippon Electric Company) – japońskie przedsiębiorstwo z dziedziny informatycznej z siedzibą w Minato w Japonii. Przedsiębiorstwo produkuje sprzęt komputerowy, telekomunikacyjny, urządzenia elektroniczne i oprogramowanie, między innymi notebooki Versa oraz Lavie (na rynek japoński). Firma NEC stworzyła Earth Simulator, najszybszy superkomputer na świecie w tym czasie. NEC jest częścią Sumitomo Group oraz spółka pub"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Netac Technology",
+      "website": "https://pl.wikipedia.org//wiki/Netac_Technology",
+      "slug": "netac-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Shenzhen Netac Technology Co., Ltd. (chiń. 深圳市朗科科技股份有限公司) – chińskie przedsiębiorstwo działające na rynku pamięci komputerowych. Zajmuje się produkcją dysków SSD, przenośnych dysków flash i pamięci RAM. Zostało założone w 1999 roku, a swoją siedzibę ma w Shenzhen[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Netgear",
+      "website": "https://pl.wikipedia.org//wiki/Netgear",
+      "slug": "netgear",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Netgear – amerykański producent urządzeń sieciowych oraz innego sprzętu komputerowego."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Nvidia",
+      "website": "https://pl.wikipedia.org//wiki/Nvidia",
+      "slug": "nvidia",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Nvidia Corporation (wymowa: ɛnˈvɪdiə; oficjalny zapis: NVIDIA, stylizowany nVIDIA[a]) – amerykańskie przedsiębiorstwo komputerowe będące jednym z największych na świecie producentów procesorów graficznych i innych układów scalonych przeznaczonych na rynek komputerowy. Nvidia jest także głównym dostawcą (pod względem udziału w rynku) kart graficznych dla komputerów osobistych ze swoją standardową serią GeForce. Firma produkuje także konsole (Nvidia Shield) oparte na Androidzie. Logo fir"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Oracle Corporation",
+      "website": "https://pl.wikipedia.org//wiki/Oracle_Corporation",
+      "slug": "oracle-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Oracle Corporation (wym. [ˈɒɹəkəl]) – amerykańskie przedsiębiorstwo zajmujące się tworzeniem oprogramowania do szeroko rozumianej obsługi przedsiębiorstw, a w szczególności systemów zarządzania bazą danych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Orvaldi",
+      "website": "https://pl.wikipedia.org//wiki/Orvaldi",
+      "slug": "orvaldi",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Orvaldi Power Protection (Orvaldi) – przedsiębiorstwo z siedzibą w Warszawie, jeden z czołowych producentów systemów UPS."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Packard Bell",
+      "website": "https://pl.wikipedia.org//wiki/Packard_Bell",
+      "slug": "packard-bell",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Packard Bell B.V. – holenderskie przedsiębiorstwo branży komputerowej zajmujące się produkcją komputerów stacjonarnych, laptopów, netbooków, tabletów oraz monitorów, będące częścią grupy Acer. Siedziba spółki mieści się w ’s-Hertogenbosch."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Palit",
+      "website": "https://pl.wikipedia.org//wiki/Palit",
+      "slug": "palit",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Palit Microsystems, (HK) Ltd – dostawca, producent i dystrybutor akceleratorów graficznych opartych na układach firmy NVIDIA dla komputerów PC, założony w roku 1988, z siedzibą główną w Hongkongu, swoje fabryki posiada w Chinach, ma także swój oddział na Tajwanie i europejski oddział na terenie Niemiec."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Panasonic Corporation",
+      "website": "https://pl.wikipedia.org//wiki/Panasonic_Corporation",
+      "slug": "panasonic-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Panasonic Corporation (jap. パナソニック株式会社 Panasonikku Kabushiki Gaisha; dawniej Matsushita Electric Industrial Co., Ltd.) – japoński koncern elektroniczny. Spółka publiczna notowana na giełdach tokijskiej i nowojorskiej (NYSE). 1 października 2008 koncern zrzeszający spółki Matsushita, Panasonic i National oficjalnie zmienił nazwę na Panasonic Corporation."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Patriot Memory",
+      "website": "https://pl.wikipedia.org//wiki/Patriot_Memory",
+      "slug": "patriot-memory",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Patriot Memory – amerykańskie przedsiębiorstwo działające na rynku pamięci komputerowych. Zajmuje się produkcją modułów pamięci operacyjnej, pamięci przenośnych oraz pokrewnych urządzeń i podzespołów komputerowych. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Patton Electronics",
+      "website": "https://pl.wikipedia.org//wiki/Patton_Electronics",
+      "slug": "patton-electronics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Patton Electronics Co. - amerykańskie przedsiębiorstwo informatyczne, jedno z większych w branży."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Plextor",
+      "website": "https://pl.wikipedia.org//wiki/Plextor",
+      "slug": "plextor",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Plextor – tajwańskie (do 2010 japońskie) przedsiębiorstwo założone w 1985 roku. Firma znana jest głównie z produkcji dysków SSD: SATA (2.5″, mSata, M.2), PCIe (HHHL, M.2) oraz przenośnych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "PNY Technologies",
+      "website": "https://pl.wikipedia.org//wiki/PNY_Technologies",
+      "slug": "pny-technologies",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "PNY Technologies, Inc. – amerykański producent sprzętu komputerowego z siedzibą w Parsippany."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Point of View",
+      "website": "https://pl.wikipedia.org//wiki/Point_of_View",
+      "slug": "point-of-view",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Point of View – producent kart graficznych opartych na chipsecie nVidii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "PowerColor",
+      "website": "https://pl.wikipedia.org//wiki/PowerColor",
+      "slug": "powercolor",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "PowerColor – tajwańska firma produkująca karty graficzne. Powstała w 1997 roku. Jej główna siedziba jest zlokalizowana w Nowym Tajpeji. Firma ma w ofercie karty graficzne ze zwykłym chłodzeniem lub lepszym PCS, PCS+, PSC++."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "RadioShack",
+      "website": "https://pl.wikipedia.org//wiki/RadioShack",
+      "slug": "radioshack",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "RadioShack (formalnie RadioShack Corporation, wcześniej Tandy Corporation) – to nazwa handlowa amerykańskiego sprzedawcy założonego w 1921 roku."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Renesas Electronics",
+      "website": "https://pl.wikipedia.org//wiki/Renesas_Electronics",
+      "slug": "renesas-electronics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Renesas Electronics (jap.  ルネサス エレクトロニクス  , Runesasu Erekutoronikusu) – japońska firma produkująca układy elektroniczne. Wcześniej znana jako Renesas Technology, przed połączeniem z NEC Electronics w kwietniu 2010. Ma siedzibę w Tokio, zatrudnia około 25 000 pracowników i dostarcza produkty na rynek około 20 krajów. Jest jednym z największych na świecie producentów układów elektronicznych do telefonów komórkowych. Wytwarza mikrokontrolery z trzech głównych gałęzi: ogólnego przeznaczeni"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Robotron",
+      "website": "https://pl.wikipedia.org//wiki/Robotron",
+      "slug": "robotron",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "VEB Kombinat Robotron – największe przedsiębiorstwo elektroniczne NRD z siedzibą w Dreźnie. Zatrudniało 30 000 pracowników."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Rockchip",
+      "website": "https://pl.wikipedia.org//wiki/Rockchip",
+      "slug": "rockchip",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Fuzhou Rockchip Electronics Co., Ltd. (chiń. 瑞芯微电子股份有限公司) – chińskie przedsiębiorstwo z branży półprzewodnikowej. Zajmuje się tworzeniem układów scalonych do zastosowania w nowoczesnych urządzeniach elektronicznych, smartfonach, tabletach, dekoderach telewizyjnych itp."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "S3 Graphics",
+      "website": "https://pl.wikipedia.org//wiki/S3_Graphics",
+      "slug": "s3-graphics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "S3 Graphics – firma produkująca układy graficzne, znana z produktów S3 Trio, S3 Virge, S3 Savage, S3 DeltaChrome/Unichrome oraz innowacyjności, twórca technologii kompresji tekstur S3TC. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Samsung Electronics",
+      "website": "https://pl.wikipedia.org//wiki/Samsung_Electronics",
+      "slug": "samsung-electronics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Samsung Electronics – jedno z największych na świecie przedsiębiorstw branży elektronicznej. Centrala znajduje się w Seulu w Korei Południowej, jest częścią grupy Samsung."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sapphire Technology",
+      "website": "https://pl.wikipedia.org//wiki/Sapphire_Technology",
+      "slug": "sapphire-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sapphire Technology (蓝宝科技) – chińska firma z Hongkongu produkująca karty graficzne oparte na procesorach graficznych firmy ATI Technologies. W ofercie firmy znaleźć można również płyty główne, tunery TV, ramki cyfrowe oraz komputery HTPC. Do końca roku 2007 sztandarowymi produktami firmy były karty graficzne z przedrostkiem TOXIC. Oznaczał on, że karta chłodzona jest cieczą i ma olbrzymi potencjał podkręcania. Od roku 2008 prym wiodą wersje ATOMIC. Te karty są fabrycznie podkręcone i p"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Scientific Atlanta",
+      "website": "https://pl.wikipedia.org//wiki/Scientific_Atlanta",
+      "slug": "scientific-atlanta",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Scientific Atlanta, A Cisco Company - założona w 1951 roku amerykańska firma informatyczna."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Seagate Technology",
+      "website": "https://pl.wikipedia.org//wiki/Seagate_Technology",
+      "slug": "seagate-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Seagate Technology – przedsiębiorstwo produkujące nośniki danych, głównie dyski twarde, założona w 1979 r. w Kalifornii przez Alana Shugarta i Finisa Connera. Spółka notowana na NYSE."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "SilentiumPC",
+      "website": "https://pl.wikipedia.org//wiki/SilentiumPC",
+      "slug": "silentiumpc",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "SilentiumPC – polska marka zasilaczy, chłodzeń i obudów komputerowych, produkowanych przez polską firmę Cooling.pl."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Silicon Integrated Systems",
+      "website": "https://pl.wikipedia.org//wiki/Silicon_Integrated_Systems",
+      "slug": "silicon-integrated-systems",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Silicon Integrated Systems (SiS, chiń. 矽統科技) – tajwańskie przedsiębiorstwo z branży półprzewodnikowej. Zajmuje się m.in. opracowywaniem chipsetów komputerowych i urządzeń sieciowych[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Silicon Power",
+      "website": "https://pl.wikipedia.org//wiki/Silicon_Power",
+      "slug": "silicon-power",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Silicon Power Computer & Communications Inc. (chiń. 廣穎電通股份有限公司) – tajwańskie przedsiębiorstwo zajmujące się produkcją pamięci komputerowych. Jego portfolio obejmuje napędy SSD, przenośne pamięci USB, dyski HDD i karty SD."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "SK hynix",
+      "website": "https://pl.wikipedia.org//wiki/SK_hynix",
+      "slug": "sk-hynix",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "SK hynix – południowokoreańskie przedsiębiorstwo zajmujące się produkcją układów elektronicznych. Wcześniej znana jako Hyundai Electronic Industrial Co., Ltd., przed oddzieleniem się od konglomeratu Hyundai Group w 2001 roku. W 2012 roku, kiedy SK Telecom stało się jej głównym akcjonariuszem, Hynix połączył się z SK Group. Produkuje głównie pamięci DRAM i flash. Jest jednym z największych producentów pamięci na świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sony",
+      "website": "https://pl.wikipedia.org//wiki/Sony",
+      "slug": "sony",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sony Corporation (jap. ソニー株式会社 Sonī Kabushiki-gaisha) – japoński producent elektroniki użytkowej i zarazem jeden z największych światowych producentów w tej branży, założony 7 maja 1946 roku przez Masaru Ibukę i Akio Moritę w Tokio jako Tokyo Communication Industry (jap. 東京通信工業 Tōkyō Tsūshin Kōgyō). Sony jest notowane na giełdach tokijskiej (TSE) i nowojorskiej (NYSE)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sony Interactive Entertainment",
+      "website": "https://pl.wikipedia.org//wiki/Sony_Interactive_Entertainment",
+      "slug": "sony-interactive-entertainment",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sony Interactive Entertainment, LLC (wcześniej jako Sony Computer Entertainment) – poboczna firma Sony założona 16 listopada 1993 roku w Tokio (Japonia). Sony Interactive Entertainment zajmuje się rozwojem, produkcją oraz sprzedażą sprzętu i oprogramowania dla serii konsoli PlayStation. Przedsiębiorstwo jest także wydawcą i producentem gier na swoje konsole."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sparkle Computer",
+      "website": "https://pl.wikipedia.org//wiki/Sparkle_Computer",
+      "slug": "sparkle-computer",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "SPARKLE Computer Co., Ltd. – tajwański producent i dostawca kart graficznych bazujących na chipsetach Nvidia. Firma założona została w 1982 roku. Jej siedziba znajduje się w Tajpej na Tajwanie. Obecnie produkty SPARKLE sprzedawane są w ponad 80 krajach."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "SteelSeries",
+      "website": "https://pl.wikipedia.org//wiki/SteelSeries",
+      "slug": "steelseries",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "SteelSeries jest duńskim producentem peryferii komputerowych, m.in. myszy, klawiatur, słuchawek i podkładek pod myszy. SteelSeries jest sponsorem e-sportu."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "STMicroelectronics",
+      "website": "https://pl.wikipedia.org//wiki/STMicroelectronics",
+      "slug": "stmicroelectronics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "STMicroelectronics – francusko-włoskie przedsiębiorstwo produkujące układy elektroniczne z siedzibą administracyjną w Genewie. Potocznie nazywana jest skrótem ST. Z rocznymi obrotami wynoszącymi ponad 10 mld $ jest największym producentem układów elektronicznych w Europie i siódmym (2010 rok) na świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Supermicro",
+      "website": "https://pl.wikipedia.org//wiki/Supermicro",
+      "slug": "supermicro",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Super Micro Computer, Inc. lub Supermicro® (NASDAQ: SMCI) – firma, która projektuje, rozwija, produkuje oraz sprzedaje serwery oparte na architekturze x86 dla procesorów Intel oraz AMD. Szeroka linia produktów obejmuje: systemy rackowe 1, 2, 3, 4U, tower, serwery kasetowe (blade), systemy GPU, wydajne stacje robocze (high-end), serwery typu storage, płyty główne, obudowy oraz komponenty serwerów oparte na markowych produktach w tym zasilacze, rozwiązania sieciowe oraz kontrolery dysków"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "System76",
+      "website": "https://pl.wikipedia.org//wiki/System76",
+      "slug": "system76",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "System76 – amerykański producent komputerów[3][4] z siedzibą w Denver w stanie Kolorado, specjalizujący się w sprzedaży notebooków, komputerów stacjonarnych i serwerów. Firma wspiera bezpłatne i otwarte oprogramowanie, oferując jako preinstalowany system operacyjny Ubuntu lub Pop! _OS – autorską dystrybucję Linuksa opartą na Ubuntu[5]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Telechips",
+      "website": "https://pl.wikipedia.org//wiki/Telechips",
+      "slug": "telechips",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Telechips Inc. – południowokoreańskie przedsiębiorstwo z branży półprzewodnikowej, założone w 1999 roku. Telechips tworzy procesory i układy scalone do zastosowania w branży motoryzacyjnej i dekoderach oraz produkty pokrewne."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Toshiba",
+      "website": "https://pl.wikipedia.org//wiki/Toshiba",
+      "slug": "toshiba",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Toshiba Corporation (jap. 株式会社東芝 Kabushiki-gaisha Tōshiba) – japońska firma wysokich technologii elektrycznych i elektronicznych, z siedzibą główną w Tokio. Spółka publiczna notowana na giełdzie tokijskiej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "TP-Link",
+      "website": "https://pl.wikipedia.org//wiki/TP-Link",
+      "slug": "tp-link",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": " TP-Link Technologies Co., Ltd. − chińskie przedsiębiorstwo zajmujące się produkcją sprzętu sieciowego (głównie przeznaczonego do sieci bezprzewodowych), w tym kart sieciowych, routerów oraz przełączników, a także telefonów komórkowych. Fabryka przedsiębiorstwa znajduje się w Chinach."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Transcend",
+      "website": "https://pl.wikipedia.org//wiki/Transcend",
+      "slug": "transcend",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Transcend Information, Inc. (chiń. 創見資訊股份有限公司) – tajwańskie przedsiębiorstwo elektroniczne, założone w 1988 roku. Zajmuje się produkcją różnego rodzaju urządzeń elektronicznych, m.in. pamięci komputerowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Trust (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Trust_(przedsi%C4%99biorstwo)",
+      "slug": "trust-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Trust International B.V. – prywatna holenderska firma z siedzibą w Dordrecht. Producent sprzętu komputerowego. Trust International B.V. działa na skalę międzynarodową w Europie, na Bliskim Wschodzie, w Afryce i Ameryce Łacińskiej. Obecnie posiada 19 oddziałów w Europie i Azji i zatrudnia około 250 osób."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Unisoc",
+      "website": "https://pl.wikipedia.org//wiki/Unisoc",
+      "slug": "unisoc",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Unisoc (chiń. 紫光展锐), pełna nazwa Beijing Ziguang Zhanrui Technology Co., Ltd. (chiń. 北京紫光展锐科技有限公司), dawniej Spreadtrum Communications Co., Ltd. (chiń. 展讯通信有限公司)  – chińskie przedsiębiorstwo z branży półprzewodnikowej, założone w 2001 roku. Jest producentem procesorów do urządzeń mobilnych, opartych na architekturze ARM[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "United Microelectronics Corporation",
+      "website": "https://pl.wikipedia.org//wiki/United_Microelectronics_Corporation",
+      "slug": "united-microelectronics-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "United Microelectronics Corporation (UMC; chiń. 聯華電子股份有限公司) – tajwańskie przedsiębiorstwo z branży półprzewodnikowej, założone w 1980 roku."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "VAIO",
+      "website": "https://pl.wikipedia.org//wiki/VAIO",
+      "slug": "vaio",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "VAIO Corporation (jap. VAIO株式会社 VAIO Kabushiki-gaisha) – japoński producent komputerów osobistych, założony w 1996 roku jako marka należąca do firmy Sony, zaś 1 lipca 2014 jako niezależna spółka."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "VIA Technologies",
+      "website": "https://pl.wikipedia.org//wiki/VIA_Technologies",
+      "slug": "via-technologies",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "VIA Technologies – tajwański producent układów scalonych, głównie płyt głównych, chipsetów, procesorów i pamięci komputerowych, należy do grupy Formosa Plastics."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Wacom",
+      "website": "https://pl.wikipedia.org//wiki/Wacom",
+      "slug": "wacom",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Wacom Co., Ltd. (jap. 株式会社ワコム Kabushiki-gaisha Wakomu) – japońska spółka z oddziałami na całym świecie zajmująca się produkowaniem tabletów graficznych, tabletów do podpisu elektronicznego, smartpadów, piórek do tabletów multimedialnych i smartfonów z siedzibą główną w mieście Kazo, w prefekturze Saitama w Japonii. Europejski oddział znajduje się w Niemczech w Düsseldorfie. Nazwa firmy jest kontaminacją japońskich słów: Wa - harmonia i Komu - komputer. Firmę tę można zaliczyć do jedneg"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Western Digital",
+      "website": "https://pl.wikipedia.org//wiki/Western_Digital",
+      "slug": "western-digital",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Western Digital Corporation (WD) – jeden z największych na świecie producentów dysków twardych. Firma posiada długą historię w zakresie przemysłu elektronicznego jako producent układów scalonych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Wilk Elektronik",
+      "website": "https://pl.wikipedia.org//wiki/Wilk_Elektronik",
+      "slug": "wilk-elektronik",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Wilk Elektronik – producent pamięci komputerowych marki Goodram mający siedzibę w Łaziskach Górnych. Po bankructwie Qimondy pozostał jedynym producentem modułów RAM w Europie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "XFX",
+      "website": "https://pl.wikipedia.org//wiki/XFX",
+      "slug": "xfx",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "XFX – oddział firmy PINE Technology. PINE utworzyła XFX, aby zwrócić uwagę na rynek kart graficznych high-end, produkując najszybsze karty graficzne na świecie[styl do poprawy]. XFX wykorzystuje zasoby PINE do tworzenia komponentów wyposażanych w akceleratory graficzne opartych na układach firmy NVIDIA i ATI. XFX jest obecnie światowym liderem w globalnej ilości sprzedaży kart graficznych NVIDIA / ATI. Podobnie do firm BFG i EVGA, XFX oferuje karty graficzne z układami fabrycznie podkr"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Zebra Technologies",
+      "website": "https://pl.wikipedia.org//wiki/Zebra_Technologies",
+      "slug": "zebra-technologies",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Zebra Technologies – producent specjalistycznych urządzeń drukujących kody paskowe, etykiety i paragony, a także urządzeń do wykonywania nadruków na kartach plastikowych. Jako pierwsza na świecie wprowadziła urządzenia do drukowania i programowania znaczników radiowych RFID. Zebra jest także producentem drukującego sprzętu mobilnego, specjalistycznego oprogramowania oraz materiałów eksploatacyjnych. Firma ma na świecie 29 biura, a jej produkty są dostępne w ponad 100 krajach na wszystk"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Zhaoxin",
+      "website": "https://pl.wikipedia.org//wiki/Zhaoxin",
+      "slug": "zhaoxin",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Zhaoxin (chiń. 兆芯), pełna nazwa Shanghai Zhaoxin Semiconductor Co., Ltd. (chiń. 珠海全志科技股份有限公司) – chińskie przedsiębiorstwo z branży półprzewodnikowej, założone w 2013 roku jako joint venture między VIA Technologies a władzami miejskimi Szanghaju. Zajmuje się opracowywaniem procesorów kompatybilnych z architekturą x86, przy czym swoją ofertę kieruje przede wszystkim na rynek chiński."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Zotac",
+      "website": "https://pl.wikipedia.org//wiki/Zotac",
+      "slug": "zotac",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Zotac – chińska firma komputerowa produkująca elektronikę użytkową w formie płyt głównych i kart graficznych bazujących na chipsetach Nvidia. Jej siedziba znajduje się w Hongkongu, a ponadto w całych Chinach rozmieszczone jest około 40 fabryk zajmujących się montażem powierzchniowym podzespołów."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "AEG (koncern)",
+      "website": "https://pl.wikipedia.org//wiki/AEG_(koncern)",
+      "slug": "aeg-koncern",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "AEG (niem. Allgemeine Elektricitäts-Gesellschaft) – niemiecki koncern elektrotechniczny z siedzibą w Berlinie, założony przez przemysłowca niemieckiego Emila Rathenau, na bazie istniejącej od 1883 r. spółki akcyjnej Deutsche Edison-Gesellschaft für angewandte Elektrizität, która zajmowała się produkcją urządzeń dla przemysłu elektrotechnicznego na bazie kilku patentów Thomasa Edisona."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Alcatel-Lucent",
+      "website": "https://pl.wikipedia.org//wiki/Alcatel-Lucent",
+      "slug": "alcatel-lucent",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Alcatel-Lucent – spółka globalna, wcześniej z siedzibą główną w Paryżu, a od stycznia 2016 roku jest częścią Nokii. Dostawca sprzętu, oprogramowania i usług telekomunikacyjnych.Powstała 1 grudnia 2006 roku z połączenia się firm Alcatel oraz Lucent Technologies."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "BenQ-Siemens",
+      "website": "https://pl.wikipedia.org//wiki/BenQ-Siemens",
+      "slug": "benq-siemens",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "BenQ Mobile GmbH & Co. OHG – byłe niemieckie przedsiębiorstwo należące do tajwańskiej korporacji BenQ."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "BlackBerry (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/BlackBerry_(przedsi%C4%99biorstwo)",
+      "slug": "blackberry-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "BlackBerry Limited – kanadyjskie przedsiębiorstwo telekomunikacyjne, producent linii smartfonów BlackBerry oraz mobilnego systemu operacyjnego BlackBerry OS. Przedsiębiorstwo zostało założone w 1984 r. w Waterloo, w Kanadzie; do 2013 r. funkcjonowało pod nazwą Research In Motion Limited."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "HMD Global",
+      "website": "https://pl.wikipedia.org//wiki/HMD_Global",
+      "slug": "hmd-global",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "HMD Global Oy, HMD – fińska firma powiązana z firmą Nokia. Działająca od grudnia 2016 r. firma rozwija i sprzedaje smartfony oraz telefony z funkcjami pod marką „Nokia”. Firma ma wyłączne prawa do marki telefonów komórkowych w ramach umowy licencyjnej. HMD jest w ścisłej współpracy z Google i korzysta z oprogramowania Android na swoich smartfonach. Marka HMD jest używana wyłącznie do celów korporacyjnych i nie pojawia się w reklamach, podczas gdy nazwa Nokia Mobile jest używana w media"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Jolla",
+      "website": "https://pl.wikipedia.org//wiki/Jolla",
+      "slug": "jolla",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Jolla Oy — fińskie przedsiębiorstwo założone przez byłych pracowników Nokii rozwijające system operacyjny Sailfish OS, oparty na systemie MeeGo telefonu Nokia N9. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Krüger&Matz",
+      "website": "https://pl.wikipedia.org//wiki/Kr%C3%BCger%26Matz",
+      "slug": "krugermatz",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Krüger&Matz – polska marka należąca do firmy Lechpol Electronics, specjalizująca się w imporcie urządzeń mobilnych oraz sprzętu audio."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Motorola Mobility",
+      "website": "https://pl.wikipedia.org//wiki/Motorola_Mobility",
+      "slug": "motorola-mobility",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Motorola Mobility – międzynarodowe przedsiębiorstwo telekomunikacyjne powstałe w wyniku podziału Motoroli. 15 sierpnia 2011 Motorola Mobility została kupiona przez Google za 12,5 mld dolarów. Na 2015 rok planowana była sprzedaż Motoroli Mobility chińskiej firmie Lenovo, jednak transakcja została zawarta wcześniej[3].8 stycznia 2016 marka Motorola Mobility zaczęła stopniowo być zastępowana nazwą „Lenovo Moto”. W marcu 2017 zdecydowano się na przywrócenie nazwy Motorola[4]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "MyPhone",
+      "website": "https://pl.wikipedia.org//wiki/MyPhone",
+      "slug": "myphone",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Chińska Republika Ludowa "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Nokia",
+      "website": "https://pl.wikipedia.org//wiki/Nokia",
+      "slug": "nokia",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Nokia – fińskie przedsiębiorstwo zajmujące się technologiami telekomunikacyjnymi. Znane z produkcji telefonów komórkowych. W kwietniu 2014 dział urządzeń i usług został przejęty przez Microsoft, a w maju 2016 dział telefonów podstawowych (ang. featurephone) został odkupiony przez FIH Mobile (Foxconn) oraz HMD Global, który odkupił również 10-letnią licencję na prawa do korzystania z marki Nokia[4][5][6]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Philips",
+      "website": "https://pl.wikipedia.org//wiki/Philips",
+      "slug": "philips",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Koninklijke Philips N.V., szerzej znany jako Philips – holenderski producent elektroniki użytkowej. W obrębie koncernu działają spółki: Philips Consumer Lifestyle, Philips Lighting, Philips Healthcare. Philips jest posiadaczem ponad 64 tys. patentów - tylko w 2013 przedsiębiorstwo złożyło do Europejskiego Urzędu Patentowego 1,8 tys. wniosków, będąc trzecim pod względem wielkości wnioskodawcą."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sagem",
+      "website": "https://pl.wikipedia.org//wiki/Sagem",
+      "slug": "sagem",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "SAGEM (Société d’Applications Générales de l’Electricité et de la Mécanique – pol. Towarzystwo Ogólnych Zastosowań Elektryczności i Mechaniki) – francuskie przedsiębiorstwo, zajmujące się produkcją telefonów komórkowych, projektorów, kamer cyfrowych i innych urządzeń elektronicznych. Część przedsiębiorstwa zajmuje się produkcją elektronicznych urządzeń dla wojska. Obecnie firma Sagem znajduje się w grupie Safran."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Samsung",
+      "website": "https://pl.wikipedia.org//wiki/Samsung",
+      "slug": "samsung",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Samsung Group (zapis stylizowany: SΛMSUNG; kor. 삼성 Samseong – „trzy gwiazdy”) – jedna z największych południowokoreańskich grup biznesowych (czeboli) zrzeszających przedsiębiorstwa produkcyjne i usługowe działające w wielu branżach, oraz instytucje finansowe. Założona w 1938 przez Lee Byung-chula jako firma eksportowa, wkrótce rozszerzyła swą działalność także na inne dziedziny. W ciągu trzech następnych dekad grupa rozszerzyła swoją działalność w różnych dziedzinach, w tym o przetwórs"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sendo",
+      "website": "https://pl.wikipedia.org//wiki/Sendo",
+      "slug": "sendo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sendo – brytyjskie przedsiębiorstwo założone w 1999 roku. Dostarcza swój sprzęt dwudziestu siedmiu operatorom telefonii komórkowej w ponad 30 krajach. Firma została przejęta przez Motorolę. Amerykańska firma kupiła zespół badawczo-rozwojowy R&D pracujących w Wielkiej Brytanii i Singapurze z wyposażeniem projektowym i testowym oraz portfolio własności intelektualnej Sendo. Nie ujawniono wartości dokonanej sprzedaży."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Siemens",
+      "website": "https://pl.wikipedia.org//wiki/Siemens",
+      "slug": "siemens",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Siemens ˈziːməns, oficjalnie Siemens AG, zapis stylizowany SIEMENS – międzynarodowy koncern z branży energetycznej, elektrotechnicznej i telekomunikacyjnej. Główne siedziby przedsiębiorstwa znajdują się w Monachium i w Berlinie. Siemens AG notowana jest na Frankfurckiej Giełdzie Papierów Wartościowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Thuraya",
+      "website": "https://pl.wikipedia.org//wiki/Thuraya",
+      "slug": "thuraya",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Telefonia Thuraya (po arabsku: الثريا, co oznacza „plejady”) – regionalny operator telefonii satelitarnej. Zasięg sieci obejmuje większość Europy, Bliski Wschód, Afrykę Północną, Środkową i Wschodnią, Azję i Australię."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Vordon",
+      "website": "https://pl.wikipedia.org//wiki/Vordon",
+      "slug": "vordon",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Vordon –  istniejące od 2010 polskie przedsiębiorstwo z siedzibą w Warszawie, zajmujące się produkcją i dostarczaniem sprzętu RTV, AGD oraz IT. Pomysłodawcą i założycielem marki jest Krzysztof Kusz."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Amoi",
+      "website": "https://pl.wikipedia.org//wiki/Amoi",
+      "slug": "amoi",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Amoi (夏新) – chińskie przedsiębiorstwo elektroniczne założone w roku 1997. Zajmuje się głównie produkcją telefonów komórkowych, telewizorów LCD, odtwarzaczy DVD, odtwarzaczy MP3 i laptopów. Produkty marki Amoi sprzedawane są tak w Chinach, jak i na całym świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "CECT",
+      "website": "https://pl.wikipedia.org//wiki/CECT",
+      "slug": "cect",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "CECT – marka (i jednocześnie nazwa chińskiej spółki - producenta) telefonów będących klonami popularnych telefonów między innymi iPhone produkcji Apple. Na rynku pojawiło się wiele telefonów marki CECT, większość z nich nosi nazwę HiPhone i Sciphone."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Coolpad",
+      "website": "https://pl.wikipedia.org//wiki/Coolpad",
+      "slug": "coolpad",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Coolpad Group Limited (chiń. 酷派集团有限公司) – chiński producent telefonów komórkowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Haier",
+      "website": "https://pl.wikipedia.org//wiki/Haier",
+      "slug": "haier",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Haier Group (chiń. upr. 海尔; chiń. trad. 海爾; pinyin Hǎi’ěr) – międzynarodowe przedsiębiorstwo produkujące elektronikę użytkową i AGD, z siedzibą w Qingdao, w prowincji Szantung w Chinach. Haier projektuje, rozwija, produkuje i sprzedaje swoje produkty, w tym klimatyzatory, telefony komórkowe, komputery, kuchenki mikrofalowe, pralki, lodówki i telewizory."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Huawei",
+      "website": "https://pl.wikipedia.org//wiki/Huawei",
+      "slug": "huawei",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Huawei Technologies Co., Ltd. (wymowa i, chiń. 华为技术公司) – chiński producent elektroniki użytkowej oraz sprzętu i rozwiązań informatycznych założony w 1987 roku, z siedzibą w Shenzhen. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Infinix Mobile",
+      "website": "https://pl.wikipedia.org//wiki/Infinix_Mobile",
+      "slug": "infinix-mobile",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Infinix Mobile – chiński producent telefonów komórkowych z siedzibą w Hongkongu. Stanowi spółkę zależną Transsion."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "LeEco",
+      "website": "https://pl.wikipedia.org//wiki/LeEco",
+      "slug": "leeco",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "LeEco (chiń. 乐视集团) – chiński konglomerat z siedzibą w Pekinie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Meizu",
+      "website": "https://pl.wikipedia.org//wiki/Meizu",
+      "slug": "meizu",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Meizu (chiń. 魅族科技), pełna nazwa Meizu Technology Co., Ltd. (chiń. 魅族科技有限公司) – chińskie przedsiębiorstwo elektroniczne. Jest jednym z największych chińskich producentów smartfonów."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "OnePlus",
+      "website": "https://pl.wikipedia.org//wiki/OnePlus",
+      "slug": "oneplus",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "OnePlus (chiń. 一加科技; pinyin Yījiā Kējì) – chińskie przedsiębiorstwo zajmujące się produkcją smartfonów. Przedsiębiorstwo zostało założone 16 grudnia 2013 r., a swoją siedzibę ma w Shenzhen, w prowincji Guangdong w Chinach. Poza Chinami działa w 33 krajach (stan na 14 czerwca 2016 r.)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Oppo",
+      "website": "https://pl.wikipedia.org//wiki/Oppo",
+      "slug": "oppo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Oppo – przedsiębiorstwo działające w branży elektroniki użytkowej i komunikacji mobilnej z siedzibą w Dongguan (prowincja Guangdong), z siedzibami regionalnymi w Tokio, Kuala Lumpur, Gurgaon, Warszawie, Dusseldorfie i Meksyku."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Realme",
+      "website": "https://pl.wikipedia.org//wiki/Realme",
+      "slug": "realme",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Realme (zapis stylizowany: realme; chiń. 真我) – chiński producent smartfonów z siedzibą w Shenzhen w prowincji Guangdong. Przedsiębiorstwo zostało założonae przez Sky Li, byłego wiceprezesa Oppo. Firma oferuje też słuchawki, słuchawki bezprzewodowe, T-shirty, torby, opaski fitness, smartwatche itp."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Tecno Mobile",
+      "website": "https://pl.wikipedia.org//wiki/Tecno_Mobile",
+      "slug": "tecno-mobile",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Tecno Mobile – chiński producent telefonów komórkowych z siedzibą w Shenzhen. Stanowi spółkę zależną Transsion[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Transsion",
+      "website": "https://pl.wikipedia.org//wiki/Transsion",
+      "slug": "transsion",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Transsion (chiń. 传音控股), pełna nazwa Shenzhen Transsion Holdings Co Ltd (chiń. 深圳传音控股有限公司) – chińskie przedsiębiorstwo zajmujące się produkcją telefonów komórkowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Vivo (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Vivo_(przedsi%C4%99biorstwo)",
+      "slug": "vivo-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Vivo (chiń. 维沃移动通信有限公司) – chiński koncern, specjalizujący się w produkcji urządzeń i rozwiązań telekomunikacyjnych, a także informatycznych, założony w 2009 roku. Siedziba przedsiębiorstwa mieści się w Dongguan w prowincji Guangdong."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Xiaomi",
+      "website": "https://pl.wikipedia.org//wiki/Xiaomi",
+      "slug": "xiaomi",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Xiaomi (chiń. 小米科技; pinyin Xiǎomĭ Kējì; dosł. „technologia prosa”; wym. [ɕjǎu.mì] ( odsłuchaj); tu: jako wieloznaczeniowe skojarzenie) – chińskie przedsiębiorstwo z siedzibą w dzielnicy Haidian w Pekinie, specjalizujące się w projektowaniu, tworzeniu i sprzedaży smartfonów oraz aplikacji i elektroniki użytkowej, założona 6 kwietnia 2010 roku. Pierwszym produktem firmy był smartfon Mi1. Oprócz telefonów przedsiębiorstwo produkuje również inteligentne opaski, tablety, kamerki sportowe, t"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "ZTE",
+      "website": "https://pl.wikipedia.org//wiki/ZTE",
+      "slug": "zte",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "ZTE Corporation (Zhong Xing Telecommunication Equipments Company Limited, gdzie Zhong Xing znaczy \"Pomyślność Chin\") – jedna z największych chińskich firm telekomunikacyjnych oferujących nowoczesne rozwiązania telekomunikacyjne i dostęp do internetu (GSM, 3G, WCDMA, CDMA, SCDMA, WiMAX, SDH, ADSL, PSTN, UMTS, LTE)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Advan",
+      "website": "https://pl.wikipedia.org//wiki/Advan",
+      "slug": "advan",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Advan (PT Bangga Teknologi Indonesia) – indonezyjskie przedsiębiorstwo elektroniczne, założone w 1998 roku w Dżakarcie. Zajmuje się produkcją telefonów komórkowych i tabletów[3], a także laptopów, zestawów audio, telewizorów i pamięci przenośnych. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Aigo",
+      "website": "https://pl.wikipedia.org//wiki/Aigo",
+      "slug": "aigo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Aigo (chiń. upr. 爱国者; chiń. trad. 愛國者; pinyin Àiguózhě) – chińska marka odtwarzaczy muzyki w formacie MP3, należąca do przedsiębiorstwa Beijing Huaqi Information Digital Technology Co., Ltd. Firma ta sponsoruje ekipę McLaren-Mercedes w Formule 1.Oryginalna, chińska nazwa tej marki to aiguozhe, czyli „patriota”."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Ainol",
+      "website": "https://pl.wikipedia.org//wiki/Ainol",
+      "slug": "ainol",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Ainol, pełna nazwa Shenzhen Ainol Electronics Co., Ltd. (chiń. 深圳艾诺电子有限公司) – chińskie przedsiębiorstwo elektroniczne, specjalizujące się w produkcji tabletów i przenośnych odtwarzaczy multimedialnych. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Aiwa",
+      "website": "https://pl.wikipedia.org//wiki/Aiwa",
+      "slug": "aiwa",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Aiwa (アイワ) – marka elektroniki użytkowej będąca własnością i używana przez różne firmy w różnych okresach i regionach świata. Licencję na nią m.in. w USA posiada spółka Aiwa Corporation z siedzibą w Chicago (od 2015 r.). Z kolei Towada Audio z Tokio – m.in. na Japonię (od 2017 r.). W Meksyku i innych krajach Ameryki Łacińskiej, prawa własności należą do Audio Mobile Americas S.A."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Akai",
+      "website": "https://pl.wikipedia.org//wiki/Akai",
+      "slug": "akai",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Akai (z jap. „czerwony”) – były japoński, teraz singapurski producent sprzętu elektroniki użytkowej, należący do Grande Holdings."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Akari (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Akari_(przedsi%C4%99biorstwo)",
+      "slug": "akari-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Akari (PT Akari Indonesia) – indonezyjskie przedsiębiorstwo elektroniczne, założone w 1992 roku. Zajmuje się produkcją telewizorów i jest jedną z dwóch głównych indonezyjskich marek telewizorów, które wciąż funkcjonują na lokalnym rynku, obok marki Polytron."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Allen&Heath",
+      "website": "https://pl.wikipedia.org//wiki/Allen%26Heath",
+      "slug": "allenheath",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Allen & Heath (znany jako AH lub A & H) - firma produkująca konsolety mikserskie przeznaczone do zastosowań estradowych, konferencyjnych, teatralnych oraz do montażu w kościołach, czy też w stacjach radiowych, filmowych, studiach nagraniowych założona w 1969 roku w Penryn w Anglii. Oprócz produkcji profesjonalnych konsolet mikserskich firma specjalizuje się także w produkcji konsolet dla DJ'ów Xone."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Alphard Sound Technology",
+      "website": "https://pl.wikipedia.org//wiki/Alphard_Sound_Technology",
+      "slug": "alphard-sound-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Alphard Sound Technology ETP to polska firma produkująca sprzęt muzyczny od 1997 roku z siedzibą w Grójcu pod Warszawą. Posiada ona certyfikat ISO 9001:2000. Firma posiada prawa ochronne, patentowe, na liczne rozwiązania. Jest także wydawcą magazynu muzycznego HardRocker i jako jedyne pismo w Polsce sprzedało licencje na wydawania pisma w Czechach i na Słowacji. Firma posiada przedstawicielstwa na Ukrainie, Białorusi, Rosji i w Szwecji."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Alpine Electronics",
+      "website": "https://pl.wikipedia.org//wiki/Alpine_Electronics",
+      "slug": "alpine-electronics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Alpine Electronics, Inc. (アルパイン株式会社, Arupain Kabushiki-gaisha) – japoński producent samochodowego sprzętu car audio i wideo."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Amstrad",
+      "website": "https://pl.wikipedia.org//wiki/Amstrad",
+      "slug": "amstrad",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Amstrad – brytyjskie przedsiębiorstwo elektroniczne. Siedziba przedsiębiorstwa, założonego w 1968 roku przez Alana Sugara, mieści się w Brentwood w hrabstwie Essex. Nazwa Amstrad jest skrótem od Alan Michael Sugar Trading."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Anker (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Anker_(przedsi%C4%99biorstwo)",
+      "slug": "anker-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Anker (chiń. 安克), pełna nazwa Anker Innovations Technology Co Ltd (chiń. 安克创新科技股份有限公司) – chińskie przedsiębiorstwo informatyczne oraz marka elektroniczna. Oferta przedsiębiorstwa obejmuje m.in. ładowarki bezprzewodowe, sprzęt audio (głośniki i słuchawki) oraz projektory. Anker Innovations Technology zajmuje się również opracowywaniem oprogramowania."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "AOC International",
+      "website": "https://pl.wikipedia.org//wiki/AOC_International",
+      "slug": "aoc-international",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "AOC International – tajwańskie przedsiębiorstwo elektroniczne założone w 1967 roku jako Admiral Overseas Corporation. Obecnie jest częścią grupy TPV Technology Limited, największego na świecie producenta monitorów komputerowych. AOC w swojej ofercie ma telewizory, monitory oraz tablety, które są sprzedawane na całym świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Archos",
+      "website": "https://pl.wikipedia.org//wiki/Archos",
+      "slug": "archos",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Archos ([ɑː(ɹ)koʊs]) – francuska firma produkująca elektronikę, głównie PMP (ang. portable media player), dyski twarde i PDA. Firma została założona w 1988 roku przez Henriego Crohasa i jest jedną z wiodących marek na rynku elektroniki."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Audio Technica",
+      "website": "https://pl.wikipedia.org//wiki/Audio_Technica",
+      "slug": "audio-technica",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Audio-Technica Corporation to japoński producent sprzętu dźwiękowego założony w Tokio 1962 roku przez Matsushita Hideo. Z mikrofonów tej firmy korzysta wielu znanych artystów, wśród nich: Justin Timberlake, Linkin Park, Metallica, Kiss, Skid Row, Puddle of Mudd, Killswitch Engage i inni oraz wytwórcy programów – m.in. Big Brother. Mikrofonów tej firmy używano także podczas zimowych igrzysk olimpijskich w 1996, 2000, 2002 i 2004 roku. W 2005 roku rozpoczęto produkcję mikrofonów odpornyc"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Bang & Olufsen",
+      "website": "https://pl.wikipedia.org//wiki/Bang_%26_Olufsen",
+      "slug": "bang-olufsen",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Bang & Olufsen a/s – duńskie przedsiębiorstwo zajmujące się produkcją sprzętu audiowizualnego – m.in. radioodbiorników, głośników, telewizorów, telefonów i systemów car audio. Siedziba przedsiębiorstwa znajduje się w mieście Struer."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Behringer",
+      "website": "https://pl.wikipedia.org//wiki/Behringer",
+      "slug": "behringer",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Behringer - niemiecka firma produkująca sprzęt muzyczny, działająca od 1989 roku. W 2007 roku wyróżniona jako jeden z 14 największych producentów na świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Beyerdynamic",
+      "website": "https://pl.wikipedia.org//wiki/Beyerdynamic",
+      "slug": "beyerdynamic",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Firma Beyerdynamic GmbH & Co. KG została założona w 1924 roku w Berlinie przez Eugena Beyera. Jest jedną z najdłużej działających firm branży audio. Początkowo Beyerdynamic zajmował się budową wzmacniaczy i głośników przeznaczonych do kin. Trwało to do roku 1937, kiedy to powstał pierwszy model słuchawek dynamicznych DT 48. Obecnie firma produkuje mikrofony, słuchawki, wzmacniacze, bezprzewodowe systemy audio oraz systemy konferencyjne."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Bose Corporation",
+      "website": "https://pl.wikipedia.org//wiki/Bose_Corporation",
+      "slug": "bose-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Bose Corporation – amerykańskie przedsiębiorstwo z siedzibą we Framingham, w stanie Massachusetts, założone przez Amara Bose'a specjalizujące się w produkcji profesjonalnego sprzętu audio. Bose Corporation znane jest z tego, iż 100% dochodów przeznaczane jest na dalszy rozwój oraz inwestycje. Produkty Bose'a można znaleźć na stadionach olimpijskich, w teatrach na Broadwayu, Kaplicy Sykstyńskiej, a nawet w wahadłowcu kosmicznym. Bose posiada 5 zakładów produkcyjnych oraz 151 punktów spr"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Candy (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Candy_(przedsi%C4%99biorstwo)",
+      "slug": "candy-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Candy S.p.A. (zapis stylizowany: CANDY) – włoska grupa przemysłowa produkująca sprzęt AGD, głównie pod marką Candy. W 1995 roku Candy przejęła w Europie markę Hoover."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "D-Wave",
+      "website": "https://pl.wikipedia.org//wiki/D-Wave",
+      "slug": "d-wave",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "D-Wave (wcześniej Digital Wave) - marka odtwarzaczy MP3/MP4. Odtwarzacze tej marki maja zastosowana pamięć Flash firmy Samsung o pojemności od 128 MB do 8 GB (aktualnie w sprzedaży od 1 GB – 8 GB).Marka zadebiutowała na rynku odtwarzaczy 1 maja 2005, a jej właścicielem jest firma Empire Audio Sp. z o.o.."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Dahua Technology",
+      "website": "https://pl.wikipedia.org//wiki/Dahua_Technology",
+      "slug": "dahua-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Dahua Technology (chiń. 大华科技), pełna nazwa Zhejiang Dahua Technology Co., Ltd. (chiń. 浙江大华技术股份有限公司) – chińskie przedsiębiorstwo elektroniczne. Zajmuje się projektowaniem i produkcją urządzeń z dziedziny bezpieczeństwa i monitoringu[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Danish Audiophile Loudspeaker Industries",
+      "website": "https://pl.wikipedia.org//wiki/Danish_Audiophile_Loudspeaker_Industries",
+      "slug": "danish-audiophile-loudspeaker-industries",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "DALI, Danish Audiophile Loudspeaker Industries A/S – duńska firma działająca w branży audio, wyrosła z wiodącej w Skandynawii sieci sprzedaży detalicznej w roku 1983. Głośniki DALI tradycyjnie sprzedawane są głównie na terenie Skandynawii, ale firma dąży do znalezienia się wśród największych producentów głośników na świecie. Obecnie DALI jest reprezentowane w ponad 70 krajach."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Denon",
+      "website": "https://pl.wikipedia.org//wiki/Denon",
+      "slug": "denon",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Denon – japońska firma działająca w branży audio i audio wideo. Nazwa Denon pochodzi od połączenia słów Denki Onkyo. Firma została utworzona w 1939."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Dyson (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Dyson_(przedsi%C4%99biorstwo)",
+      "slug": "dyson-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Dyson Ltd. – brytyjski producent odkurzaczy, suszarek i innych urządzeń z grona sprzętu AGD założony w lipcu 1991 roku przez Jamesa Dysona w Wiltshire."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Electro Voice",
+      "website": "https://pl.wikipedia.org//wiki/Electro_Voice",
+      "slug": "electro-voice",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Electro Voice (popularnie zwana EV) – producent sprzętu muzycznego oraz profesjonalnych systemów nagłośnieniowych przystosowanych do zastosowań w małych i dużych salach koncertowych, radiowych, domach, kościołach, przeznaczona do sprzedaży detalicznej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Elektronika (producent)",
+      "website": "https://pl.wikipedia.org//wiki/Elektronika_(producent)",
+      "slug": "elektronika-producent",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Elektronika Legionowo - firma produkująca sprzęt muzyczny dla systemów nagłośnieniowych i rozgłoszeniowych, założona w 1955 roku jako Spółdzielnia Pracy \"Elektronika\". Realizuje ona nagłośnienia dla kościołów i obiektów o trudnych warunkach akustycznych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "GoPro",
+      "website": "https://pl.wikipedia.org//wiki/GoPro",
+      "slug": "gopro",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "GoPro, Inc. (wcześniej: Woodman Labs, Inc[3]) – amerykańskie przedsiębiorstwo elektroniczne specjalizujące się w produkcji kamer sportowych, często używanych w rejestrowaniu sportów ekstremalnych[4]. GoPro dominuje na rynku kamer sportowych (stan na 2015 r.)[a][5]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Grundig",
+      "website": "https://pl.wikipedia.org//wiki/Grundig",
+      "slug": "grundig",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Grundig AG – niemiecki producent elektroniki użytkowej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Hama (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Hama_(przedsi%C4%99biorstwo)",
+      "slug": "hama-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Hama (wł. Hama GmbH & Co. KG) – niemiecka firma produkująca akcesoria fotograficzne i elektroniczne, z siedzibą w Monheim w Bawarii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Hikvision",
+      "website": "https://pl.wikipedia.org//wiki/Hikvision",
+      "slug": "hikvision",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Hikvision (chiń. 海康威视), pełna nazwa Hangzhou Hikvision Digital Technology Co., Ltd. (chiń. 杭州海康威视数字技术股份有限公司) – chińskie przedsiębiorstwo elektroniczne. Jego portfolio obejmuje kamery, programy do rozpoznawania twarzy i sprzęt do wideomonitoringu[3][4]. Przedsiębiorstwo zostało założone w 2001 roku, a swoją siedzibę ma w Hangzhou (prowincja Zhejiang)[4]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Humax",
+      "website": "https://pl.wikipedia.org//wiki/Humax",
+      "slug": "humax",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Humax - firma branży elektronicznej, założona w 1989 roku w Korei Południowej. Zajmuje się wytwarzaniem Set-top boxów, Personal Video Recorderów, telewizorów itp. Jest notowana na koreańskiej giełdzie KOSDAQ."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "JBL",
+      "website": "https://pl.wikipedia.org//wiki/JBL",
+      "slug": "jbl",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "JBL – amerykańskie przedsiębiorstwo zajmujące się produkcją sprzętu audio. Zostało założone w 1946 roku i początkowo produkowało głośniki oraz związaną z nimi elektronikę. Współcześnie specjalizuje się głównie w dziedzinie profesjonalnego sprzętu nagłośnieniowego, jest też producentem sprzętu audio do użytku domowego."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "JTS Microphones",
+      "website": "https://pl.wikipedia.org//wiki/JTS_Microphones",
+      "slug": "jts-microphones",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "JTS Microphones – tajwańskie przedsiębiorstwo elektroniczne założone w 1982 roku. Wytwarza mikrofony, słuchawki, systemy bezprzewodowe. W swojej ofercie ma produkty do zastosowań profesjonalnych, biznesowych oraz konsumenckich."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "JVC",
+      "website": "https://pl.wikipedia.org//wiki/JVC",
+      "slug": "jvc",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "JVC (Victor Company of Japan, Limited) – przedsiębiorstwo założone zostało w 1927 roku w Japonii, początkowo jako producent płyt i gramofonów. W ciągu swojej historii, technologia JVC wielokrotnie wytyczała i wciąż wytycza nowe kierunki w rozwoju światowej elektroniki. Istotnym przełomem był rok 1976, kiedy firma JVC wprowadziła na rynek domowy magnetowid, nagrywający na taśmie 1/2-cala VHS (Video Home System)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Klein + Hummel",
+      "website": "https://pl.wikipedia.org//wiki/Klein_%2B_Hummel",
+      "slug": "klein-hummel",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Klein + Hummel – byłe niemieckie przedsiębiorstwo produkujące sprzęt nagłaśniający. Założone zostało krótko po II wojnie światowej przez Waltera Hummela, Horsta Kleina i Heinricha Brumma w Wedemark w Niemczech."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Laboga",
+      "website": "https://pl.wikipedia.org//wiki/Laboga",
+      "slug": "laboga",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Laboga – polskie przedsiębiorstwo rodzinne wytwarzające wzmacniacze gitarowe, kable instrumentalne oraz kolumny głośnikowe."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Lautsprecher Teufel",
+      "website": "https://pl.wikipedia.org//wiki/Lautsprecher_Teufel",
+      "slug": "lautsprecher-teufel",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Teufel Audio – niemiecki producent produktów audio, takich jak głośniki, słuchawki, systemy hi-fi i zestawy kina domowego. Firma została założona w 1979 roku w Berlinie i zatrudnia ponad 330 pracowników (stan na kwiecień 2021). Produkty firmy Teufel można nabyć tylko i wyłącznie w sprzedaży bezpośredniej w salonach firmowych i w sklepach online."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Lindy",
+      "website": "https://pl.wikipedia.org//wiki/Lindy",
+      "slug": "lindy",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Lindy – jeden z czołowych światowych dostawców technologii połączeń komputerowych i audio/video."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Loewe",
+      "website": "https://pl.wikipedia.org//wiki/Loewe",
+      "slug": "loewe",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Loewe Technology GmbH – niemieckie przedsiębiorstwo zajmujące się produkcją elektroniki użytkowej, założone w 1923 roku przez Siegmunda i Davida Loewe w Berlinie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Maxell",
+      "website": "https://pl.wikipedia.org//wiki/Maxell",
+      "slug": "maxell",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Maxell Holdings, Ltd. (jap. マクセルホールディングス株式会社 Makuseru Kabushiki-gaisha) – japońskie przedsiębiorstwo elektroniczne. Oferta firmy obejmuje baterie, nośniki danych, elementy optyczne, taśmy samoprzylepne, atramenty, folie, soczewki i urządzenia wyświetlające. Przedsiębiorstwo zostało założone w 1960 roku i zatrudnia ponad 5 tys. pracowników."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Medion",
+      "website": "https://pl.wikipedia.org//wiki/Medion",
+      "slug": "medion",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Medion AG – niemieckie przedsiębiorstwo założone w 1983 roku. 1 czerwca 2011 o zamiarze przejęcia Medion AG i skupu pozostałych w obrocie akcji Mediona poinformowała Lenovo Group Ltd (LNVGY). Komisja Europejska zaakceptowała przejęcie w końcu lipca 2011 roku[3][4]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Nespresso",
+      "website": "https://pl.wikipedia.org//wiki/Nespresso",
+      "slug": "nespresso",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Nestlé Nespresso S.A. – szwajcarskie przedsiębiorstwo, które wprowadziło na rynek koncepcję kawy porcjowanej, zamkniętej w szczelnych kapsułkach. Przedsiębiorstwo z siedzibą w Lozannie, obecne jest w ponad 60 krajach i zatrudnia 9500 pracowników. W 2013 roku przedsiębiorstwo zarządzało globalną siecią sprzedaży detalicznej liczącą 320 butików. Wartość sprzedaży Nestlé Nespresso w roku 2011 osiągnęła ponad 3 mld franków szwajcarskich, a rozwój organiczny osiągnął ponad 20%. W Polsce prz"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Neutrik",
+      "website": "https://pl.wikipedia.org//wiki/Neutrik",
+      "slug": "neutrik",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Neutrik – producent złącz do profesjonalnych systemów audio-video, założony w 1975 roku przez Bernharda Weingartnera w Liechtensteinie. Asortyment firmy obejmuje między innymi złącza typu XLR, Speakon, RCA, BNC, powerCON wtyki Jack, oraz inne, jak również akcesoria do złączy i kabli oraz specjalne złącza do zastosowań przemysłowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Numark Industries",
+      "website": "https://pl.wikipedia.org//wiki/Numark_Industries",
+      "slug": "numark-industries",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Numark Industries – globalny producent sprzętu dla DJ-ów."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Peiying",
+      "website": "https://pl.wikipedia.org//wiki/Peiying",
+      "slug": "peiying",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Peiying – to zastrzeżony na terenie Unii Europejskiej znak towarowy producenta sprzętu car audio oferującego, m.in.: radia, głośniki samochodowe oraz nawigacje. Marka należy do polskiej firmy, będąc dystrybutorem sprzętu firmy FENGSHUN PEIYING ELECTRO-ACOUSTIC CO.,LTD."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Phonic Corporation",
+      "website": "https://pl.wikipedia.org//wiki/Phonic_Corporation",
+      "slug": "phonic-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Phonic Corporation – tajwańska spółka założona w 1977 roku, produkująca sprzęt muzyczny."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Pioneer Corporation",
+      "website": "https://pl.wikipedia.org//wiki/Pioneer_Corporation",
+      "slug": "pioneer-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Pioneer Corporation(パイオニア株式会社 (jap. Paionia Kabushiki-gaisha)) – japoński producent sprzętu RTV, car audio, DJ i napędów CD z główną siedzibą w Bunkyō w Tokio założony 1 stycznia 1938 jako Fukuin Shokai Denki Seisakushō."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Polytron",
+      "website": "https://pl.wikipedia.org//wiki/Polytron",
+      "slug": "polytron",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Polytron (PT Hartono Istana Teknologi) – indonezyjskie przedsiębiorstwo elektroniczne. Stanowi spółkę zależną grupy Djarum[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Roberts Radio",
+      "website": "https://pl.wikipedia.org//wiki/Roberts_Radio",
+      "slug": "roberts-radio",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Roberts – firma produkująca sprzęt elektroniczny domowego użytku, mająca swą siedzibę w Mexborough, w hrabstwie South Yorkshire w Anglii. Firma zajmuje się przede wszystkim produkcją radioodbiorników, zarówno tradycyjnych, jak również odbierających w systemie Digital Audio Broadcasting i internetowych. Jest posiadaczem trzech gwarantów królewskich. Firma zatrudnia 8500 pracowników, a jej roczny obrót wynosi 1,5 mld euro."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Robot Aviation",
+      "website": "https://pl.wikipedia.org//wiki/Robot_Aviation",
+      "slug": "robot-aviation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Robot Aviation – firma z branży lotniczej z siedzibą w Oslo, posiadająca spółkę zależną w Warszawie, zajmującą się badaniami i produkcją oraz spółkę zależną w USA z siedzibą w Grand Forks (Północna Dakota) i Phoenix (Arizona)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Røde",
+      "website": "https://pl.wikipedia.org//wiki/R%C3%B8de",
+      "slug": "rde",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Røde Microphones – australijskie przedsiębiorstwo zajmujące się produkcją profesjonalnych mikrofonów jak i akcesoriów do nich, założone przez Henry'ego i Astrid Freedman w 1964 roku w Australii. Mikrofony Røde wykorzystywane są m.in. przez profesjonalne studia nagrań oraz wokalistów."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sennheiser",
+      "website": "https://pl.wikipedia.org//wiki/Sennheiser",
+      "slug": "sennheiser",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sennheiser electronic GmbH & Co. KG – niemiecka, prywatna firma rodzinna założona w 1945 roku przez rodzinę Sennheiserów, wytwarzająca mikrofony, słuchawki, akcesoria telefoniczne oraz zestawy słuchawkowe dla lotnictwa. W swojej ofercie firma posiada produkty do zastosowań profesjonalnych, biznesowych, jak i produkty na rynek konsumencki."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Shure",
+      "website": "https://pl.wikipedia.org//wiki/Shure",
+      "slug": "shure",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Shure Incorporated – prywatna firma założona w 1925 roku wytwarzająca mikrofony, słuchawki, miksery, systemy bezprzewodowe, osobiste systemy monitoringu. W swojej ofercie firma posiada produkty do zastosowań profesjonalnych, biznesowych jak i przeznaczone na rynek konsumencki."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sinclair Radionics",
+      "website": "https://pl.wikipedia.org//wiki/Sinclair_Radionics",
+      "slug": "sinclair-radionics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sinclair Radionics to pierwsze z przedsiębiorstw założonych przez Sir Clive’a Sinclaira. Powstało 25 lipca 1961 roku w londyńskiej dzielnicy Islington. W profilu produkcyjnym lat 60. znalazły się radioodbiorniki tranzystorowe oraz sprzęt hi-fi, dzięki temu jej twórca stał się jednym z pionierów na rynku elektroniki konsumpcyjnej. Pierwszym produktem przedsiębiorstwa był zestaw obejmujący radio i wzmacniacz, sprzedawany za pośrednictwem poczty, w częściach do samodzielnego montażu. W 19"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sinclair Research",
+      "website": "https://pl.wikipedia.org//wiki/Sinclair_Research",
+      "slug": "sinclair-research",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sinclair Research – brytyjskie przedsiębiorstwo elektroniczne założone przez Clive’a Sinclaira w roku 1961 (wówczas jako Sinclair Radionics) w Cambridge."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Soundcraft",
+      "website": "https://pl.wikipedia.org//wiki/Soundcraft",
+      "slug": "soundcraft",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Soundcraft to brytyjska firma produkująca konsole mikserskie oraz urządzenia audio, powstała w Wielkiej Brytanii w 1973 roku. Założona przez inżyniera dźwięku Phila Dudderidge'a oraz inżyniera elektroniki i projektanta Grahama Blytha."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "TCL Technology",
+      "website": "https://pl.wikipedia.org//wiki/TCL_Technology",
+      "slug": "tcl-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "TCL Technology (TCL) – korporacja międzynarodowa z siedzibą główną w Huizhou, w prowincji Guangdong w ChRL, działająca w branży elektronicznej. W 2010 r. była 25. pod względem wielkości producentem elektroniki dla konsumentów i szóstym co do wielkości producentem telewizorów (po Samsungu, LG, Sony, Panasonicu i Sharpie), natomiast w 2018 była marką numer 2 na świecie (zaraz po Samsungu) w ilości sprzedanych telewizorów."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Tonsil",
+      "website": "https://pl.wikipedia.org//wiki/Tonsil",
+      "slug": "tonsil",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Tonsil – zakłady we Wrześni produkujące głośniki, założone w marcu 1945 roku przez dyrekcję Polskiego Radia w Poznaniu. W latach 1945–1990 działały jako przedsiębiorstwo państwowe, a w latach 1990–2004 jako spółka akcyjna, po której likwidacji produkcję pod marką Tonsilu kontynuowały spółki zależne. Od 2012 r. zakład działa jako przedsiębiorstwo prywatne osoby fizycznej – Sławomira Wieszczecińskiego."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Unima",
+      "website": "https://pl.wikipedia.org//wiki/Unima",
+      "slug": "unima",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Zakłady Maszyn i Urządzeń Technologicznych Unitra-Unima z siedzibą zarządu w Warszawie - grupa zakładów przemysłu elektronicznego, rozmieszczonych w różnych częściach kraju: Koszalinie, Olsztynie, Szczytnie i Warszawie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Vivitar",
+      "website": "https://pl.wikipedia.org//wiki/Vivitar",
+      "slug": "vivitar",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Vivitar – przedsiębiorstwo produkujące sprzęt fotograficzny, elektroniczny, cyfrowy i optyczny głównie na rynki USA, Francji, Japonii i Wielkiej Brytanii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Casio",
+      "website": "https://pl.wikipedia.org//wiki/Casio",
+      "slug": "casio",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Casio (jap. カシオ計算機株式会社 Kashio Keisanki Kabushiki-gaisha) – międzynarodowe przedsiębiorstwo branży elektronicznej, z siedzibą w dzielnicy Shibuya w Tokio, Japonia."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Mitsubishi",
+      "website": "https://pl.wikipedia.org//wiki/Mitsubishi",
+      "slug": "mitsubishi",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Mitsubishi Corporation (jap. 三菱商事株式会社 Mitsubishi Shōji Kabushiki-gaisha) – japoński konglomerat i marka licznych korporacji należących do grupy Mitsubishi Group, luźno powiązanych ze sobą jako keiretsu, notowana na Tokijskiej Giełdzie Papierów Wartościowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Panasonic",
+      "website": "https://pl.wikipedia.org//wiki/Panasonic",
+      "slug": "panasonic",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Panasonic (jap. パナソニック Panasonikku) – czołowa marka japońskiego koncernu Panasonic Corporation (wcześniej Matsushita Electric Industrial Co. Ltd), specjalizująca się w obrazowaniu i produktach optycznych, takich jak aparaty fotograficzne, kamery, sprzęt telekomunikacyjny, sprzęt gospodarstwa domowego, taki jak chłodziarki, pralki, kuchenki mikrofalowe, golarki, suszarki oraz urządzenia klimatyzacyjne. W Gnieźnie znajduje się jedyna europejska fabryka Panasonica wytwarzająca ogniwa cynk"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sanyo Electric",
+      "website": "https://pl.wikipedia.org//wiki/Sanyo_Electric",
+      "slug": "sanyo-electric",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sanyo Electric Co. Ltd. (jap. 三洋電機株式会社 San’yō Denki Kabushiki-gaisha) – japońskie przedsiębiorstwo zajmujące się produkcją elektroniki: telewizorów, sprzętu stereo, baterii, klimatyzatorów, półprzewodników, baterii słonecznych, kalkulatorów bateryjnych oraz telefonów komórkowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Sharp Corporation",
+      "website": "https://pl.wikipedia.org//wiki/Sharp_Corporation",
+      "slug": "sharp-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Sharp Corporation (jap. シャープ株式会社 Shāpu Kabushiki-gaisha) – japoński producent elektroniki użytkowej założony 15 września 1912 przez Tokuji Hayakawę."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Taiyo Yuden",
+      "website": "https://pl.wikipedia.org//wiki/Taiyo_Yuden",
+      "slug": "taiyo-yuden",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Taiyo Yuden Co., Ltd. (jap. 太陽誘電株式会社 Taiyō Yūden Kabushiki-gaisha) – japońskie przedsiębiorstwo elektroniczne. Zostało założone w 1950 roku. Portfolio firmy obejmuje m.in. kondensatory ceramiczne, układy scalone, zasilacze, falowniki, dyski optyczne, filtry i cewki."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "TDK",
+      "website": "https://pl.wikipedia.org//wiki/TDK",
+      "slug": "tdk",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "TDK (właśc. TDK Corporation) (jap. TDK株式会社 TDK Kabushiki-kaisha) – spółka akcyjna powstała w 1935 r. jako pierwsza firma elektroniczna zajmująca się komercyjnym obrotem ferrytu, który dzięki swym właściwościom magnetycznym używany jest w nośnikach pamięci magnetycznej takich jak taśma magnetyczna czy dyskietka. TDK rozpoczęło swoją działalność w Europie w 1970 r., otwierając biuro we Frankfurcie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "TEAC Corporation",
+      "website": "https://pl.wikipedia.org//wiki/TEAC_Corporation",
+      "slug": "teac-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "TEAC Corporation – japońskie przedsiębiorstwo produkujące sprzęt elektroniczny. TEAC powstał w 1953 r. jako Tokyo Electro Acoustic Company. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Altera",
+      "website": "https://pl.wikipedia.org//wiki/Altera",
+      "slug": "altera",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Altera – Stany Zjednoczone amerykańskie przedsiębiorstwo branży elektronicznej założone w 1983 r. Jest pionierem w dziedzinie programowalnych układów logicznych, systemów mikroprocesorowych i podzespołów elektronicznych. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Analog Devices",
+      "website": "https://pl.wikipedia.org//wiki/Analog_Devices",
+      "slug": "analog-devices",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Analog Devices, Inc. (skrótowiec: ADI) – amerykański producent układów półprzewodnikowych, notowany na New York Stock Exchange. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Award Software International",
+      "website": "https://pl.wikipedia.org//wiki/Award_Software_International",
+      "slug": "award-software-international",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Award Software International – amerykańskie przedsiębiorstwo, zajmujące się produkcją BIOS-ów oraz oprogramowania. Zostało założone w 1983 roku w kalifornijskim mieście San Jose przez Rene Vishny’ego i Boba Stillmana. Rok później firma przeniosła swoją siedzibę do Los Gatos."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Beats Electronics",
+      "website": "https://pl.wikipedia.org//wiki/Beats_Electronics",
+      "slug": "beats-electronics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Beats Electronics, LLC – amerykańskie przedsiębiorstwo zajmujące się produkcją sprzętu audio z siedzibą w Cupertino, w stanie Kalifornia, w Stanach Zjednoczonych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Broadcom",
+      "website": "https://pl.wikipedia.org//wiki/Broadcom",
+      "slug": "broadcom",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Broadcom  – amerykańskie przedsiębiorstwo działających w obszarze półprzewodników wykorzystywanych w sieciach bezprzewodowych oraz szerokopasmowych. Przedsiębiorstwo nie posiada własnych mocy produkcyjnych, zleca produkcję przedsiębiorstwom zewnętrznym."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Fairchild Semiconductor",
+      "website": "https://pl.wikipedia.org//wiki/Fairchild_Semiconductor",
+      "slug": "fairchild-semiconductor",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Fairchild Semiconductor Corporation – amerykańskie przedsiębiorstwo branży elektronicznej, zajmujące się produkcją elementów i układów elektronicznych opartych na półprzewodnikach. Spółka powstała w 1957 roku, a jej siedziba mieści się w San Jose, w Kalifornii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Freescale Semiconductor",
+      "website": "https://pl.wikipedia.org//wiki/Freescale_Semiconductor",
+      "slug": "freescale-semiconductor",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Freescale Semiconductor – przedsiębiorstwo z brańzy półprzewodnikowej, które powstało poprzez wydzielenie w 2004 r. działu półprzewodników z firmy Motorola. Freescale skupia się na rynku produktów związanych z telekomunikacją i systemami wbudowanymi."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Garmin",
+      "website": "https://pl.wikipedia.org//wiki/Garmin",
+      "slug": "garmin",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Garmin Ltd. – amerykańskie przedsiębiorstwo elektroniczne z siedzibą w Olathe, w stanie Kansas, w Stanach Zjednoczonych. Głównymi produktami produkowanymi przez przedsiębiorstwo są odbiorniki GPS oraz urządzenia wearables."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "General Atomics",
+      "website": "https://pl.wikipedia.org//wiki/General_Atomics",
+      "slug": "general-atomics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "General Atomics – amerykańskie prywatne przedsiębiorstwo przemysłu jądrowego, obronnego i aeronautycznego, z siedzibą w San Diego. Zatrudnia około 8000 osób."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "General Instrument",
+      "website": "https://pl.wikipedia.org//wiki/General_Instrument",
+      "slug": "general-instrument",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "General Instrument (GI) - nieistniejące już amerykańskie przedsiębiorstwo z branży elektronicznej, wyspecjalizowane w produkcji półprzewodników oraz akcesoriów na potrzeby telewizji kablowej."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Google Nest",
+      "website": "https://pl.wikipedia.org//wiki/Google_Nest",
+      "slug": "google-nest",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Google Nest (wcześniej Nest Labs Inc.) – producent programowalnej, samouczącej się, sterowanej czujnikami automatyki domowej, termostatów obsługujących wi-fi, czujniki dymu i innych systemów zabezpieczeń. W 2011 r. jako pierwszy produkt wprowadzono termostat Nest Learning. W październiku 2013 r. wprowadzono wykrywacz dymu i tlenku węgla Nest Protect. Po przejęciu Dropcam w czerwcu 2015 r. wprowadzono na rynek firmę Nest Cam. W lipcu 2016 r. został wydany Nest Cam Outdoor[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Jabil Circuit",
+      "website": "https://pl.wikipedia.org//wiki/Jabil_Circuit",
+      "slug": "jabil-circuit",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Jabil – dostawca usług EMS. Zajmuje się projektowaniem i produkcją podzespołów elektronicznych. Główną siedzibą firmy jest St. Petersburg na Florydzie. JABIL posiada 90 obiektów w 23 krajach oraz zatrudnia około 175 tys. pracowników na całym Świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Lexmark",
+      "website": "https://pl.wikipedia.org//wiki/Lexmark",
+      "slug": "lexmark",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Lexmark (Lexmark International Inc.) – dostawca szerokiej gamy produktów do druku i skanowania obrazu, programów, rozwiązań i usług. Częścią Lexmarka jest Perceptive Software, dostawca oprogramowania do inteligentnego wczytywania dokumentów i do zarządzania treścią. W 2012 r. Lexmark sprzedał produkty w ponad 170 krajach i odnotował przychody w wysokości około 3,8 mld USD."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Magnavox",
+      "website": "https://pl.wikipedia.org//wiki/Magnavox",
+      "slug": "magnavox",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Magnavox (z łac. „świetny dźwięk”) – przedsiębiorstwo elektroniczne założone przez Edwina Pridhama i Petera L. Jensena. W 1915 bracia stworzyli głośnik dynamiczny i nazwali go „Magnavox”. Firma została założona w 1917 pod tą samą nazwą w celu sprzedaży produktu."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "National Instruments",
+      "website": "https://pl.wikipedia.org//wiki/National_Instruments",
+      "slug": "national-instruments",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "NI (dawniej National Instruments) – producent zautomatyzowanych urządzeń i kart pomiarowych oraz oprogramowania wirtualnych urządzeń. Sztandarowym produktem NI jest pakiet oprogramowania LabVIEW wykorzystującego graficzny język programowania G. Ponadto NI oferuje oprogramowanie LabWindows/CVI udostępniające narzędzia wirtualne do programowania w języku C."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "National Semiconductor",
+      "website": "https://pl.wikipedia.org//wiki/National_Semiconductor",
+      "slug": "national-semiconductor",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "National Semiconductor (skrót NS lub NSC) – amerykański producent półprzewodników, działający od 1959 do 2011 roku. 23 września 2011 został przejęty przez Texas Instruments za 6,5 miliarda dolarów.Siedziba firmy znajdowała się w Santa Clara w Kalifornii w Stanach Zjednoczonych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "NCR Corporation",
+      "website": "https://pl.wikipedia.org//wiki/NCR_Corporation",
+      "slug": "ncr-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "NCR Corporation – korporacja amerykańska, produkująca maszyny biurowe; obecnie dostawca m.in. bankomatów, a także zintegrowanych systemów informatycznych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Neuralink",
+      "website": "https://pl.wikipedia.org//wiki/Neuralink",
+      "slug": "neuralink",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Neuralink Corporation – amerykańska firma neurotechnologiczna założona m.in. przez Elona Muska, zajmująca się tworzeniem wszczepialnych interfejsów mózg-maszyna. Siedziba firmy znajduje się w San Francisco; rozpoczęła działalność w 2016 roku i po raz pierwszy została ogłoszona publicznie w marcu 2017 roku[3]."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Rockwell International Corporation",
+      "website": "https://pl.wikipedia.org//wiki/Rockwell_International_Corporation",
+      "slug": "rockwell-international-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Rockwell International Corporation (R.I.C.) – amerykańska spółka akcyjna, konglomerat produkcyjny."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "SanDisk",
+      "website": "https://pl.wikipedia.org//wiki/SanDisk",
+      "slug": "sandisk",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "SanDisk Corporation – amerykańska korporacja zajmująca się projektowaniem, produkcją oraz rozwojem rozwiązań pamięci masowej flash oraz oprogramowania. Przez ponad 25 lat, firma SanDisk rozszerzała możliwości przechowywania danych, tworząc zaufane i innowacyjne produkty, które zmieniły dzisiejszy przemysł elektroniczny. Wysokiej jakości rozwiązania SanDisk, stanowią trzon w wielu największych światowych centrach przetwarzania danych i osadzone są w zaawansowanych smartfonach, tabletach"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Silicon Motion",
+      "website": "https://pl.wikipedia.org//wiki/Silicon_Motion",
+      "slug": "silicon-motion",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Silicon Motion Technology Corporation – przedsiębiorstwo zajmujące się produkcją kontrolerów pamięci Flash NAND. Zostało założone w 2005 roku."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Texas Instruments",
+      "website": "https://pl.wikipedia.org//wiki/Texas_Instruments",
+      "slug": "texas-instruments",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Texas Instruments Inc. – amerykańskie przedsiębiorstwo z siedzibą w Dallas, w stanie Teksas, będące czołowym producentem półprzewodników. Obecnie producent m.in. cyfrowych procesorów sygnałowych (rodzina TMS320), przetworników cyfrowo-analogowych, analogowo-cyfrowych, czujników, układów analogowych i półprzewodnikowych elementów dyskretnych, a także kalkulatorów naukowych."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Universal Avionics Systems Corporation",
+      "website": "https://pl.wikipedia.org//wiki/Universal_Avionics_Systems_Corporation",
+      "slug": "universal-avionics-systems-corporation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Universal Avionics Systems Corporation (UASC) – amerykańskie przedsiębiorstwo produkujące systemy sterowania lotem FMS i inne elementy awioniki dla samolotów wykorzystywanych w lotnictwie pasażerskim (m.in. systemy TAWS). Universal Avionics, założone  w 1981 roku przez Huberta L. Naimera i działające na rynku międzynarodowym, ma przedstawicielstwa w stanach Arizona, Kansas, Waszyngton, Georgia oraz w Szwajcarii na terenie Europy. Siedziba firmy mieści się w Tucson w Arizonie, a prezese"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Xilinx",
+      "website": "https://pl.wikipedia.org//wiki/Xilinx",
+      "slug": "xilinx",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Xilinx Inc. – przedsiębiorstwo, które opracowało architekturę FPGA. Założone w 1984 roku w Dolinie Krzemowej, obecnie z główną siedzibą w San Jose (Kalifornia). Największy światowy producent i projektant FPGA, posiada około połowy globalnego rynku tych urządzeń. Jeden z dostawców opracowanych przez siebie urządzeń CPLD. Spółka publiczna notowana na nowojorskiej giełdzie NASDAQ."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Producenci baterii",
+      "website": "https://pl.wikipedia.org//wiki/Kategoria:Producenci_baterii",
+      "slug": "producenci-baterii",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Poniżej wyświetlono 17 spośród wszystkich 17 stron tej kategorii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Producenci elektroniki użytkowej",
+      "website": "https://pl.wikipedia.org//wiki/Kategoria:Producenci_elektroniki_u%C5%BCytkowej",
+      "slug": "producenci-elektroniki-uzytkowej",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Poniżej wyświetlono 3 spośród wszystkich 3 podkategorii tej kategorii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Amerykańskie przedsiębiorstwa elektroniczne",
+      "website": "https://pl.wikipedia.org//wiki/Kategoria:Ameryka%C5%84skie_przedsi%C4%99biorstwa_elektroniczne",
+      "slug": "amerykanskie-przedsiebiorstwa-elektroniczne",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Poniżej wyświetlono 36 spośród wszystkich 36 stron tej kategorii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Chińskie przedsiębiorstwa elektroniczne",
+      "website": "https://pl.wikipedia.org//wiki/Kategoria:Chi%C5%84skie_przedsi%C4%99biorstwa_elektroniczne",
+      "slug": "chinskie-przedsiebiorstwa-elektroniczne",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Ta kategoria ma tylko jedną podkategorię."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Indonezyjskie przedsiębiorstwa elektroniczne",
+      "website": "https://pl.wikipedia.org//wiki/Kategoria:Indonezyjskie_przedsi%C4%99biorstwa_elektroniczne",
+      "slug": "indonezyjskie-przedsiebiorstwa-elektroniczne",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Ta kategoria ma tylko jedną podkategorię."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Japońskie przedsiębiorstwa elektroniczne",
+      "website": "https://pl.wikipedia.org//wiki/Kategoria:Japo%C5%84skie_przedsi%C4%99biorstwa_elektroniczne",
+      "slug": "japonskie-przedsiebiorstwa-elektroniczne",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Ta kategoria ma tylko jedną podkategorię."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Polskie przedsiębiorstwa elektroniczne",
+      "website": "https://pl.wikipedia.org//wiki/Kategoria:Polskie_przedsi%C4%99biorstwa_elektroniczne",
+      "slug": "polskie-przedsiebiorstwa-elektroniczne",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Poniżej wyświetlono 3 spośród wszystkich 3 podkategorii tej kategorii."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Rynek elektroniczny",
+      "website": "https://pl.wikipedia.org//wiki/Rynek_elektroniczny",
+      "slug": "rynek-elektroniczny",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Pojęcie rynku elektronicznego  (w skrócie ER, ang. electronic market), zwanego również rynkiem wirtualnym, powstało w latach 80. w pracach grupy badawczej z Massachusetts Institute of Technology. W literaturze brak jest ogólnej i powszechnie akceptowalnej definicji elektronicznego rynku. Wielu autorów tworzy zwykle ad hoc określenia, ukierunkowane jedynie na specyficzne zagadnienia. W pewnym stopniu wspomaganie i automatyzacja działalności rynkowej przez systemy informatyczno-telekomun"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Berker",
+      "website": "https://pl.wikipedia.org//wiki/Berker",
+      "slug": "berker",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Berker GmbH & Co. KG – producent osprzętu elektroinstalacyjnego, systemów elektrycznych oraz automatyki do budynków mieszkaniowych i komercyjnych. Firma powstała w 1919 roku w Niemczech, w miejscowości Schalksmühle. Została założona przez dwóch braci – Hugona i Roberta Berkerów. Firma z czasem weszła w posiadanie własnych oddziałów na terenie Austrii, Rosji, Chin, Belgii, Holandii, jak również polskiej miejscowości Kórnik zlokalizowanej koło Poznania. W 2010 roku firma Berker Polska Sp"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Blackmagic Design",
+      "website": "https://pl.wikipedia.org//wiki/Blackmagic_Design",
+      "slug": "blackmagic-design",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Blackmagic Design – australijskie przedsiębiorstwo-manufaktura zajmujące się działem kina cyfrowego, mające siedzibę w przedmieściu Melbourne (Port Melbourne), w stanie Wiktoria w Australii. Firma projektuje i produkuje sprzęt do broadcastingu i dla kin, w szczególności high-endowe cyfrowe kamery filmowe; zarządza także oprogramowaniem do edycji filmów, jak DaVinci Resolve i Blackmagic Fusion. Blackmagic Design posiada 8 biur na całym świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Blaupunkt",
+      "website": "https://pl.wikipedia.org//wiki/Blaupunkt",
+      "slug": "blaupunkt",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Blaupunkt – niemieckie przedsiębiorstwo z siedzibą w Hildesheim produkujące sprzęt elektroniczny, jest też jednym z największych producentów akcesoriów do samochodów na świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Cambridge Audio",
+      "website": "https://pl.wikipedia.org//wiki/Cambridge_Audio",
+      "slug": "cambridge-audio",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Cambridge Audio – największy brytyjski producent sprzętu elektroakustycznego z siedzibą w Londynie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "CMC Magnetics",
+      "website": "https://pl.wikipedia.org//wiki/CMC_Magnetics",
+      "slug": "cmc-magnetics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "CMC Magnetics Corporation (chiń. 中環股份有限公司) – tajwańskie przedsiębiorstwo zajmujące się produkcją nośników danych, m.in. dysków optycznych CD i DVD. Zostało założone w 1978 roku."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Energizer",
+      "website": "https://pl.wikipedia.org//wiki/Energizer",
+      "slug": "energizer",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Energizer Holdings, Inc. – przedsiębiorstwo produkujące baterie i akumulatory, spółka publiczna notowana na Giełdzie Nowojorskiej (NYSE): ENR (tzw. „Wall Street”)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Epson",
+      "website": "https://pl.wikipedia.org//wiki/Epson",
+      "slug": "epson",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Seiko Epson Corporation (jap. セイコーエプソン株式会社 Seikō Epuson Kabushiki-gaisha; Epson) – japoński producent drukarek, skanerów, projektorów i innych urządzeń oraz akcesoriów związanych głównie z drukowaniem i wyświetlaniem obrazów z siedzibą w Suwie założony 18 maja 1942 roku."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Flex (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Flex_(przedsi%C4%99biorstwo)",
+      "slug": "flex-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Flex (do 2015 Flextronics International Ltd.) – spółka z siedzibą w Singapurze oferująca projektowanie i produkcję urządzeń dla klientów (OEM) z wielu sektorów. Oferuje również usługi w łańcuchu dostaw (m.in. pakowanie, transport i obsługę posprzedażową)."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Gents' of Leicester",
+      "website": "https://pl.wikipedia.org//wiki/Gents%27_of_Leicester",
+      "slug": "gents-of-leicester",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Gents’ of Leicester – brytyjskie przedsiębiorstwo znane jako Gents & Company Limited zajmujące się produkcją zegarków powstałe w 1872 r., założone przez Johna Thomasa Genta w mieście Leicester w Wielkiej Brytanii. Przedsiębiorstwo było producentem zegarków, urządzeń elektrycznych oraz zegarów dla użyteczności publicznej na całym świecie m.in. na dworcach kolejowych budynkach publicznych. Przedsiębiorstwo produkowało również systemy sygnalizacji przeciwpożarowej, dzwonki elektryczne, tr"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Hager Group",
+      "website": "https://pl.wikipedia.org//wiki/Hager_Group",
+      "slug": "hager-group",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Hager Group – europejski producent rozwiązań z zakresu rozdziału energii, automatyki budynku, osprzętu elektroinstalacyjnego oraz systemów prowadzenia przewodów  stosowanych zarówno w budownictwie mieszkaniowym, jak i  komercyjnym. Produkty firmy Hager dostępne są w 120 krajach na całym świecie. Hager posiada 23 zakłady produkcyjne w 10 krajach świata,  zatrudnia 11 400 pracowników i generuje roczny obrót w wysokości 1,9 mld €."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Halbleiterwerk Frankfurt (Oder)",
+      "website": "https://pl.wikipedia.org//wiki/Halbleiterwerk_Frankfurt_(Oder)",
+      "slug": "halbleiterwerk-frankfurt-oder",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Volkseigener Betrieb Halbleiterwerk Frankfurt (Oder), w skrócie VEB HFO lub VEB HWF – największy producent mikroelektroniki w Niemieckiej Republice Demokratycznej, działający we Frankfurcie nad Odrą od 1 stycznia 1959."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "HellermannTyton",
+      "website": "https://pl.wikipedia.org//wiki/HellermannTyton",
+      "slug": "hellermanntyton",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "HellermannTyton jest przedsiębiorstwem zarejestrowanym w Wielkiej Brytanii i posiadającym oddziały w 39 krajach.[3] Specjalizuje się w wytwarzaniu produktów do wiązania, mocowania, ochrony, oznaczania i instalacji przewodów oraz kabli. W skład przedsiębiorstwa wchodzi 12 fabryk[4], a globalne zatrudnienie osiągnęło poziom 3800 pracowników. HellermannTyton było spółką akcyjną notowaną na Londyńskiej Giełdzie Papierów Wartościowych aż do grudnia 2015 roku, kiedy to została nabyta przez D"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "JUMO",
+      "website": "https://pl.wikipedia.org//wiki/JUMO",
+      "slug": "jumo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "JUMO GmbH & Co. KG – niemieckie przedsiębiorstwo z siedzibą w Fuldzie zajmujące się produkcją urządzeń automatyki przemysłowej w zakresie pomiarów, sterowania i rejestracji."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Lacroix Electronics",
+      "website": "https://pl.wikipedia.org//wiki/Lacroix_Electronics",
+      "slug": "lacroix-electronics",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Lacroix Electronics – przedsiębiorstwo prowadzące działalność w branży elektronicznej. Posiada obiekty we Francji, Niemczech, Tunezji i Polsce. Lacroix Electronics Solutions założona w 1990 roku jest spółką w 100% zależną od Lacroix Electronics."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Mio Technology",
+      "website": "https://pl.wikipedia.org//wiki/Mio_Technology",
+      "slug": "mio-technology",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Mio Technology – tajwańskie przedsiębiorstwo produkujące sprzęt elektroniczny. Jest jednym z trzech największych producentów nawigacji GPS na świecie."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Największe przedsiębiorstwa elektroniczne w kolejnych latach",
+      "website": "https://pl.wikipedia.org//wiki/Najwi%C4%99ksze_przedsi%C4%99biorstwa_elektroniczne_w_kolejnych_latach",
+      "slug": "najwieksze-przedsiebiorstwa-elektroniczne-w-kolej",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Ten artykuł prezentuje największych sprzedawców układów elektronicznych w kolejnych latach."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Philips Polska",
+      "website": "https://pl.wikipedia.org//wiki/Philips_Polska",
+      "slug": "philips-polska",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Philips Polska – przedsiębiorstwo elektrotechniczne wchodzące w skład koncernu Philips."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Phison",
+      "website": "https://pl.wikipedia.org//wiki/Phison",
+      "slug": "phison",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Phison Electronics Corporation – tajwańskie przedsiębiorstwo elektroniczne. Zajmuje się projektowaniem i produkcją kontrolerów do układów pamięci flash NAND. Ich produkty są stosowane w różnych urządzeniach opartych na pamięci flash, takimi jak przenośne pamięci USB, karty pamięci i dyski SSD."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Pilkor",
+      "website": "https://pl.wikipedia.org//wiki/Pilkor",
+      "slug": "pilkor",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "PILKOR rozpoczął swoją działalność w 1974 roku jako Philips Electronics Korea. Wówczas był to ulokowany w Korei należący do Philipsa zakład produkcji kondensatorów foliowych metalizowanych (MKT / MPP / PP+MMKP) oraz cienkowarstwowych rezystorów metalizowanych. W 1994 firma Philips wycofała się z tego przedsięwzięcia i na miejscu pozostałej fabryki została powołana do życia firma PILKOR. Obecnie PILKOR jest największym producentem tego typu produktów w Korei. Roczne obroty firmy w 2002 "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Pilz (przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Pilz_(przedsi%C4%99biorstwo)",
+      "slug": "pilz-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Pilz GmbH & Co. KG – przedsiębiorstwo działające w branży techniki automatyzacji z siedzibą w Ostfildern w Niemczech. Jest ona reprezentowana przez swoje oddziały oraz filie w 40 różnych krajach."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Plessey",
+      "website": "https://pl.wikipedia.org//wiki/Plessey",
+      "slug": "plessey",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "The Plessey Company plc była międzynarodowym przedsiębiorstwem, zajmującym się elektroniką i telekomunikacją, mającym brytyjskie korzenie. Założone w 1917 roku w Londynie, obecnie jest częścią General Electric."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Radio Corporation of America",
+      "website": "https://pl.wikipedia.org//wiki/Radio_Corporation_of_America",
+      "slug": "radio-corporation-of-america",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Radio Corporation of America, RCA – amerykańskie przedsiębiorstwo elektroniczne istniejące w latach 1919–1986. Jego założycielem i głównym menedżerem był David Sarnoff. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Radwin",
+      "website": "https://pl.wikipedia.org//wiki/Radwin",
+      "slug": "radwin",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "RADWIN – firma telekomunikacyjna zajmująca się projektowaniem i produkcją urządzeń do obsługi bezprzewodowej, dwupunktowej i wielopunktowej szerokopasmowej transmisji danych. Z oferowanych przez nią rozwiązań korzystają dostawcy usług telekomunikacyjnych i internetowych, rady miejskie, społeczności w odległych rejonach, sieci prywatne. RADWIN dostarcza również rozwiązania do zastosowań w transporcie, m.in. w metrze, autobusach, na promach i lotniskach oraz w pojazdach takich jak wozy p"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Ritek",
+      "website": "https://pl.wikipedia.org//wiki/Ritek",
+      "slug": "ritek",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Ritek Corporation (chiń. 錸德科技股份有限公司) – tajwańskie przedsiębiorstwo elektroniczne, zajmujące się produkcją cyfrowych nośników danych, produktów elektrooptycznych i podzespołów elektronicznych. Jego portfolio obejmuje m.in. płyty CD i DVD oraz lampy elektroluminescencyjne."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Rivera Amplification",
+      "website": "https://pl.wikipedia.org//wiki/Rivera_Amplification",
+      "slug": "rivera-amplification",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Rivera Amplification – producent wysokiej klasy, ręcznie robionych, lampowych wzmacniaczy gitarowych. "
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Rockwell Automation",
+      "website": "https://pl.wikipedia.org//wiki/Rockwell_Automation",
+      "slug": "rockwell-automation",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Rockwell Automation, Inc. (NYSE: ROK) – amerykański producent automatyki przemysłowej oraz rozwiązań informatycznych z siedzibą w Milwaukee, Wisconsin. Główne marki to Allen-Bradley i Rockwell Software. Rockwell Automation zatrudnia około 22 000 pracowników i oferuje usługi oraz produkty w ponad 80 krajach na świecie. Jest komponentem rankingu giełdowego Fortune 500 z obrotem ponad 6 miliardów dolarów w roku 2014. Dewizą firmy jest slogan „Listen, Think, Solve”."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Samtron",
+      "website": "https://pl.wikipedia.org//wiki/Samtron",
+      "slug": "samtron",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Początkowo przedsięwzięcie Samsunga, które miało za zadanie rozwijanie i produkcję ekranów kineskopowych i plazmowych. W 1999 powstała uniezależniona od Samsunga firma Samtron."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Seiko",
+      "website": "https://pl.wikipedia.org//wiki/Seiko",
+      "slug": "seiko",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Seiko Holdings Corporation (jap. セイコーホールディングス株式会社 Seikō Hōrudingusu Kabushiki-gaisha), w skrócie Seiko – japoński producent zegarków z siedzibą w Chūō w Tokio założony w 1881 roku."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Tesla (czechosłowackie przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Tesla_(czechos%C5%82owackie_przedsi%C4%99biorstwo)",
+      "slug": "tesla-czechosowackie-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Tesla (od „Technika Slaboproudová” – co znaczy „technika słaboprądowa”) – przedsiębiorstwo państwowe branży elektronicznej w byłej Czechosłowacji."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Tim (polskie przedsiębiorstwo)",
+      "website": "https://pl.wikipedia.org//wiki/Tim_(polskie_przedsi%C4%99biorstwo)",
+      "slug": "tim-polskie-przedsiebiorstwo",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "TIM SA - hurtowy dystrybutor artykułów elektrotechnicznych działający w Polsce, spółka akcyjna. Dominująca spółka w Grupie Kapitałowej TIM."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "TSMC",
+      "website": "https://pl.wikipedia.org//wiki/TSMC",
+      "slug": "tsmc",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Taiwan Semiconductor Manufacturing Company Limited – tajwańskie przedsiębiorstwo specjalizujące się w produkcji układów scalonych, w tym procesorów. Założone w 21 lutego 1987 roku przez Chung Mou Changa, uzyskało status największego na świecie niezależnego producenta układów scalonych. Przy pomocy maszyn i urządzeń dostarczonych z USA, wytwarza m.in. układy dla firm Nvidia, AMD, Apple i VIA Technologies, oraz chińskiej rządowej firmy Phytium Technology projektującej procesory dla chińs"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Tyco Thermal Controls",
+      "website": "https://pl.wikipedia.org//wiki/Tyco_Thermal_Controls",
+      "slug": "tyco-thermal-controls",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Tyco Thermal Controls jest przedsiębiorstwem należącym do Tyco International Ltd., korporacji oferującej wyroby od elektroniki, telekomunikacji i kontroli procesów przemysłowych po ochronę zdrowia, zabezpieczenia przeciwpożarowe i systemy bezpieczeństwa. Produkuje systemy grzewcze (oparte na przewodach grzejnych) oraz systemy detekcji i lokalizacji wycieków dla przemysłu, budownictwa, telekomunikacji, medycyny i innych sektorów OEM. Łącząc działalność i doświadczenia firm Raychem, Isop"
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "U3",
+      "website": "https://pl.wikipedia.org//wiki/U3",
+      "slug": "u3",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "U3 – przedsiębiorstwo typu joint venture, utworzone przez przedsiębiorstwa SanDisk i M-Systems, które jest producentem platformy programistycznej dla Microsoft Windows, która umożliwia uruchamianie programów i jest umieszczona na specjalnie sformatowanej pamięci USB."
+    }
+  },
+  {
+    "model": "products.brand",
+    "fields": {
+      "brand": "Wincor Nixdorf",
+      "website": "https://pl.wikipedia.org//wiki/Wincor_Nixdorf",
+      "slug": "wincor-nixdorf",
+      "logo": [
+        "brands/placeholder_N377WC4.png"
+      ],
+      "description": "Wincor Nixdorf – międzynarodowa korporacja z siedzibą w Paderborn (Niemcy) dostarczająca sprzęt, oprogramowanie, usługi dla banków oraz sieci sklepów detalicznych. W Polsce jest jednym z kilku przedsiębiorstw dostarczających oprogramowanie, bankomaty i wpłatomaty oraz dyspensery kasjerskie oraz rozwiązania dla rynku handlu detalicznego. Wincor Nixdorf dysponuje także rozbudowaną siecią serwisową dla swoich urządzeń oraz urządzeń podmiotów trzecich."
+    }
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "fields": {
+      "is_superuser": true,
+      "first_name": "Mahalia",
+      "last_name": "Arnaudin",
+      "username": "marnaudin0",
+      "email": "marnaudin0@ehow.com",
+      "age": 39
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Bradney",
+      "last_name": "Gurry",
+      "username": "bgurry1",
+      "email": "bgurry1@spiegel.de",
+      "age": 33
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Zacharie",
+      "last_name": "Khomishin",
+      "username": "zkhomishin2",
+      "email": "zkhomishin2@java.com",
+      "age": 46
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Berthe",
+      "last_name": "Harvatt",
+      "username": "bharvatt3",
+      "email": "bharvatt3@loc.gov",
+      "age": 48
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Gearalt",
+      "last_name": "de Marco",
+      "username": "gdemarco4",
+      "email": "gdemarco4@discuz.net",
+      "age": 44
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Adler",
+      "last_name": "Lemery",
+      "username": "alemery5",
+      "email": "alemery5@soundcloud.com",
+      "age": 35
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Even",
+      "last_name": "Bennetto",
+      "username": "ebennetto6",
+      "email": "ebennetto6@wired.com",
+      "age": 41
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Bernadene",
+      "last_name": "Angel",
+      "username": "bangel7",
+      "email": "bangel7@macromedia.com",
+      "age": 36
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": true,
+      "first_name": "Katrinka",
+      "last_name": "Corley",
+      "username": "kcorley8",
+      "email": "kcorley8@microsoft.com",
+      "age": 44
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Maisey",
+      "last_name": "Hukins",
+      "username": "mhukins9",
+      "email": "mhukins9@soup.io",
+      "age": 19
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": true,
+      "first_name": "Vernor",
+      "last_name": "Larcombe",
+      "username": "vlarcombea",
+      "email": "vlarcombea@symantec.com",
+      "age": 22
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": true,
+      "first_name": "Trip",
+      "last_name": "Bodsworth",
+      "username": "tbodsworthb",
+      "email": "tbodsworthb@ycombinator.com",
+      "age": 22
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Daisey",
+      "last_name": "Kirsopp",
+      "username": "dkirsoppc",
+      "email": "dkirsoppc@networkadvertising.org",
+      "age": 45
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Walker",
+      "last_name": "Gibbie",
+      "username": "wgibbied",
+      "email": "wgibbied@drupal.org",
+      "age": 32
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": true,
+      "first_name": "Larine",
+      "last_name": "Kennicott",
+      "username": "lkennicotte",
+      "email": "lkennicotte@slideshare.net",
+      "age": 30
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Lyndsey",
+      "last_name": "Carrington",
+      "username": "lcarringtonf",
+      "email": "lcarringtonf@ovh.net",
+      "age": 31
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Babara",
+      "last_name": "Daye",
+      "username": "bdayeg",
+      "email": "bdayeg@whitehouse.gov",
+      "age": 39
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": true,
+      "first_name": "Valeria",
+      "last_name": "Ungerechts",
+      "username": "vungerechtsh",
+      "email": "vungerechtsh@china.com.cn",
+      "age": 39
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": true,
+      "first_name": "Yance",
+      "last_name": "Rodda",
+      "username": "yroddai",
+      "email": "yroddai@blogtalkradio.com",
+      "age": 41
+    },
+    "model": "users.customuser"
+  },
+  {
+    "fields": {
+      "is_superuser": false,
+      "first_name": "Bee",
+      "last_name": "Howard - Gater",
+      "username": "bhowardgaterj",
+      "email": "bhowardgaterj@flavors.me",
+      "age": 41
+    },
+    "model": "users.customuser"
+  }
+]
