@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     # local
     'users.apps.UsersConfig',
     'deals.apps.DealsConfig',
+    'products.apps.ProductsConfig',
     # 'accounts.apps.AccountsConfig',
     # third party
     'admin_honeypot',

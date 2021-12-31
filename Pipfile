@@ -29,6 +29,8 @@ pillow = "==8.4.0"
 [dev-packages]
 faker = "*"
 psutil = "*"
+beautifulsoup4 = "*"
+requests-html = "*"
 
 [requires]
 python_version = "3.10"
