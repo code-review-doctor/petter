@@ -10,7 +10,7 @@
 				{% csrf_token %}
 				{{ form.errors }}
 				<!-- 2 column grid layout with text inputs for the first and last names -->
-				<div class="row mb-4">
+				<div class="row mb-1">
 					<div class="col">
 						<div class="form-outline">
 							<input type="text" id="form3Example1" name="{{ form.name.html_name }}"
@@ -19,23 +19,25 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-4">
+				<div class="row mb-3">
 					<div class="col">
 						<div class="form-outline">
-							{{ form.product_img }}
+							<input type="file" class="custom-file-input" id="id_product_img" name="product_img">
+							<label class="custom-file-label" for="id_product_img">Wybierz zdjęcie</label>
 						</div>
 					</div>
 				</div>
 
-				<div class="row mb-4">
+				<div class="row mb-1">
 					<div class="col">
-						<div class="form-outline mb-4" style="background-color: white">
+						<div class="form-outline mb-1" style="background-color: white">
 							{{ form.description }}
+
 						</div>
 					</div>
 				</div>
 
-				<div class="form-outline mb-4">
+				<div class="form-outline mb-1">
 					<input type="text" id="form3Example1" name="{{ form.link.html_name }}"
 					       class="form-control" {% if form.link.required %} required {% endif %}/>
 					<label class="form-label" for="form3Example1">Link</label>
@@ -44,25 +46,68 @@
 					</div>
 				</div>
 
-				<div class="row mb-4">
-					<div class="col">
+				<div class="row mb-1">
+					<div class="form-group col-md-8">
 						<div class="form-outline">
-							{{ form.current_price }}
-							<label class="form-label" for="form3Example1">Cena promocyjna</label>
+							<input type="text" id="id_current_price_0" name="current_price_0"
+							       class="form-control"/>
+							<label class="form-label" for="id_current_price_0">Cena promocyjna</label>
 						</div>
 					</div>
-					<div class="col">
+					<div class="form-group col-md-4">
 						<div class="form-outline">
-							{{ form.historical_price }}
+
+							<select class="select form-control" name="current_price_1" id="id_current_price_1">
+								<option value="EUR">EUR €</option>
+								<option value="USD">USD $</option>
+								<option value="PLN" selected="">zł</option>
+							</select>
+							<label class="form-label" for="id_current_price_1">Waluta</label>
 						</div>
-						<label class="form-label" for="form3Example1">Cena regularna</label>
 					</div>
 				</div>
-				<div class="form-outline mb-4">
-					{{ form.delivery_cost }}
-					<label class="form-label" for="form3Example1">Koszt dostawy</label>
+				<div class="row mb-1">
+					<div class="form-group col-md-8">
+						<div class="form-outline">
+							<input type="text" id="id_historical_price_0" name="historical_price_0"
+							       class="form-control"/>
+							<label class="form-label" for="id_historical_price_0">Cena regularna</label>
+						</div>
+					</div>
+					<div class="form-group col-md-4">
+						<div class="form-outline">
+
+							<select class="select form-control" name="historical_price_1" id="id_historical_price_1">
+								<option value="EUR">EUR €</option>
+								<option value="USD">USD $</option>
+								<option value="PLN" selected="">zł</option>
+							</select>
+							<label class="form-label" for="id_historical_price_1">Waluta</label>
+						</div>
+					</div>
 				</div>
-				<button type="submit" class="btn btn-success btn-block mb-4">Dodaj</button>
+
+				<div class="row mb-1">
+					<div class="form-group col-md-8">
+						<div class="form-outline">
+							<input type="text" id="id_delivery_cost_0" name="delivery_cost_0"
+							       class="form-control"/>
+							<label class="form-label" for="id_delivery_cost_0">Koszt transportu</label>
+						</div>
+					</div>
+					<div class="form-group col-md-4">
+						<div class="form-outline">
+
+							<select class="select form-control" name="delivery_cost_1" id="id_delivery_cost_1">
+								<option value="EUR">EUR €</option>
+								<option value="USD">USD $</option>
+								<option value="PLN" selected="">zł</option>
+							</select>
+							<label class="form-label" for="id_delivery_cost_1">Waluta</label>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-success btn-block mb-1">Dodaj</button>
 
 			</form>
 		</article>

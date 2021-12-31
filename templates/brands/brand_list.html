@@ -13,9 +13,7 @@
 			<div class="card-body d-flex flex-column pt-1">
 				<ul class="list-unstyled text-left">
 					<li>Produktów: {{ brand.product_set.count }}</li>
-					<li>Okazji: 5/12</li>
-					<li>Komentarzy: 5/12</li>
-					<li><a href="{{ brand.website }}">WWW</a></li>
+					<li>Okazji: x/y</li>
 				</ul>
 				<a class="mt-auto btn btn btn-danger"
 				   href="{% url 'products:brand_detail' brand.slug %}">{{ brand.brand }}</a>
@@ -26,5 +24,7 @@
 			</div>
 		{% endif %}
 		{% endfor %}
+
+		{% include "_pagination.html" %}
 	</div>
 {% endblock %}

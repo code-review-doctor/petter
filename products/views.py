@@ -15,7 +15,6 @@ class ProductListView(ListView):
     def get_context_data(self, **kwargs):
         context = super(ProductListView, self).get_context_data(**kwargs)
         query = self.request.GET.get('deal')
-        print(self.request.GET)
         if query:
             context['filter'] = ProductsFilter(self.request.GET, queryset=self.get_queryset())
 
@@ -32,6 +31,7 @@ class BrandListView(ListView):
     model = Brand
     context_object_name = 'brands'
     template_name = 'brands/brand_list.html'
+    paginate_by = 16
 
 
 class BrandDetailView(DetailView):

@@ -13,6 +13,9 @@ class Brand(models.Model):
     description = models.CharField(max_length=500)
     slug = models.SlugField(unique=True, max_length=50, allow_unicode=True, blank=True, editable=False)
 
+    class Meta:
+        ordering = ['brand']
+
     def __str__(self):
         return str(self.brand)
 
@@ -24,9 +27,6 @@ class Brand(models.Model):
     def get_absolute_url(self):
         return reverse("products:brand_detail", args=[str(self.slug)])
 
-    class Meta:
-        ordering = ['brand']
-
 
 class Product(models.Model):
     name = models.CharField(max_length=500)
@@ -37,6 +37,9 @@ class Product(models.Model):
                                       blank=True,
                                       default='img.png')
     slug = models.SlugField(unique=True, max_length=50, allow_unicode=True, blank=True, editable=False)
+
+    class Meta:
+        ordering = ['brand']
 
     def __str__(self):
         return str(self.name)
