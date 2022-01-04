@@ -1,8 +1,9 @@
-# Create your views here.
 import datetime
 
 from django import forms
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.paginator import Paginator
+from django.db.models import Prefetch
 from django.db.models import Q
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
@@ -47,7 +48,8 @@ def vote_view(request):
 
 
 class DealList(ListView):
-    model = Deal
+    queryset = Deal.objects.select_related('author', 'category').prefetch_related(
+        Prefetch('comment_set', queryset=Comment.objects.all()))
     template_name = 'deals/deal_list.html'
     context_object_name = 'deals'
     ordering = ['-created_at', '-vote_up', '-vote_down']
@@ -102,16 +104,25 @@ class NewDealDetailView(DetailView):
     model = Deal
     context_object_name = 'deal'
 
+    def get_queryset(self):
+        qs = Deal.objects.all() \
+            .select_related('author', 'category') \
+            .prefetch_related(Prefetch('comment_set', queryset=Comment.objects.all().select_related('author'))) \
+            .prefetch_related('vote_set')
+        return qs
+
     def get_context_data(self, **kwargs):
         context = super(NewDealDetailView, self).get_context_data(**kwargs)
+        comment_limit: int = self.request.GET.get('comment_limit', 20)
+        page: int = self.request.GET.get('page', 1)
+
         context['form'] = CommentForm()
 
-        comments = Comment.objects.filter(deal_id=self.object.id).order_by('-created_at')[:10]
-        context['comments'] = comments
-
-        votes = Vote.objects.filter(deal_id=self.object.id)
+        comments = context['deal'].comment_set.all().order_by('-created_at')
+        p = Paginator(comments, comment_limit)
+        context['comments'] = p.get_page(page)
+        votes = context['deal'].vote_set.filter(deal_id=self.object.id)
         context['votes'] = votes
-
         if not self.request.user.is_anonymous:
             have_voted = votes.filter(user_id=self.request.user.uuid).exists()
             if have_voted:
