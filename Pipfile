@@ -25,6 +25,7 @@ django-money = "~=2.1"
 django-quill-editor = "~=0.1.29"
 django-debug-toolbar = "~=3.2.4"
 pillow = "==8.4.0"
+django-summernote = "*"
 
 [dev-packages]
 faker = "*"
