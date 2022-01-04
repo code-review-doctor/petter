@@ -1,6 +1,7 @@
 # Register your models here.
 from django import forms
 from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
 
 from deals.models import Category
 from deals.models import Comment
@@ -23,9 +24,10 @@ class DealAdminForm(forms.ModelForm):
         return self.cleaned_data
 
 
-class DealAdmin(admin.ModelAdmin):
+class DealAdmin(SummernoteModelAdmin):
     form = DealAdminForm
     list_display = ('name', 'created_at', 'vote_up', 'vote_down', "overall_rating",)
+    summernote_fields = '__all__'
 
     def overall_rating(self, obj):
         return obj.vote_up - obj.vote_down
