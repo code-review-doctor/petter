@@ -1,4 +1,5 @@
 # Create your views here.
+from django.db.models import Prefetch
 from django.views.generic import DetailView
 from django.views.generic import ListView
 
@@ -28,19 +29,13 @@ class ProductDetailView(DetailView):
 
 
 class BrandListView(ListView):
-    model = Brand
+    queryset = Brand.objects.prefetch_related(Prefetch('product_set', queryset=Product.objects.all()))
     context_object_name = 'brands'
     template_name = 'brands/brand_list.html'
-    paginate_by = 16
+    paginate_by = 20
 
 
 class BrandDetailView(DetailView):
     model = Brand
     context_object_name = 'brand'
     template_name = 'brands/brand_detail.html'
-
-    def get_context_data(self, **kwargs):
-        context = super(BrandDetailView, self).get_context_data(**kwargs)
-        brand = kwargs['object']
-        context['brand_products'] = Product.objects.filter(brand=brand.id)
-        return context
