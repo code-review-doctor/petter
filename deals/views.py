@@ -15,6 +15,7 @@ from django.views.generic import CreateView
 from django.views.generic import DeleteView
 from django.views.generic import DetailView
 from django.views.generic import ListView
+from django_summernote.widgets import SummernoteInplaceWidget
 
 from deals.filters import DealFilter
 from deals.models import Comment
@@ -84,6 +85,11 @@ class DealCreateView(LoginRequiredMixin, CreateView):
               'current_price', 'historical_price', 'delivery_cost',
               # 'valid_till' commented for mocking purpose
               ]
+
+    def get_form(self, form_class=None):
+        form = super(DealCreateView, self).get_form(form_class)
+        form.fields['description'].widget = SummernoteInplaceWidget()
+        return form
 
     def form_valid(self, form):
         form.instance.author = self.request.user
