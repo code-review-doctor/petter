@@ -27,6 +27,7 @@ urlpatterns = [
     path('profile/', include('allauth.urls')),
     path('', include(('deals.urls', 'deals'), namespace='deals')),
     path('', include(('products.urls', 'products'), namespace='products')),
+    path('summernote/', include('django_summernote.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
