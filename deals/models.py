@@ -6,7 +6,6 @@ from django.db.models import F
 from django.db.models import Q
 from django.urls import reverse
 from django.utils.text import slugify
-from django_quill.fields import QuillField
 from djmoney.models.fields import MoneyField
 
 from users.models import CustomUser
@@ -40,7 +39,7 @@ class Deal(models.Model):
     deal_mgr = DealManager()
     category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)
     name = models.CharField(max_length=140, db_index=True)
-    description = QuillField(max_length=5000)
+    description = models.TextField(max_length=5000)
     link = models.URLField()
     product_img = models.ImageField(upload_to='deals_photo')
     uuid = models.UUIDField(

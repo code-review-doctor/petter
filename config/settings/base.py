@@ -32,30 +32,9 @@ INSTALLED_APPS = [
     'allauth.account',
     # 'allauth.socialaccount',
     'djmoney',
-    'django_quill',
+    'django_summernote',
     'debug_toolbar',
 ]
-
-QUILL_CONFIGS = {
-    'default': {
-        'theme': 'snow',
-        'placeholder': 'Wspaniały opis okazji...',
-        'modules': {
-            'syntax': True,
-            'toolbar': [
-                [
-                    {'align': []},
-                    'bold', 'italic', 'underline', 'strike', 'blockquote',
-                    {'color': []},
-                ],
-                [{'list': 'ordered'}, {'list': 'bullet'}],
-                [{'list': ['ordered', 'bullet', ]}],
-                ['link'],
-                ['clean'],
-            ]
-        }
-    }
-}
 
 CURRENCIES = ('USD', 'EUR', 'PLN')
 CURRENCY_CHOICES = [('USD', 'USD $'), ('EUR', 'EUR €'), ('PLN', 'zł')]
@@ -119,12 +98,39 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+SUMMERNOTE_THEME = 'bs4'
+SUMMERNOTE_CONFIG = {
+    'summernote': {
+        # As an example, using Summernote Air-mode
+        'airMode': False,
+
+        # Change editor size
+        'width': '100%',
+        'height': '480',
+
+        # Toolbar customization
+        # https://summernote.org/deep-dive/#custom-toolbar-popover
+        'toolbar': [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['para', ['ul']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['codeview', 'help']],
+        ],
+
+        'codemirror': {
+            'mode': 'htmlmixed',
+            'lineNumbers': 'true',
+            'theme': 'monokai',
+        },
+    },
+}
 
 FILE_UPLOAD_HANDLERS = [
     'django.core.files.uploadhandler.MemoryFileUploadHandler',
     'django.core.files.uploadhandler.TemporaryFileUploadHandler',
 ]
-
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 LANGUAGE_CODE = 'pl-pl'
 
 TIME_ZONE = 'UTC'
