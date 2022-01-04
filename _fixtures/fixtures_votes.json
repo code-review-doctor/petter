@@ -1,0 +1,11 @@
+[
+  {
+    "model": "deals.vote",
+    "fields": {
+      "created_at": "2021-12-31T13:37:55.127Z",
+      "deal": 3,
+      "user": "f0c17368-02f9-49d1-8510-bf8de02341cc",
+      "vote_value": 1
+    }
+  }
+]
