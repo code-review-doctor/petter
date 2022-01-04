@@ -24,7 +24,7 @@
 			</div>
 			<div class="col-md-8">
 				<h5>{{ deal.name }}</h5>
-				<p class="mb-2 text-muted text-uppercase small">Category | {{ deal.author }}</p>
+				<p class="mb-2 text-muted text-uppercase small">{{ deal.category }} | {{ deal.author }}</p>
 				<p>
 					<span class="mr-1">
 						<strong>{{ deal.current_price }}
@@ -80,7 +80,7 @@
 			</div>
 
 		</div>
-		<p class="pt-1">{{ deal.description.html|safe }}</p>
+		<p class="pt-1">{{ deal.description |safe }}</p>
 	</section>
 
 	{% include 'deals/comments.html' %}

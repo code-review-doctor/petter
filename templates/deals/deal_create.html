@@ -9,6 +9,7 @@
 			<form class="create_deal" method="POST" enctype="multipart/form-data">
 				{% csrf_token %}
 				{{ form.errors }}
+				{{ form.media }}
 				<!-- 2 column grid layout with text inputs for the first and last names -->
 				<div class="row mb-1">
 					<div class="col">
