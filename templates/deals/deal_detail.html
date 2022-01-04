@@ -36,7 +36,7 @@
 				<p>
 
 					<span id="deal_id" data-value="{{ deal.id }}" {% if have_voted %} data-toggle="tooltip"
-					      title="You can vote only once." {% endif %}>
+					      title="Może oddać tylko jeden głos!" {% endif %}>
 					<span id="container-vote-up">
 
 						<a class="vote-action btn btn-outline-success {% if have_voted %}disabled {% endif %}" href="#"
@@ -80,7 +80,7 @@
 			</div>
 
 		</div>
-		<p class="pt-1">{{ deal.description.html|safe  }}</p>
+		<p class="pt-1">{{ deal.description.html|safe }}</p>
 	</section>
 
 	{% include 'deals/comments.html' %}
@@ -108,9 +108,8 @@
                         document.getElementById("vote_down").classList.add("disabled")
                         document.getElementById("vote_up").classList.add("disabled")
                         document.getElementById("voting-counter").innerHTML = json['total']
-
-                        console.log(json)
-
+                        document.getElementById("deal_id").dataset.toggle = 'tooltip'
+                        document.getElementById("deal_id").title = 'Może oddać tylko jeden głos!'
                     },
                     error: function (xhr, errmsg, err) {
                     }
