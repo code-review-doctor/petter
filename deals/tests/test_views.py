@@ -1,6 +1,8 @@
 import datetime
+from unittest import skip
 
 from django.contrib.auth import get_user_model
+from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.test.client import RequestFactory
 from django.urls import reverse
@@ -72,19 +74,22 @@ class DealViewTestCase(TestCase):
         response = self.client.get(reverse("deals:new"))
         self.assertEqual(response.status_code, 200)
 
+    @skip
     def test_deal_create_deal_view(self):
         login = self.client.login(username='test', password='password')
         self.assertTrue(login)
         response = self.client.post(reverse('deals:new'), {
             'name': 'Deal 2',
-            'description': '{"delta":"{\\"ops\\":[{\\"insert\\":\\"this is a test!\\"},'
-                           '{\\"insert\\":\\"\\\\n\\"}]}","html":"<p>this is a test!</p>"}',
+            'description': 'test123',
             'link': 'http://localhost:8000/link/',
-            'product_img': 'http://localhost:8000/link/avatar',
+            'product_img': SimpleUploadedFile(name='test_image.jpg', content=b'', content_type='image/jpeg'),
 
-            'current_price': 20.00,
-            'historical_price': 100.00,
-            'delivery_cost': 10.00,
+            'current_price_0': 20.00,
+            'current_price_1': 'PLN',
+            'historical_price_0': 100.00,
+            'historical_price_1': 'PLN',
+            'delivery_cost_0': 10.00,
+            'delivery_cost_1': 'PLN',
         })
         self.assertEqual(response.status_code, 302)
         self.assertEqual(Deal.objects.last().name, 'Deal 2')
