@@ -1,0 +1,46 @@
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    font-size: 32px;
+}
+
+.icon-wrapper .bi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 700ms;
+}
+
+.icon-wrapper .bi-file-plus-fill.text-success {
+    opacity: 0;
+}
+
+.icon-wrapper .bi-file-plus.text-success {
+    opacity: 1;
+}
+
+.icon-wrapper:hover .bi-file-plus-fill.text-success {
+    opacity: 1
+}
+
+.icon-wrapper:hover .bi-file-plus.text-success {
+    opacity: 0;
+}
+
+.icon-wrapper .bi-file-minus-fill.text-danger {
+    opacity: 0;
+}
+
+.icon-wrapper .bi-file-minus.text-danger {
+    opacity: 1;
+}
+
+.icon-wrapper:hover .bi-file-minus-fill.text-danger {
+    opacity: 1
+}
+
+.icon-wrapper:hover .bi-file-minus.text-danger {
+    opacity: 0;
+}
