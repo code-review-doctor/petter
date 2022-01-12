@@ -1,121 +1,188 @@
 {% extends '_base.html' %}
+{% load static %}
 {% block title %} Deal detail {% endblock %}
+{% block scripts %}
+    {{ block.super }}
+    <script src="{% static 'js/copyToClipboard.js' %}"></script>
+{% endblock scripts %}
 {% block content %}
 
-	<!--Section: Block Content-->
-	<section class="mb-5">
-		<div class="row">
-			<div class="col-md-4 mb-2 mb-md-0">
-				<div id="mdb-lightbox-ui"></div>
-				<div class="mdb-lightbox">
-					<div class="row product-gallery mx-1">
-						<div class="col-12 mb-0">
-							<figure class="view overlay rounded z-depth-1 main-img">
-								<a href="{{ deal.product_img.url }}" data-size="400x400">
-									<img src="{{ deal.product_img.url }}" class="img-fluid z-depth-1"
-									     alt="Product photo">
-								</a>
-							</figure>
-						</div>
-					</div>
+    {% if not deal.active %}
+        <div class="alert alert-dark" role="alert">
+            <h4 class="alert-heading">Niestety już za późno!</h4>
+            <p>Tym razem Ci się nie udało, może nastepnym razem?</p>
+            <hr>
+            <p class="mb-0"><small>Jeżeli okazja jest znowu aktywna, zgłoś ją do nas KLIK</small></p>
+        </div>
+    {% endif %}
 
-				</div>
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-md-4 mb-2 mb-md-0">
+                <div id="mdb-lightbox-ui"></div>
+                <div class="mdb-lightbox">
+                    <div class="row product-gallery mx-1">
+                        <div class="col-12 mb-0 shadow-sm">
+                            <figure class="view overlay rounded z-depth-1 main-img">
+                                <img src="{{ deal.product_img.url }}" class="img-fluid z-depth-1 "
+                                     alt="Product photo" data-toggle="modal" data-target="#myModal">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="float-right mr-2">&times;</span>
+                        </button>
+                        <img src="{{ deal.product_img.url }}" class="img-responsive" alt="Product photo">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <p class="mb-1 h4 text-dark"> {{ deal.name }} </p>
+                <p class="mb-2 text-muted text-uppercase small">{{ deal.category }}</p>
+                <p class="h5">
+                    <span class="text-success font-weight-bold">{{ deal.current_price_format }}</span>
+                    {% if deal.historical_price %}
+                        <span class="text-muted"> <s> {{ deal.historical_price_format }}</s></span>
+                        <span class="text-dark">{{ deal.price_percentage | floatformat:2 }}%</span>
+                    {% endif %}
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-sm table-borderless mb-0" aria-describedby="deal details">
+                        <tbody>
+                        {% if deal.delivery_cost %}
+                            <tr>
+                                <th class="pl-0 w-25" scope="row"><strong>Koszt dostawy:</strong></th>
+                                <td>
+                                    <i class="bi bi-truck" aria-hidden="true"></i> {{ deal.delivery_cost }}
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if deal.valid_till %}
+                            <tr>
+                                <th class="pl-0 w-25" scope="row"><strong>Dostępny:</strong></th>
+                                <td>
+                                    <i class="bi bi-stopwatch" aria-hidden="true"></i> {{ deal.valid_till | timeuntil }}
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if deal.promo_code %}
+                            <tr>
+                                <th class="pl-0 w-25" scope="row"><strong>Kod promocyjny:</strong></th>
+                                <td>
+                                    <h3>
+                                        <button type="button" class="btn btn-outline-secondary"
+                                                onclick="CopyToClipBoard('promo_code')"
+                                                title="Kliknij aby skopiować">
+                                            <i class="bi bi-files" aria-hidden="true"></i>
+                                            <input type="text" id="promo_code" value="{{ deal.promo_code }}"
+                                                   readonly="readonly">
+                                        </button>
+                                    </h3>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        <tr>
+                            <th class="pl-0 w-25" scope="row"><strong>Dodał:</strong></th>
+                            <td>
+                                <i class="bi bi-person" aria-hidden="true"></i> {{ deal.author }}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span id="deal_id" data-value="{{ deal.id }}" {% if have_voted %} data-toggle="tooltip"
+                          title="Możesz oddać tylko jeden głos!" {% endif %}
+                          class="text-center mt-3 mb-3 border-0 border-warning rounded-lg">
 
-			</div>
-			<div class="col-md-8">
-				<h5>{{ deal.name }}</h5>
-				<p class="mb-2 text-muted text-uppercase small">{{ deal.category }} | {{ deal.author }}</p>
-				<p>
-					<span class="mr-1">
-						<strong>{{ deal.current_price }}
-							{% if deal.historical_price %}| <s> {{ deal.historical_price }}</s> |
-								{{ deal.price_percentage | floatformat:2 }}%  {% endif %}
-						</strong>
-					</span>
-				</p>
-				<p>
+            <span id="container-vote-up">
 
-					<span id="deal_id" data-value="{{ deal.id }}" {% if have_voted %} data-toggle="tooltip"
-					      title="Może oddać tylko jeden głos!" {% endif %}>
-					<span id="container-vote-up">
+            {% if not have_voted %}
+                <a class="vote-action text-decoration-none disabled" href="#" role="button" value="vote_up"
+                   id="vote_up">
+                     <span class="icon-wrapper">
+                        <i class="bi bi-file-plus text-success" aria-hidden=true> </i>
+                        <i class="bi bi-file-plus-fill text-success" aria-hidden=true> </i>
+                    </span>
+            </a>
+            {% elif have_voted and have_voted.vote_value == 1 %}
+                <span class="icon-wrapper">
+                <i class="bi bi-file-plus-fill text-dark" aria-hidden=true> </i>
+                </span>
+            {% endif %}
+            </span>
 
-						<a class="vote-action btn btn-outline-success {% if have_voted %}disabled {% endif %}" href="#"
-						   role="button" value="vote_up" id="vote_up">
-							<i class="bi bi-file-plus" fill="currentColor" width="20" height="20" aria-hidden=true></i>
-						</a>
+            <span id="voting-counter" class="p-2">{{ deal.get_voting_count }}</span>
 
-					</span>
+            <span id="container-vote-down">
+            {% if not have_voted %}
+                <a class="vote-action" href="#" value="vote_down" id="vote_down">
+                <span class="icon-wrapper">
 
-					<span id="voting-counter" class="p-2">{{ deal.get_voting_count }}</span>
+                   <i class="bi bi-file-minus text-danger" aria-hidden=true> </i>
+                   <i class="bi bi-file-minus-fill text-danger" aria-hidden=true> </i>
 
-					<span id="container-vote-down">
-						<a class="vote-action btn btn-outline-danger {% if have_voted %}disabled {% endif %}" href="#"
-						   role="button" value="vote_down" id="vote_down">
-							<i class="bi bi-file-minus" fill="currentColor" width="20" height="20" aria-hidden=true></i>
-						</a>
-					</span>
-					</span>
-				</p>
+                </span>
+            </a>
+            {% elif have_voted and have_voted.vote_value == -1 %}
+                <span class="icon-wrapper">
+                    <i class="bi bi-file-minus-fill text-dark" aria-hidden=true> </i>
+                </span>
+            {% endif %}
 
-				<div class="table-responsive">
-					<table class="table table-sm table-borderless mb-0" aria-describedby="deal details">
-						<tbody>
-						<tr>
-							<th class="pl-0 w-25" scope="row"><strong>Delivery cost</strong></th>
-							<td>{{ deal.delivery_cost }}</td>
-						</tr>
-						<tr>
-							<th class="pl-0 w-25" scope="row"><strong>Valid</strong></th>
-							{#							Add custom filter and return 0 when expired#}
-							<td>{{ deal.valid_till | timeuntil }}</td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-				<hr>
+            </span>
 
-				<a type="button" class="btn btn-primary btn-md mr-1 mb-2" href="{{ deal.link }}">Buy now</a>
+            </span>
 
-
-			</div>
-
-		</div>
-		<p class="pt-1">{{ deal.description |safe }}</p>
-	</section>
-
-	{% include 'deals/comments.html' %}
-	<script>
+                </div>
+                <p class="text-center mt-3 mb-3 border-0 border-warning rounded-lg">
+                </p>
+                <hr>
+                <a type="button" class="btn btn-lg btn-block btn-primary btn-md mr-1 mb-2" href="{{ deal.link }}">Przejdź</a>
+            </div>
+        </div>
+        <p class="pt-1">{{ deal.description |safe }}</p>
+    </section>
+    {% include 'deals/comments.html' %}
+    <script>
         {# TODO: Delete this dummy permission #}
-        $(document).ready(function () {
-            $('.vote-action').click(function (e) {
-                e.preventDefault();
-                let deal_id = document.getElementById('deal_id').getAttribute('data-value');
-                let button = $(this).attr("value");
+        $(document).ready(
+            function () {
+                $('.vote-action').click(function (e) {
+                    e.preventDefault();
+                    let deal_id = document.getElementById('deal_id').getAttribute('data-value');
+                    let button = $(this).attr("value");
 
-                $.ajax({
-                    type: 'POST',
-                    url: '{% url "deals:vote" %}',
-                    data: {
-                        deal_id: deal_id,
-                        csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
-                        action: 'votes',
-                        button: button,
-                    },
-                    success: function (json) {
-                        if (json.length < 1 || json == undefined) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '{% url "deals:vote" %}',
+                        data: {
+                            deal_id: deal_id,
+                            csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+                            action: 'votes',
+                            button: button,
+                        },
+                        success: function (json) {
+                            if (json.length < 1 || json == undefined) {
+                            }
+                            $('.toast').toast('show');
+                            document.getElementById("vote_down").classList.add("disabled")
+                            document.getElementById("vote_up").classList.add("disabled")
+                            document.getElementById("voting-counter").innerHTML = json['total']
+                            document.getElementById("deal_id").dataset.toggle = 'tooltip'
+                            document.getElementById("deal_id").title = 'Możesz oddać tylko jeden głos!'
+                        },
+                        error: function (xhr, errmsg, err) {
                         }
-                        $('.toast').toast('show');
-                        document.getElementById("vote_down").classList.add("disabled")
-                        document.getElementById("vote_up").classList.add("disabled")
-                        document.getElementById("voting-counter").innerHTML = json['total']
-                        document.getElementById("deal_id").dataset.toggle = 'tooltip'
-                        document.getElementById("deal_id").title = 'Może oddać tylko jeden głos!'
-                    },
-                    error: function (xhr, errmsg, err) {
-                    }
+                    });
                 });
-            });
-        });
+            },
+        );
 
-	</script>
+    </script>
 {% endblock %}
