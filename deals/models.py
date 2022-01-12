@@ -37,26 +37,29 @@ class DealManager(models.Manager):
 class Deal(models.Model):
     objects = models.Manager()
     deal_mgr = DealManager()
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)
-    name = models.CharField(max_length=140, db_index=True)
-    description = models.TextField(max_length=5000)
-    link = models.URLField()
-    product_img = models.ImageField(upload_to='deals_photo')
     uuid = models.UUIDField(
         unique=True,
         default=uuid.uuid4,
         editable=False)
-    current_price = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN')
+    active = models.BooleanField(default=True, blank=False, null=False)
+
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)
+    promo_code = models.CharField(max_length=200, blank=True)
+    name = models.CharField(max_length=140, db_index=True)
+    description = models.TextField(max_length=5000)
+    link = models.URLField()
+    product_img = models.ImageField(upload_to='deals_photo')
+
+    current_price = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN', default=0)
     historical_price = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN',
-                                  null=False, blank=True, default=0)
-    delivery_cost = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN')
+                                  null=True, blank=True, default=0)
+    delivery_cost = MoneyField(max_digits=19, decimal_places=2, default_currency='PLN',
+                               null=True, blank=True, default=0)
+
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, db_index=True)
     valid_till = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    promo_code = models.CharField(max_length=200, blank=True)
-
-    active = models.BooleanField(default=True, blank=False, null=False)
 
     vote_up = models.IntegerField(default=0)
     vote_down = models.IntegerField(default=0)
