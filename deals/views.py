@@ -1,5 +1,3 @@
-import datetime
-
 from django import forms
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
@@ -9,7 +7,6 @@ from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
 from django.urls import reverse_lazy
-from django.utils import timezone
 from django.views.decorators.http import require_http_methods
 from django.views.generic import CreateView
 from django.views.generic import DeleteView
@@ -83,8 +80,7 @@ class DealCreateView(LoginRequiredMixin, CreateView):
     template_name = 'deals/deal_create.html'
     fields = ['name', 'description', 'link', 'product_img',
               'current_price', 'historical_price', 'delivery_cost',
-              # 'valid_till' commented for mocking purpose
-              ]
+              'valid_till', 'promo_code']
 
     def get_form(self, form_class=None):
         form = super(DealCreateView, self).get_form(form_class)
@@ -93,8 +89,10 @@ class DealCreateView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
-        today = timezone.now()
-        form.instance.valid_till = today + datetime.timedelta(8)
+        if not form.instance.delivery_cost:
+            form.instance.delivery_cost = '0'
+        if not form.instance.historical_price:
+            form.instance.historical_price = '0'
         return super().form_valid(form)
 
 
@@ -132,7 +130,7 @@ class NewDealDetailView(DetailView):
         if not self.request.user.is_anonymous:
             have_voted = votes.filter(user_id=self.request.user.uuid).exists()
             if have_voted:
-                have_voted = votes.get(user_id=self.request.user.uuid)
+                have_voted: Vote = votes.get(user_id=self.request.user.uuid)
             context['have_voted'] = have_voted
 
         return context
