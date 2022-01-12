@@ -1,25 +1,47 @@
 <div class="container">
-	<div class="card mb-2">
-		<div class="row no-gutters">
-			<div class="col-sm-2 p-2">
-				<img class="card-img" src="{{ deal.product_img.url }}" alt="Deal image">
-			</div>
-			<div class="col-sm-10">
-				<div class="card-body">
-					<h5 class="card-title">
-						<a href="{% url 'deals:detail' deal.pk %}">
-							{{ deal.name }} | {{ deal.current_price_format }}
-							{% if deal.historical_price %}| <s> {{ deal.historical_price_format }}</s> |
-								{{ deal.price_percentage | floatformat:2 }}%  {% endif %}
-						</a>
-						<p><span class="badge badge-info">{{ deal.get_voting_count }}</span></p>
-					</h5>
-					<p class="card-text">{{ deal.description | safe | striptags | truncatechars:100 }}</p>
-					<p><small>{{ deal.created_at }} | Comments: {{ deal.comment_set.count }} |
-						Author: {{ deal.author }}</small></p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="card mb-2">
+        <div class="row no-gutters">
+            <div class="col-sm-3 p-2">
+                <img class="card-img" src="{{ deal.product_img.url }}" alt="Deal image">
+            </div>
+            <div class="col-sm-9">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <p class="mb-1 h4">
+                            <a href="{% url 'deals:detail' deal.pk %}" class="text-dark"> {{ deal.name }}</a>
+                            <label class="badge badge-info text-white">
+                                <i class="bi bi-heart align-middle" aria-hidden="true"></i>
+                                <span class="align-middle">{{ deal.get_voting_count }}</span>
+                            </label>
+                        </p>
+                        <p class="h5">
+                            <span class="text-success font-weight-bold">{{ deal.current_price_format }}</span>
+                            {% if deal.historical_price %}
+                                <span class="text-muted"> <s> {{ deal.historical_price_format }}</s></span>
+                                <span class="text-dark">{{ deal.price_percentage | floatformat:2 }}%</span>
+
+                            {% endif %}
+                        </p>
+                        <p></p>
+                    </h5>
+                    <p class="card-text text-break">{{ deal.description | safe | striptags | truncatechars:200 }}</p>
+                    <p class="text-secondary">
+                        <small>
+                            <i class="bi bi-calendar3" aria-hidden="true"></i> {{ deal.created_at }}
+                            <i class="bi bi-menu-up" aria-hidden="true"></i> <a
+                                href="{% url 'deals:detail' deal.pk %}#comments_container"
+                                class="text-dark"> {{ deal.comment_set.count }}</a>
+                            <span class="float-right ">
+								<i class="bi bi-person" aria-hidden="true"></i>
+								<a href="{% url 'accounts:profile' deal.author %}" class="text-secondary">
+									 {{ deal.author }}
+								</a>
+							</span>
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
