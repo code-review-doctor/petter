@@ -91,6 +91,18 @@ class DealViewTestCase(TestCase):
             'delivery_cost_0': 10.00,
             'delivery_cost_1': 'PLN',
         })
+        # encoding = {str} 'utf-8'
+        # 'csrfmiddlewaretoken' = {str} 'xSA4g3CnZjubybMB4noF37qJeDxhoVxjF2cTbVdwFSU7CipzC7QdnQPtCuDBXiQY'
+        # 'name' = {str} 'Fake random Deal'
+        # 'description' = {str} ''
+        # 'files' = {str} ''
+        # 'valid_till' = {str} '2023-06-01T08:30'
+        # 'link' = {str} 'http://127.0.0.1:8000/deals/new/'
+        # 'current_price_0' = {str} '100'
+        # 'current_price_1' = {str} 'PLN'
+        # 'historical_price_0' = {str} '1000'
+        # 'delivery_cost_0' = {str} '10'
+        # __len__ = {int} 10
         self.assertEqual(response.status_code, 302)
         self.assertEqual(Deal.objects.last().name, 'Deal 2')
 
