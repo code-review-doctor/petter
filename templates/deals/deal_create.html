@@ -3,58 +3,62 @@
 {% block title %} Dodaj nową okazję {% endblock %}
 {% block content %}
 
-	<div class="card bg-light">
-		<article class="card-body mx-auto" style="max-width: 800px;">
-			<h4 class="card-title mt-3 text-center">Dodaj nową okazję</h4>
-			<form class="create_deal" method="POST" enctype="multipart/form-data">
-				{% csrf_token %}
-				{{ form.errors }}
-				{{ form.media }}
-				<!-- 2 column grid layout with text inputs for the first and last names -->
-				<div class="row mb-1">
-					<div class="col">
-						<div class="form-outline">
-							<input type="text" id="form3Example1" name="{{ form.name.html_name }}"
-							       class="form-control"/>
-							<label class="form-label" for="form3Example1">Tytuł</label>
-						</div>
-					</div>
-				</div>
-				<div class="row mb-3">
-					<div class="col">
-						<div class="form-outline">
-							<input type="file" class="custom-file-input" id="id_product_img" name="product_img">
-							<label class="custom-file-label" for="id_product_img">Wybierz zdjęcie</label>
-						</div>
-					</div>
-				</div>
+    <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 800px;">
+            <h4 class="card-title mt-3 text-center">Dodaj nową okazję</h4>
+            <form class="create_deal" method="POST" enctype="multipart/form-data" onsubmit=alter()>
+                {% csrf_token %}
+                {{ form.errors }}
+                {{ form.media }}
+                <div class="row mb-1">
+                    <div class="col">
+                        <div class="form-outline">
+                            <input type="text" name="{{ form.name.html_name }}" class="form-control" />
+                            <label class="form-label">Tytuł</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-outline">
+                            <input type="file" class="custom-file-input" id="id_product_img" name="product_img">
+                            <label class="custom-file-label" for="id_product_img">Wybierz zdjęcie</label>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="row mb-1">
-					<div class="col">
-						<div class="form-outline mb-1" style="background-color: white">
-							{{ form.description }}
+                <div class="row mb-1">
+                    <div class="col">
+                        <div class="form-outline mb-1" style="background-color: white">
+                            {{ form.description }}
 
-						</div>
-					</div>
-				</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-outline mb-1">
+                    <input type="text" id="{{ form.promo_code.id }}" name="{{ form.promo_code.html_name }}"
+                           class="form-control" />
+                    <label class="form-label">Kod promocyjny</label>
+                </div>
 
-				<div class="form-outline mb-1">
-					<input type="text" id="form3Example1" name="{{ form.link.html_name }}"
-					       class="form-control" {% if form.link.required %} required {% endif %}/>
-					<label class="form-label" for="form3Example1">Link</label>
-					<div class="invalid-feedback">
-						Please provide a valid link.
-					</div>
-				</div>
+                <div class="form-outline mb-1">
+                    <input type="datetime-local" name="{{ form.valid_till.html_name }}" class="form-control" />
+                    <label class="form-label">Dostępny do</label>
+                </div>
 
-				<div class="row mb-1">
-					<div class="form-group col-md-8">
-						<div class="form-outline">
-							<input type="text" id="id_current_price_0" name="current_price_0"
-							       class="form-control"/>
-							<label class="form-label" for="id_current_price_0">Cena promocyjna</label>
-						</div>
-					</div>
+                <div class="form-outline mb-1">
+                    <input type="text" id="{{ form.link.id }}" name="{{ form.link.html_name }}" class="form-control" />
+                    <label class="form-label">Link</label>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="form-group col-md-8">
+                        <div class="form-outline">
+                            <input type="text" id="id_current_price_0" name="current_price_0"
+                                   class="form-control" />
+                            <label class="form-label" for="id_current_price_0">Cena promocyjna</label>
+                        </div>
+                    </div>
 					<div class="form-group col-md-4">
 						<div class="form-outline">
 
@@ -65,53 +69,41 @@
 							</select>
 							<label class="form-label" for="id_current_price_1">Waluta</label>
 						</div>
-					</div>
-				</div>
-				<div class="row mb-1">
-					<div class="form-group col-md-8">
-						<div class="form-outline">
-							<input type="text" id="id_historical_price_0" name="historical_price_0"
-							       class="form-control"/>
-							<label class="form-label" for="id_historical_price_0">Cena regularna</label>
-						</div>
-					</div>
-					<div class="form-group col-md-4">
-						<div class="form-outline">
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="form-group col-md-8">
+                        <div class="form-outline">
+                            <input type="text" id="id_historical_price_0" name="historical_price_0"
+                                   class="form-control" />
+                            <label class="form-label" for="id_historical_price_0">Cena regularna</label>
+                        </div>
+                    </div>
+                    <input type="hidden" name="historical_price_1" id="id_historical_price_1" value="PLN">
+                </div>
 
-							<select class="select form-control" name="historical_price_1" id="id_historical_price_1">
-								<option value="EUR">EUR €</option>
-								<option value="USD">USD $</option>
-								<option value="PLN" selected="">zł</option>
-							</select>
-							<label class="form-label" for="id_historical_price_1">Waluta</label>
-						</div>
-					</div>
-				</div>
+                <div class="row mb-1">
+                    <div class="form-group col-md-8">
+                        <div class="form-outline">
+                            <input type="text" id="id_delivery_cost_0" name="delivery_cost_0"
+                                   class="form-control" />
+                            <label class="form-label" for="id_delivery_cost_0">Koszt transportu</label>
+                        </div>
+                    </div>
+                    <input type="hidden" name="delivery_cost_1" id="id_delivery_cost_1" value="PLN">
+                </div>
+                <button type="submit" class="btn btn-success btn-block mb-1">Dodaj</button>
 
-				<div class="row mb-1">
-					<div class="form-group col-md-8">
-						<div class="form-outline">
-							<input type="text" id="id_delivery_cost_0" name="delivery_cost_0"
-							       class="form-control"/>
-							<label class="form-label" for="id_delivery_cost_0">Koszt transportu</label>
-						</div>
-					</div>
-					<div class="form-group col-md-4">
-						<div class="form-outline">
+            </form>
+        </article>
+    </div>
 
-							<select class="select form-control" name="delivery_cost_1" id="id_delivery_cost_1">
-								<option value="EUR">EUR €</option>
-								<option value="USD">USD $</option>
-								<option value="PLN" selected="">zł</option>
-							</select>
-							<label class="form-label" for="id_delivery_cost_1">Waluta</label>
-						</div>
-					</div>
-				</div>
-				<button type="submit" class="btn btn-success btn-block mb-1">Dodaj</button>
-
-			</form>
-		</article>
-	</div>
+    <script>
+        function alter() {
+            let currency = id_current_price_1.value
+            id_historical_price_1.value = currency
+            id_delivery_cost_1.value = currency
+        }
+    </script>
 
 {% endblock content %}
