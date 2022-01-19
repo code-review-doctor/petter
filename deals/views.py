@@ -52,6 +52,7 @@ class DealList(ListView):
     context_object_name = 'deals'
     ordering = ['-created_at', '-vote_up', '-vote_down']
     search_message = ''
+    paginate_by = 20
 
     def get_context_data(self, **kwargs):
         context = super(DealList, self).get_context_data(**kwargs)
@@ -101,7 +102,7 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ['comment']
 
-    comment = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control mr-3', 'id': 'comment_id'}))
+    comment = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control me-3', 'id': 'comment_id'}))
 
 
 class NewDealDetailView(DetailView):
