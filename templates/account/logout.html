@@ -2,24 +2,36 @@
 {% block title %}Sign out?{% endblock %}
 {% block content %}
 
-	<div class="card bg-light">
-		<article class="card-body mx-auto" style="max-width: 400px;">
-			<h4 class="card-title mt-3 text-center">Sign out?</h4>
-			<p class="text-center">Are you sure {{ user.username }} you want to sign out?</p>
-			<form method="post" action="{% url 'account_logout' %}">
-				{% csrf_token %}
-				{% if redirect_field_value %}
-					<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-				{% endif %}
-				<small>{{ form.email.errors }}</small>
+    <section class="vh-50 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-light" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
 
-				<div class="form-group">
+                            <div class="mb-md-5 mt-md-4 pb-1">
 
-					<button type="submit" class="btn btn-primary btn-block"> Log out</button>
-				</div>
+                                <h2 class="fw-bold mb-2 text-uppercase">Wylogować się?</h2>
+                                <p class="mb-5">Czy jesteś pewien {{ user.username }}, że chcesz się wylogować?</p>
+                                <form method="post" action="{% url 'account_logout' %}">
+                                    {% csrf_token %}
+                                    {% if redirect_field_value %}
+                                        <input type="hidden" name="{{ redirect_field_name }}"
+                                               value="{{ redirect_field_value }}" />
+                                    {% endif %}
+                                    <small>{{ form.email.errors }}</small>
 
-			</form>
-		</article>
-	</div>
+                                    <div class="form-group">
+
+                                        <button type="submit" class="btn btn-primary btn-block"> Wyloguj</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {% endblock content %}

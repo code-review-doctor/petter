@@ -1,48 +1,68 @@
 {% extends "_base.html" %}
-{% block title %}Log in{% endblock %}
+{% block title %}Zaloguj się{% endblock %}
 {% block content %}
-	<div class="card bg-light">
-		<article class="card-body mx-auto" style="max-width: 400px;">
-			<h4 class="card-title mt-3 text-center">Login</h4>
-			<p class="text-center">Login or register from here to access.</p>
-			<form class="login" method="POST" action="{% url 'account_login' %}">
-				{% csrf_token %}
-				<small>{{ form.login.errors }}</small>
-				<div class="form-group input-group">
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-light" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
 
-					<div class="input-group-prepend">
-						<span class="input-group-text"> <i class="bi bi-person" aria-hidden="true"></i> </span>
-					</div>
+                            <div class="mb-md-5 mt-md-4 pb-5">
 
-					<input name="{{ form.login.html_name }}" class="form-control"
-					       placeholder="{{ form.login.label }}" type="text">
+                                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                                <p class="mb-5">Podaj swój login oraz hasło!</p>
+                                <form class="login" method="POST" action="{% url 'account_login' %}">
+                                    {% csrf_token %}
 
-				</div>
+                                    {% for error in form.non_field_errors %}
+                                        <small class="mb-2">{{ error }}</small>
+                                    {% endfor %}
 
-				<small>{{ form.password1.errors }}</small>
-				<div class="form-group input-group">
-					<div class="input-group-prepend">
-						<span class="input-group-text"> <i class="bi bi-lock" aria-hidden="true"></i> </span>
-					</div>
-					<small>{{ form.password.errors }}</small>
-					<input name="{{ form.password.html_name }}" class="form-control"
-					       placeholder="{{ form.password.label }}" type="password">
-				</div>
+                                    <div class="form-outline mb-4">
+                                        <i class="fas fa-user trailing" aria-hidden="true"></i>
+                                        <input
+                                                type="text"
+                                                id="{{ form.login.id_for_label }}"
+                                                name="{{ form.login.html_name }}"
+                                                class="form-control form-control-lg" />
+                                        <label
+                                                class="form-label"
+                                                for="{{ form.login.id_for_label }}">
+                                            Login
+                                        </label>
+                                    </div>
 
+                                    <div class="form-outline mb-4">
+                                        <i class="fas fa-key trailing" aria-hidden="true"></i>
+                                        <input
+                                                type="password"
+                                                id="{{ form.password.id_for_label }}"
+                                                name="{{ form.password.html_name }}"
+                                                class="form-control form-control-lg" />
+                                        <label class="form-label" for="{{ form.password.id_for_label }}">Hasło</label>
+                                    </div>
 
-				<div class="form-group">
+                                    <p class="small mb-3 pb-lg-2">
+                                        <a href="{% url 'account_reset_password' %}">Zapomniałeś hasła?</a>
+                                    </p>
 
-					<button type="submit" class="btn btn-primary btn-block"> Login</button>
-				</div>
-				<div class="input-group-prepend">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1"
-					       name="{{ form.remember.html_name }}">
-					<label for="{{ form.remember.id_for_label }}">Remember me</label>
-				</div>
-				<p class="text-center">Don't have an account? <a href="{{ signup_url }}">Register!</a></p>
-				<p class="text-center">Forgot password?<a href="{% url 'account_reset_password' %}"> Remind password</a>
-				</p>
-			</form>
-		</article>
-	</div>
+                                    <button class="btn btn-outline-dark btn-lg px-5" type="submit">Login</button>
+
+                                </form>
+                            </div>
+
+                            <div>
+                                <p class="mb-0">
+                                    Nie masz jeszcze konta? <a href="{{ signup_url }}" class="fw-bold">Zarejestruj
+                                    się</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock content %}

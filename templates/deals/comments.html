@@ -1,53 +1,68 @@
 {% include 'deals/comment_create.html' with form=form %}
 
 <div class="container mt-5 mb-4" id="comments_container">
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-12 col-lg-12">
             <div class="headings d-flex justify-content-between align-items-center mb-3">
                 <h5>Komentarze ({{ deal.comment_set.count }}):</h5>
 
             </div>
-            {#			{% for comment in deal.comment_set.all %}#}
-            {% for comment in comments %}
-                <div class="card p-3 mt-2">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="user d-flex flex-row align-items-center">
-                            <a href="{% url 'accounts:profile' comment.author.username %}">
-                                {% if comment.author.avatar %}
-                                    <img src="{{ comment.author.avatar.url }}"
-									     class="user-img rounded-circle z-depth-2 circle-avatar mr-2" alt="User avatar"
-									     style="width:38px; height:38px">
-								{% else %}
-									<div class="circle rounded-circle z-depth-2 circle-avatar mr-2"
-									     style="width:38px; height:38px">
+            <div class="card text-dark">
+
+                {% for comment in comments %}
+                    <div class="card-body p-4">
+                        <div class="d-flex flex-start">
+                            {% if comment.author.avatar %}
+                                <img
+                                        class="rounded-circle shadow-1-strong me-3"
+                                        src="{{ comment.author.avatar.url }}"
+                                        alt="avatar"
+                                        width="40"
+                                        height="40"
+                                />
+                            {% else %}
+                                <div class="circle rounded-circle z-depth-2 circle-avatar me-2"
+                                     style="width:38px; height:38px">
 						<span class="initials" role="button" data-toggle="dropdown" aria-haspopup="true"
-						      aria-expanded="false">{{ comment.author.get_initials }}</span>
+                              aria-expanded="false">{{ comment.author.get_initials }}</span>
 
-									</div>
-								{% endif %}
-							</a>
-							<span>
-								<small class="font-weight-bold text-primary">
-									<a href="{% url 'accounts:profile' comment.author.username %}"> {{ comment.author }}</a>
-								</small>
-
-								<small>{{ comment.created_at | timesince }} ago</small>
-							</span>
-						</div>
-
-					</div>
-                    <div class="action d-flex justify-content-between mt-2 align-items-center">
-                        <small class="font-weight-bold">{{ comment.comment }} </small>
+                                </div>
+                            {% endif %}
+                            <div>
+                                <h6 class="fw-bold mb-1">
+                                    <a href="{% url 'accounts:profile' comment.author.username %}">
+                                        {{ comment.author }} </a>
+                                </h6>
+                                <div class="d-flex align-items-center mb-3">
+                                    <p class="mb-0 text-muted">
+                                        <small>{{ comment.created_at | timesince }} ago</small>
+                                    </p>
+                                    {#   <a href="#!" ><i class="fas fa-pencil-alt ms-2" aria-hidden="true" ></i></a>#}
+                                    {#  <a href="#!" ><i class="fas fa-redo-alt ms-2" aria-hidden="true" ></i></a>#}
+                                    {#   <a href="#!" ><i class="fas fa-heart ms-2" aria-hidden="true" ></i></a>#}
+                                </div>
+                                <p class="mb-0">
+                                    {{ comment.comment }}
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            {% empty %}
-                <div class="card p-3 mt-2">
-                    Sorry, no comments yet...
-                </div>
 
-            {% endfor %}
-            {% if comments.paginator.num_pages > 1 %}
-                <div class="pagination">
+                    <hr class="my-0" style="height: 1px;" />
+                {% empty %}
+                    <div class="card p-3 mt-2">
+                        Sorry, no comments yet...
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+{#        sss#}
+
+{% if comments.paginator.num_pages > 1 %}
+    <div class="pagination">
 		            <span class="step-links">
 				        {% if comments.has_previous %}
                             <a href="?page=1">&laquo; first</a>
@@ -63,8 +78,8 @@
                             <a href="?page={{ comments.paginator.num_pages }}">last &raquo;</a>
                         {% endif %}
 		            </span>
-                </div>
-            {% endif %}
-        </div>
     </div>
+{% endif %}
+</div>
+</div>
 </div>

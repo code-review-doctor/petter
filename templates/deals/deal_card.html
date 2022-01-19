@@ -2,17 +2,21 @@
     <div class="card mb-2">
         <div class="row no-gutters">
             <div class="col-sm-3 p-2">
-                <img class="card-img" src="{{ deal.product_img.url }}" alt="Deal image">
+                <img class="img-fluid rounded-start" src="{{ deal.product_img.url }}" alt="Deal image">
             </div>
             <div class="col-sm-9">
                 <div class="card-body">
                     <h5 class="card-title">
                         <p class="mb-1 h4">
                             <a href="{% url 'deals:detail' deal.pk %}" class="text-dark"> {{ deal.name }}</a>
-                            <label class="badge badge-info text-white">
-                                <i class="bi bi-heart align-middle" aria-hidden="true"></i>
-                                <span class="align-middle">{{ deal.get_voting_count }}</span>
-                            </label>
+                            <span class="h2">
+                            <i class="fas fa-heartbeat
+                            {% if deal.get_voting_count > 200 %} text-danger
+                            {% elif deal.get_voting_count <= 200 and deal.get_voting_count > 100 %} text-success
+                            {% endif %}" aria-hidden="true"></i>
+
+                            <span class="badge  badge-notification bg-success">{{ deal.get_voting_count }}</span>
+                        </span>
                         </p>
                         <p class="h5">
                             <span class="text-success font-weight-bold">{{ deal.current_price_format }}</span>
@@ -25,15 +29,15 @@
                         <p></p>
                     </h5>
                     <p class="card-text text-break">{{ deal.description | safe | striptags | truncatechars:200 }}</p>
-                    <p class="text-secondary">
+                    <p class="text-black-50">
                         <small>
-                            <i class="bi bi-calendar3" aria-hidden="true"></i> {{ deal.created_at }}
-                            <i class="bi bi-menu-up" aria-hidden="true"></i> <a
+                            <i class="far fa-calendar-alt" aria-hidden="true"></i> {{ deal.created_at }}
+                            <i class="far fa-comment-dots" aria-hidden="true"></i> <a
                                 href="{% url 'deals:detail' deal.pk %}#comments_container"
-                                class="text-dark"> {{ deal.comment_set.count }}</a>
-                            <span class="float-right ">
-								<i class="bi bi-person" aria-hidden="true"></i>
-								<a href="{% url 'accounts:profile' deal.author %}" class="text-secondary">
+                                class="text-black-50"> {{ deal.comment_set.count }}</a>
+                            <span class="float-end ">
+								<i class="far fa-user" aria-hidden="true"></i>
+								<a href="{% url 'accounts:profile' deal.author %}" class="text-black-50">
 									 {{ deal.author }}
 								</a>
 							</span>

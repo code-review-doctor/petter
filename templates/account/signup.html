@@ -4,62 +4,95 @@
 {% block title %}Register{% endblock %}
 
 {% block content %}
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-light" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
 
-	<div class="card bg-light">
-		<article class="card-body mx-auto" style="max-width: 400px;">
-			<h4 class="card-title mt-3 text-center">Create Account</h4>
-			<p class="text-center">Get started with your free account</p>
-			<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-				{% csrf_token %}
-				<small>{{ form.username.errors }}</small>
-				<div class="form-group input-group">
+                            <div class="mb-md-5 mt-md-4 pb-2">
 
-					<div class="input-group-prepend">
-						<span class="input-group-text"> <i class="bi bi-person" aria-hidden="true"></i> </span>
+                                <h2 class="fw-bold mb-2 text-uppercase">Zarejestruj</h2>
+                                <p class="mb-5">Podaj swój login, email oraz hasło!</p>
+                                <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+                                    {% csrf_token %}
 
-					</div>
+                                    {% for error in form.non_field_errors %}
+                                        <small class="mb-2">{{ error }}</small>
+                                    {% endfor %}
 
-					<input name="{{ form.username.html_name }}" class="form-control"
-					       placeholder="{{ form.username.label }}" type="text">
+                                    <div class="form-outline mb-4">
+                                        <i class="fas fa-user trailing" aria-hidden="true"></i>
+                                        <input
+                                                type="text"
+                                                id="{{ form.username.id_for_label }}"
+                                                name="{{ form.username.html_name }}"
+                                                class="form-control form-control-lg" />
+                                        <label
+                                                class="form-label"
+                                                for="{{ form.username.id_for_label }}">
+                                            Login
+                                        </label>
+                                    </div>
 
-				</div>
+                                    <div class="form-outline mb-4">
+                                        <i class="fas fa-envelope trailing" aria-hidden="true"></i>
+                                        <input
+                                                type="email"
+                                                id="{{ form.email.id_for_label }}"
+                                                name="{{ form.email.html_name }}"
+                                                class="form-control form-control-lg" />
+                                        <label
+                                                class="form-label"
+                                                for="{{ form.username.id_for_label }}">
+                                            Email
+                                        </label>
+                                    </div>
 
-				<small>{{ form.email.errors }}</small>
-				<div class="form-group input-group">
-					<div class="input-group-prepend">
-						<span class="input-group-text"> <i class="bi bi-envelope" aria-hidden="true"></i> </span>
-					</div>
-					<small>{{ form.email.errors }}</small>
-					<input name="{{ form.email.html_name }}" class="form-control"
-					       placeholder="{{ form.email.label }}" type="text">
-				</div>
+                                    <div class="form-outline mb-4">
+                                        <i class="fas fa-key trailing" aria-hidden="true"></i>
+                                        <input
+                                                type="password"
+                                                id="{{ form.password1.id_for_label }}"
+                                                name="{{ form.password1.html_name }}"
+                                                class="form-control form-control-lg" />
+                                        <label class="form-label" for="{{ form.password1.id_for_label }}">
+                                            Hasło</label>
+                                    </div>
 
-				<small>{{ form.password1.errors }}</small>
-				<div class="form-group input-group">
-					<div class="input-group-prepend">
-						<span class="input-group-text"> <i class="bi bi-lock" aria-hidden="true"></i> </span>
-					</div>
-					<small>{{ form.password1.errors }}</small>
-					<input name="{{ form.password1.html_name }}" class="form-control" placeholder="Create password"
-					       type="password">
-				</div>
+                                    <div class="form-outline mb-4">
+                                        <i class="fas fa-key trailing" aria-hidden="true"></i>
+                                        <input
+                                                type="password"
+                                                id="{{ form.password2.id_for_label }}"
+                                                name="{{ form.password2.html_name }}"
+                                                class="form-control form-control-lg" />
+                                        <label class="form-label" for="{{ form.password2.id_for_label }}">
+                                            Powtórz hasło</label>
+                                    </div>
 
-				<small>{{ form.password2.errors }}</small>
-				<div class="form-group input-group">
-					<div class="input-group-prepend">
-						<span class="input-group-text"> <i class="bi bi-lock" aria-hidden="true"></i> </span>
-					</div>
-					<small>{{ form.password2.errors }}</small>
-					<input name="{{ form.password2.html_name }}" class="form-control" placeholder="Repeat password"
-					       type="password">
-				</div>
-				<div class="form-group">
-					<button type="submit" class="btn btn-primary btn-block"> Create Account</button>
-				</div>
-				<p class="text-center">Have an account? <a href="{% url 'account_login' %}">Log In</a></p>
-			</form>
-		</article>
-	</div>
+                                    <p class="small mb-3 pb-lg-2">
+                                        <a href="{% url 'account_reset_password' %}">Zapomniałeś hasła?</a>
+                                    </p>
+
+                                    <button class="btn btn-outline-dark btn-lg px-5" type="submit">Zarejestruj</button>
+
+                                </form>
+                            </div>
+
+                            <div>
+                                <p class="mb-0">
+                                    Masz konto? <a href="{% url 'account_login' %}">zaloguj się</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {% endblock %}
 
