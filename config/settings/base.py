@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     # third party
     'admin_honeypot',
     'django_filters',
-    'bootstrap4',  # TODO: Override forms with raw BS and delete this lib
     'allauth',
     'allauth.account',
     # 'allauth.socialaccount',
