@@ -1,14 +1,11 @@
 [[source]]
 url = "https://pypi.org/simple"
-verify_ssl = true
+verify_ssl = false
 name = "pypi"
 
 [packages]
 django = "~=3.2.0"
 postgres = "*"
-faker = "*"
-uuid = "*"
-django-bootstrap4 = "*"
 django-allauth = "*"
 flake8 = "~=4.0.1"
 pre-commit = "~=2.16.0"
@@ -22,13 +19,6 @@ psycopg2 = "*"
 django-environ = "~=0.8.1"
 django-admin-honeypot = "~=1.1.0"
 django-money = "~=2.1"
-django-quill-editor = "~=0.1.29"
 django-debug-toolbar = "~=3.2.4"
 pillow = "==9.0.0"
 django-summernote = "*"
-
-[dev-packages]
-faker = "*"
-psutil = "*"
-beautifulsoup4 = "*"
-requests-html = "*"
