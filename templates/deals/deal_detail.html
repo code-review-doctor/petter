@@ -8,7 +8,7 @@
 {% block content %}
     <div class="container my-5 bg-white p-4 rounded">
         {% if not deal.active %}
-            <div class="alert alert-dark" role="alert">
+            <div class="alert alert-info" role="alert">
                 <h4 class="alert-heading">Niestety już za późno!</h4>
                 <p>Tym razem Ci się nie udało, może nastepnym razem?</p>
                 <hr>
@@ -50,7 +50,9 @@
 
                 <div class="col-md-8">
                     <p class="mb-1 h4 text-dark"> {{ deal.name }} </p>
-                    <p class="mb-2 text-muted text-uppercase small">{{ deal.category }}</p>
+                    {% if deal.category %}
+                        <p class="mb-2 text-muted text-uppercase small">{{ deal.category }}</p>
+                    {% endif %}
                     <p class="h5">
                         <span class="text-success font-weight-bold">{{ deal.current_price_format }}</span>
                         {% if deal.historical_price %}
@@ -73,8 +75,15 @@
                                 <tr>
                                     <th class="pl-0 w-25" scope="row"><strong>Dostępny:</strong></th>
                                     <td>
-                                        <i class="fas fa-clock"
-                                           aria-hidden="true"></i> {{ deal.valid_till | timeuntil }}
+                                        <span
+                                                data-mdb-toggle="tooltip"
+                                                data-mdb-placement="right"
+                                                title="{{ deal.valid_till }}">
+                                            <i class="fas fa-clock"
+                                               aria-hidden="true"></i>
+                                        {{ deal.valid_till | timeuntil }}
+                                        </span>
+
                                     </td>
                                 </tr>
                             {% endif %}
@@ -97,14 +106,17 @@
                             <tr>
                                 <th class="pl-0 w-25" scope="row"><strong>Dodał:</strong></th>
                                 <td>
-                                    <i class="fas fa-user-alt" aria-hidden="true"></i> {{ deal.author }}
+                                    <i class="fas fa-user-alt" aria-hidden="true"></i>
+                                    <a href="{% url 'accounts:profile' deal.author %}" class="link-dark">
+                                        {{ deal.author }}
+                                    </a> <small>({{ deal.created_at }})</small>
                                 </td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="d-flex justify-content-center">
-                    <span id="deal_id" data-value="{{ deal.id }}" {% if have_voted %} data-toggle="tooltip"
+                    <span id="deal_id" data-value="{{ deal.id }}" {% if have_voted %} data-mdb-toggle="tooltip"
                           title="Możesz oddać tylko jeden głos!" {% endif %}
                           class="text-center mt-3 mb-3 border-0 border-warning rounded-lg">
 

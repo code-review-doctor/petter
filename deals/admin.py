@@ -26,7 +26,7 @@ class DealAdminForm(forms.ModelForm):
 
 class DealAdmin(SummernoteModelAdmin):
     form = DealAdminForm
-    list_display = ('name', 'created_at', 'vote_up', 'vote_down', "overall_rating",)
+    list_display = ('name', 'created_at', 'vote_up', 'vote_down', 'overall_rating', 'active',)
     summernote_fields = '__all__'
 
     def overall_rating(self, obj):

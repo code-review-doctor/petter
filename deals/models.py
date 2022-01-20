@@ -67,7 +67,7 @@ class Deal(models.Model):
     @property
     def current_price_format(self):
         if self.current_price.currency.code == 'PLN':
-            money_format = f'{self.current_price.amount} {self.current_price.currency}'
+            money_format = f'{self.current_price.amount} zł'
         else:
             money_format = f'{self.current_price.currency}{self.current_price.amount}'
         return money_format
@@ -75,7 +75,7 @@ class Deal(models.Model):
     @property
     def historical_price_format(self):
         if self.historical_price.currency.code == 'PLN':
-            money_format = f'{self.historical_price.amount} {self.historical_price.currency}'
+            money_format = f'{self.historical_price.amount} zł'
         else:
             money_format = f'{self.historical_price.currency}{self.historical_price.amount}'
         return money_format
