@@ -56,7 +56,7 @@ class TestDealsModel(TestCase):
             user=self.custom_user,
             vote_value=Vote.VoteChoice.PLUS,
         )
-        self.assertTrue(self.deal1.can_vote(user_id=self.custom_user.uuid), True)
+        self.assertTrue(self.deal1.can_vote(user_id=self.custom_user.uuid))
 
     def test_vote_plus_increase_deal_vote_counter(self):
         deal = Deal.objects.get(name=self.DEAL_1)
